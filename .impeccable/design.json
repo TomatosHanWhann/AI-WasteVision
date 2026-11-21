@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-21T08:34:16.324413+00:00",
+  "generatedAt": "2026-11-21T12:03:16.100787+00:00",
   "title": "Design System: AI WasteVision",
   "extensions": {
     "colorMeta": {
@@ -462,6 +462,26 @@
       "loyalty": "confirmed count, 1000-item progress, grade, separate labelled demo",
       "privacy": "visible phone consent and no-OTP limitation",
       "glass": "#417e82"
+    },
+    "multiObjectSurface": {
+      "score": "tabular 0–100, calibrated per detected object; round mean excludes missing objects",
+      "layout": "contained image overlay and result rows; one column on mobile",
+      "states": [
+        "loading",
+        "no detections",
+        "uncertain",
+        "special handling",
+        "confirmed",
+        "feedback pending"
+      ],
+      "binColors": {
+        "yellow": "#b68a1e",
+        "green": "#1e7057",
+        "blue": "#3a6c92",
+        "orange": "#bc7228",
+        "red": "#a53630"
+      },
+      "consent": "metadata and optional image consent are separate and unchecked"
     }
   },
   "components": [
@@ -528,6 +548,13 @@
       "description": "Prediction inset extracted from the shipped interface.",
       "html": "<section class=\"ds-prediction\"><span>AI คาดว่าเป็น</span><h3>พลาสติก</h3></section>",
       "css": ".ds-prediction{font-family:\"Noto Sans Thai\",sans-serif;background:#e7f2e9;color:#193e35;padding:18px;border-radius:9px;margin-bottom:20px;animation:ds-reveal .32s cubic-bezier(.16,1,.3,1)}.ds-prediction span{font-size:.85rem;color:#487053}.ds-prediction h3{margin:0;font-size:1.7rem;font-weight:600;line-height:1.6}.ds-prediction.ds-uncertain{background:#fbf1db;color:#73521e}.ds-prediction.ds-uncertain span{color:#73521e}@keyframes ds-reveal{from{clip-path:inset(0 0 35% 0);background:#d2e7d8}to{clip-path:inset(0);background:#e7f2e9}}@media(prefers-reduced-motion:reduce){.ds-prediction{animation:none}}"
+    },
+    {
+      "name": "Detected object result",
+      "kind": "custom",
+      "description": "Numbered result, written destination, confidence and condition controls within the inherited scanner.",
+      "html": "<article class=\"ds-object\"><span class=\"ds-number\">1</span><strong>ประเภทวัสดุที่คาดการณ์</strong><span>76 / 100</span><p>ตรวจสอบประเภทและสภาพก่อนคัดแยก</p></article>",
+      "css": ".ds-object{padding:22px 0;border-top:1px solid var(--line,#dce5df);font-family:\"Noto Sans Thai\",sans-serif;color:var(--ink,#193e35);line-height:1.8}.ds-number{display:inline-grid;place-items:center;width:29px;height:29px;border-radius:50%;background:var(--forest,#123e35);color:white;margin-right:9px}.ds-object>span:last-of-type{float:right;font-variant-numeric:tabular-nums}.ds-object p{font-size:.875rem;color:var(--muted,#596e65)}"
     }
   ],
   "narrative": {

@@ -1,0 +1,13 @@
+TACO: Trash Annotations in Context
+Pedro F. Proenca and Pedro Simoes (2020)
+https://doi.org/10.5281/zenodo.3587843
+Release license: CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+Training uses original annotations with downloaded 640px derivatives.
+
+Custom Bangladeshi E-Waste Image Dataset for Object Detection and Recognition
+Tanzila Afrin and Azizul Abedin Azmi (2025)
+https://doi.org/10.17632/77383kmdnw.1
+CC BY 4.0. Supplied YOLO polygons converted to enclosing bounding boxes.
+
+Gallery derivatives are JPEG recompressions; per-image source group and dataset links in /detection-examples/catalog.json. No endorsement or affiliation is implied.

@@ -24,6 +24,7 @@ colors:
   uncertain-ink: "#73521e"
   danger: "#a53630"
   focus: "#bc7228"
+  bin-yellow: "#b68a1e"
   plastic: "#24785b"
   metal: "#3a6c92"
   paper: "#99712d"
@@ -241,6 +242,12 @@ Navigation links pair SVG icons and Thai labels. Current location uses the selec
 The prediction inset leads with a textual status and semibold material name. Rejection uses warm amber with explicit uncertainty text. Each probability row aligns material label, horizontal bar and percentage; numeric text uses tabular figures. The class mapping lives in `src/domain.js` and must stay consistent across views.
 
 Prediction reveal lasts (0.32s) using `cubic-bezier(0.16, 1, 0.3, 1)`, clipping upward into view. Ordinary button fill transitions last (0.16s); sample fill transitions last (0.15s). The existing reduced-motion query disables animation, transition and smooth scrolling. These are state cues, not ambient decoration.
+
+### Detected objects and confidence
+
+The scan workspace preserves its existing desktop image/results columns and mobile single-column flow. Numbered green outlines align with the contained photograph using the same image proportions; numbered result rows retain the object label and tabular 0–100 score. The mint count summary describes detected objects only. Native selects disclose the disposal profile and condition. Disposal labels pair a written destination with a color border; special handling uses the existing warm warning color. Low confidence uses explicit verification language instead of a positive disposal assertion. Consent and evaluation fields follow the result and never block scanning.
+
+The side-bordered safety note is a warning component, not a selected navigation tab. The preview image intentionally has no src while hidden; its actual image loads before it is shown. Keep model uncertainty, voluntary consent and the trial label visible when extending this surface.
 
 ## Do's and Don'ts
 

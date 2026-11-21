@@ -36,3 +36,6 @@ All held-out images were evaluated with the exported ONNX. Per-image predictions
 ## Versioning and next validation
 
 Preserve the baseline in Git. Add used Thai packaging photographed in real environments, verify material manually, group all views by physical item, freeze a sufficiently sized holdout, then retrain without tuning on it. Commit model, metadata and results together and verify browser preprocessing. Do not override predictions with catalogue labels or lower thresholds just to make examples look correct.
+
+
+The multi-object SSDLite detector is a separate model; see DETECTION_MODEL_CARD.md. Do not compare its localization metrics directly with this legacy whole-image classifier accuracy.

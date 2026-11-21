@@ -4,5 +4,6 @@
   "main":"worker/index.js",
   "compatibility_date":"2026-11-21",
   "assets":{"binding":"ASSETS","not_found_handling":"single-page-application","run_worker_first":["/api/*"]},
-  "d1_databases":[{"binding":"DB","database_name":"wastevision","database_id":"00000000-0000-4000-8000-000000000000","migrations_dir":"drizzle"}]
+  "d1_databases":[{"binding":"DB","database_name":"wastevision","database_id":"00000000-0000-4000-8000-000000000000","migrations_dir":"drizzle"}],
+  "r2_buckets":[{"binding":"BUCKET","bucket_name":"wastevision-feedback"}]
 }

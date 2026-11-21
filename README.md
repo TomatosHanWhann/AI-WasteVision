@@ -23,6 +23,23 @@ npm run dev
 
 เปิด URL ที่ terminal แสดง กล้องต้องใช้ localhost หรือ HTTPS การจำแนกไม่ต้องมีบัญชี ส่วนบัตรสะสมแต้มต้องมี Worker + D1 และ `PHONE_HASH_SECRET` จึงไม่สามารถใช้ static hosting เพียงอย่างเดียวได้
 
+## รุ่นตรวจจับหลายชิ้น
+
+เพิ่มโหมดทดลองตรวจตำแหน่งและจำนวนขยะสูงสุด 10 ชิ้น พร้อมกรอบหมายเลข ความมั่นใจ 0–100 รายชิ้น/เฉลี่ยเฉพาะรายการที่ตรวจพบ สีถังตามรูปแบบพื้นที่ และคำแนะนำจุดรับเฉพาะ รองรับ 15 กลุ่มที่ใช้ฝึก แต่บางกลุ่มยังมี recall ต่ำมาก ไม่ใช่ระบบยืนยันความปลอดภัย
+
+ชุดตรวจจับปัจจุบันมีภาพใช้ได้ 3,652 ภาพ (รวม augmentation ที่ผู้เผยแพร่จัดไว้) จาก TACO และ Bangladeshi E-Waste แบ่ง train/validation/test เป็น 2,541/563/548 ภาพ ผลจาก ONNX จริง: Precision 60.43%, Recall 28.96%, mAP50–95 21.16%, จำนวนตรง 57.12%, count MAE 1.06 ชิ้น จึงยังเป็นรุ่นทดลองและยังไม่ผ่านการประเมินหน้างานไทย อ่าน [Detection model card](docs/DETECTION_MODEL_CARD.md)
+
+ผู้ใช้ส่งคำตอบ/จำนวนจริงโดยสมัครใจ และเลือกแนบภาพแยกต่างหากได้ ข้อมูลเป็น pending ก่อนตรวจทาน ไม่ผูกกับเบอร์โทร และไม่ฝึกจากคำทำนายของโมเดลเอง อ่าน [กระบวนการพัฒนาต่อเนื่อง](docs/CONTINUOUS_IMPROVEMENT.md)
+
+```sh
+python ml/download_detection.py
+python ml/train_detector.py
+# ตรวจซ้ำด้วย exact ONNX โดยไม่ฝึกใหม่
+python ml/evaluate_detector.py
+```
+
+สองคำสั่งแรกต้องใช้ Python environment ตาม ml/requirements.txt และใช้เวลาฝึกบน CPU ได้ โมเดลและรายงานอยู่ใน Git แล้ว ไม่ต้องฝึกเพื่อเปิดเว็บ
+
 ## ความสามารถ
 
 - หน้าเกี่ยวกับระบบและ `presentation.html` สำหรับนำเสนอ พร้อมคู่มือและข้อจำกัด
@@ -69,6 +86,8 @@ python ml/check_model.py
 
 ## เผยแพร่
 
-Sites ใช้โครงการเดิมใน `.openai/hosting.json` พร้อม D1 binding `DB` และ secret `PHONE_HASH_SECRET` ที่เก็บใน runtime เท่านั้น ไม่ใส่ secret ลง Git การ push GitHub ยังไม่เผยแพร่ Sites อัตโนมัติ ต้อง build/push/save/deploy source commit เดียวกัน ดู `docs/DEPLOYMENT.md`
+Sites ใช้โครงการเดิมใน `.openai/hosting.json` พร้อม D1 binding `DB`, R2 binding `BUCKET` สำหรับภาพที่ยินยอมแนบ และ secret `PHONE_HASH_SECRET` ที่เก็บใน runtime เท่านั้น ไม่ใส่ secret ลง Git การ push GitHub ยังไม่เผยแพร่ Sites อัตโนมัติ ต้อง build/push/save/deploy source commit เดียวกัน ดู `docs/DEPLOYMENT.md`
 
 แหล่งข้อมูล: RealWaste CC BY 4.0, Open Food Facts photographs CC BY-SA 3.0 ดูเครดิตและ URL รายภาพใน catalog ภาพผลิตภัณฑ์ไม่ได้แสดงถึงความร่วมมือหรือการรับรองจากเจ้าของแบรนด์ Repository ยังเป็น private; เว็บทดลองเปิดให้ผู้มีลิงก์
+
+ภาพ TACO และ Bangladeshi E-Waste ที่ใช้เป็นตัวอย่างมีเครดิตรายภาพใน public/detection-examples/catalog.json ภาพตัวอย่างทั้งหมดไม่เพิ่มแต้มและไม่สร้างสถิติผู้ใช้

@@ -20,3 +20,7 @@ Vite + Cloudflare Worker; static assets อยู่ `dist/client`, Worker อ�
 GitHub Actions ตรวจโค้ด/build/model แต่ไม่ publish Sites อัตโนมัติ หากย้าย host ต้องมี Worker/D1 หรือ backend ที่เทียบเท่า การส่ง dist/client ขึ้น static host เพียงอย่างเดียวจะใช้บัตรไม่ได้
 
 ย้อนกลับให้คืนทั้ง Worker, assets, โมเดล และ metadata ที่ตรงกัน หลีกเลี่ยงการย้อน schema ที่ทำให้ข้อมูลหาย HTTPS จำเป็นต่อกล้องและ cookie Secure
+
+## การประเมินต่อเนื่อง
+
+เพิ่ม R2 binding BUCKET สำหรับภาพ feedback ที่ผู้ใช้ยินยอมโดยเฉพาะ ตาราง analysis_feedback อยู่ใน migration 0001 ไม่แก้ migration ที่ใช้แล้ว REVIEW_ADMIN_SECRET เป็น secret แยกสำหรับ API ตรวจทาน/ส่งออก ไม่มีค่า secret หรือหน้าจอ admin ใน frontend ทดสอบ public /api/quality และการห้ามเข้าถึง /api/review/export เมื่อไม่มีสิทธิ์หลังเผยแพร่

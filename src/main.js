@@ -21,6 +21,7 @@ import {
 import QRCode from "qrcode";
 import { LABELS, NAMES, COLORS, guidance } from "./domain.js";
 import { layout, icon } from "./views.js";
+import { renderMulti, clearBoxes, initReceipt } from "./multi-ui.js";
 import { cardRequest, renderCard } from "./loyalty.js";
 const $ = (id) => document.getElementById(id);
 const base = import.meta.env.BASE_URL;
@@ -54,6 +55,7 @@ const motion = () =>
   matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
 document.querySelector("#app").innerHTML = layout();
 icons();
+initReceipt();
 let model,
   engine,
   modelLoading,
@@ -78,12 +80,13 @@ function error(message) {
 }
 function toast(message) {
   $("toast").textContent = message;
-  $("toast").hidden = true;
+  $("toast").hidden = false;
   clearTimeout(toast.timer);
   toast.timer = setTimeout(() => ($("toast").hidden = true), 4500);
 }
 function sync() {
   const locked = busy || imageLoading || awardBusy;
+  $("scan-mode").disabled = locked || !!modelLoading;
   $("analyze").disabled =
     !ready || locked || !current || !!stream || cameraPending;
   $("choose-file").disabled = locked;
@@ -112,6 +115,7 @@ function releaseURL() {
 }
 function emptyResult(text = "เลือกภาพและเริ่มวิเคราะห์เพื่อดูประเภทวัสดุ") {
   result = null;
+  clearBoxes();
   $("result-state").textContent = current
     ? "ภาพพร้อมสำหรับวิเคราะห์"
     : "ยังไม่ได้เลือกภาพ";
@@ -137,10 +141,10 @@ async function showImage(url, source) {
     current = im;
     sourceType = source;
     $("preview-image").src = url;
-    $("preview-image").hidden = true;
+    $("preview-image").hidden = false;
     $("empty-view").hidden = true;
-    $("crop-hint").hidden = true;
-    $("clear-image").hidden = true;
+    $("crop-hint").hidden = false;
+    $("clear-image").hidden = false;
     $("crop-frame").hidden = true;
     emptyResult();
     return true;
@@ -210,15 +214,15 @@ $("open-camera").onclick = async () => {
     stream = incoming;
     const video = $("camera-video");
     video.srcObject = stream;
-    video.hidden = true;
+    video.hidden = false;
     await video.play();
     if (epoch !== cameraEpoch) return;
     $("preview-image").hidden = true;
     $("empty-view").hidden = true;
     $("crop-hint").hidden = true;
     $("crop-frame").hidden = true;
-    $("clear-image").hidden = true;
-    $("capture").hidden = true;
+    $("clear-image").hidden = false;
+    $("capture").hidden = false;
     current = null;
     emptyResult("เลือก “ถ่ายภาพ” เมื่อจัดวัตถุอยู่กลางกรอบ");
   } catch (e) {
@@ -275,7 +279,7 @@ $("clear-image").onclick = () => {
   sourceType = "";
   $("preview-image").removeAttribute("src");
   $("preview-image").hidden = true;
-  $("empty-view").hidden = true;
+  $("empty-view").hidden = false;
   $("crop-hint").hidden = true;
   $("crop-frame").hidden = true;
   $("clear-image").hidden = true;
@@ -290,15 +294,22 @@ async function initModel() {
   $("model-status").textContent = "กำลังโหลดโมเดลครั้งแรก กรุณารอสักครู่";
   modelLoading = (async () => {
     try {
-      engine = await import("./inference.js");
-      model = await engine.loadModel();
+      engine =
+        $("scan-mode").value === "multiple"
+          ? await import("./detection.js")
+          : await import("./inference.js");
+      const activeMetadata =
+        $("scan-mode").value === "multiple"
+          ? await engine.loadDetector()
+          : await engine.loadModel();
+      if ($("scan-mode").value !== "multiple") model = activeMetadata;
       ready = true;
       $("model-status").textContent = "โมเดลพร้อมสำหรับวิเคราะห์บนอุปกรณ์นี้";
       renderEvaluation();
     } catch (e) {
       $("model-status").textContent =
         "ไม่สามารถโหลดโมเดลได้ กรุณาตรวจอินเทอร์เน็ตแล้วลองใหม่";
-      $("retry-model").hidden = true;
+      $("retry-model").hidden = false;
     } finally {
       modelLoading = null;
       sync();
@@ -307,6 +318,11 @@ async function initModel() {
   return modelLoading;
 }
 $("retry-model").onclick = initModel;
+$("scan-mode").onchange = () => {
+  ready = false;
+  emptyResult();
+  void initModel();
+};
 $("analyze").onclick = async () => {
   if (!current || busy || !ready) return;
   busy = true;
@@ -315,7 +331,10 @@ $("analyze").onclick = async () => {
   $("result-state").textContent = "กำลังวิเคราะห์ภาพ";
   $("analyze").textContent = "กำลังวิเคราะห์ภาพ…";
   try {
-    result = await engine.predict(current);
+    result =
+      $("scan-mode").value === "multiple"
+        ? await engine.detect(current)
+        : await engine.predict(current);
     result.source = sourceType;
     result.imageDigest = await engine.imageDigest(current);
     renderResult();
@@ -334,6 +353,22 @@ $("analyze").onclick = async () => {
   }
 };
 function renderResult() {
+  if (result.mode === "multiple") {
+    renderMulti({
+      result,
+      source: current,
+      getCard: () => card,
+      setCard: (next) => {
+        card = next;
+        showCard();
+      },
+      setBusy: (value) => {
+        awardBusy = value;
+        sync();
+      },
+    });
+    return;
+  }
   const r = result,
     unknown = r.label === "unknown";
   $("result-state").textContent = r.latency.toLocaleString("th-TH") + " ms";
@@ -347,7 +382,7 @@ function renderResult() {
   icons();
 }
 function updateAward() {
-  if (!result || !$("award-content")) return;
+  if (!result || result.mode === "multiple" || !$("award-content")) return;
   const area = $("award-content");
   if (result.awarded) {
     area.innerHTML = `<p class="award-success">${icon("check")}บันทึกการคัดแยกแล้ว ได้รับ 1 แต้ม</p><a href="#card">ตรวจยอดสะสม</a>`;
@@ -474,7 +509,7 @@ function renderExamples() {
   $("examples").innerHTML = visible
     .map(
       (x) =>
-        `<button class="example-tile" data-example="${esc(x.id)}"><div class="example-photo"><img src="${base + esc(x.image)}" alt="${esc(x.name)}" loading="lazy"/></div><span>${esc(x.brand || NAMES[x.label])}</span><small>${esc(x.name)}</small><em>${x.label === "unknown" ? "วัสดุหลายชั้น · นอกขอบเขต" : NAMES[x.label]}</em></button>`,
+        `<button class="example-tile" data-example="${esc(x.id)}"><div class="example-photo"><img src="${base + esc(x.image)}" alt="${esc(x.name)}" loading="lazy"/></div><span>${esc(x.brand || NAMES[x.label])}</span><small>${esc(x.name)}</small><em>${x.label === "multiple" ? "คำตอบชุดข้อมูล " + x.ground_truth_count + " ชิ้น" : x.label === "unknown" ? "วัสดุหลายชั้น · ตรวจสอบวัสดุ" : NAMES[x.label]}</em></button>`,
     )
     .join("");
   document.querySelectorAll("[data-example]").forEach(
@@ -482,6 +517,14 @@ function renderExamples() {
       (button.onclick = async () => {
         const example = examples.find((x) => x.id === button.dataset.example);
         try {
+          if (
+            example.label === "multiple" &&
+            $("scan-mode").value !== "multiple"
+          ) {
+            $("scan-mode").value = "multiple";
+            ready = false;
+            void initModel();
+          }
           await showImage(base + example.image, "example");
           releaseURL();
           if (example.label === "unknown") error(example.note);
@@ -545,6 +588,21 @@ async function initExamples() {
       note: "ภาพวัสดุจาก RealWaste",
     })),
   );
+  try {
+    const r = await fetch(base + "detection-examples/catalog.json");
+    if (r.ok) {
+      const data = await r.json();
+      examples.push(
+        ...data.map((x, i) => ({
+          ...x,
+          id: "detection-" + i,
+          name: "ภาพทดสอบหลายชิ้น " + (i + 1),
+          brand: "ชุดข้อมูล " + x.source,
+          label: "multiple",
+        })),
+      );
+    }
+  } catch {}
   renderExamples();
 }
 function renderEvaluation() {
@@ -632,4 +690,29 @@ $("copy-url").onclick = async () => {
 route();
 void initExamples();
 void readMetadata();
+void readDetectionEvaluation();
 void refreshCard(true);
+
+async function readDetectionEvaluation() {
+  try {
+    const r = await fetch(base + "model/detector-metadata.json");
+    if (!r.ok) return;
+    const m = await r.json(),
+      t = m.test;
+    $("detection-evaluation").innerHTML =
+      `<p>โมเดลตรวจจับ ${m.labels.length} กลุ่ม · ภาพทดสอบ ${m.split_counts.test.toLocaleString("th-TH")} ภาพ และวัตถุจริง ${t.true_objects.toLocaleString("th-TH")} ชิ้น</p><dl class="evaluation-numbers"><div><dt>Precision ของรายการที่ตรวจพบ</dt><dd>${pct(t.precision)}</dd></div><div><dt>Recall ของวัตถุจริง</dt><dd>${pct(t.recall)}</dd></div><div><dt>mAP@0.50–0.95</dt><dd>${pct(t.map50_95)}</dd></div><div><dt>จำนวนตรงทั้งหมดต่อภาพ</dt><dd>${pct(t.count_exact_match)}</dd></div><div><dt>ความคลาดเคลื่อนจำนวนเฉลี่ย</dt><dd>${t.count_mae.toFixed(2)} ชิ้น</dd></div></dl><p class="caption">วัดจากชุดข้อมูลสาธารณะที่กันไว้ ไม่ใช่ผลภาคสนามไทย Precision ตรวจทั้งประเภทและกรอบที่ทับวัตถุจริงอย่างน้อย 50% คะแนนความมั่นใจรายชิ้นผ่านการปรับเทียบ แต่ยังมีความคลาดเคลื่อนได้</p>`;
+    const q = await cardRequest("quality");
+    const rows = q.versions || [];
+    $("community-evaluation").innerHTML = rows.length
+      ? rows
+          .map(
+            (x) =>
+              `<p>รุ่น ${esc(x.model_version)} · ผู้ใช้ส่ง ${Number(x.submissions).toLocaleString("th-TH")} ภาพ · ตอบตรงตามผู้ใช้รายงาน ${Number(x.predictions) ? pct(Number(x.user_correct) / Number(x.predictions)) : "ยังไม่มีรายการ"} (${Number(x.predictions)} รายการ) · ผ่านตรวจทาน ${Number(x.reviewed_submissions)} ภาพ</p><p>คลาดเคลื่อนจำนวนตามผู้ใช้รายงานเฉลี่ย ${(Number(x.count_error) / Math.max(1, Number(x.submissions))).toFixed(2)} ชิ้นต่อภาพ · Precision หลังตรวจทาน ${Number(x.reviewed_predictions) ? pct(Number(x.reviewed_correct) / Number(x.reviewed_predictions)) : "ยังไม่มีข้อมูล"} · Recall หลังตรวจทาน ${Number(x.reviewed_truth) ? pct(Number(x.reviewed_correct) / Number(x.reviewed_truth)) : "ยังไม่มีข้อมูล"}</p>`,
+          )
+          .join("") +
+        '<p class="caption">ข้อมูลสมัครใจอาจมีอคติและไม่ใช่ชุดทดสอบอิสระ การเพิ่มข้อมูลไม่ได้รับประกันว่าโมเดลจะแม่นยำขึ้น</p>'
+      : "ยังไม่มีข้อมูลประเมินจากผู้ใช้";
+  } catch {
+    $("community-evaluation").textContent = "ยังไม่สามารถอ่านสถิติจากผู้ใช้ได้";
+  }
+}

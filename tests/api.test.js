@@ -5,82 +5,8 @@ import { readFileSync } from "node:fs";
 import { api } from "../worker/index.js";
 import model from "../public/model/metadata.json" with { type: "json" };
 
-function fixture() {
-  const sqlite = new DatabaseSync(":memory:");
-  sqlite.exec("PRAGMA foreign_keys=ON;");
-  sqlite.exec(
-    readFileSync(
-      new URL("../drizzle/0000_solid_cerise.sql", import.meta.url),
-      "utf8",
-    ),
-  );
-  const wrap = (sql, values = []) => ({
-    bind: (...args) => wrap(sql, args),
-    async first() {
-      return sqlite.prepare(sql).get(...values) || null;
-    },
-    async all() {
-      return { results: sqlite.prepare(sql).all(...values) };
-    },
-    async run() {
-      const result = sqlite.prepare(sql).run(...values);
-      return { meta: { changes: Number(result.changes) } };
-    },
-  });
-  const env = {
-    PHONE_HASH_SECRET: "test-only-secret-at-least-thirty-two-characters",
-    DB: {
-      prepare: (sql) => wrap(sql),
-      async batch(queries) {
-        sqlite.exec("BEGIN");
-        try {
-          const values = [];
-          for (const q of queries) values.push(await q.run());
-          sqlite.exec("COMMIT");
-          return values;
-        } catch (e) {
-          sqlite.exec("ROLLBACK");
-          throw e;
-        }
-      },
-    },
-  };
-  const call = async (
-    path,
-    body,
-    cookie = "",
-    origin = "https://wastevision.test",
-  ) => {
-    const headers = {
-      origin,
-      "x-wastevision-client": "web",
-      "content-type": "application/json",
-    };
-    if (cookie) headers.cookie = cookie;
-    const response = await api(
-      new Request("https://wastevision.test/api/" + path, {
-        method: body ? "POST" : "GET",
-        headers,
-        body: body ? JSON.stringify(body) : undefined,
-      }),
-      env,
-    );
-    return {
-      status: response.status,
-      data: await response.json(),
-      cookie: response.headers.get("set-cookie")?.split(";")[0],
-      cookieHeader: response.headers.get("set-cookie"),
-    };
-  };
-  const scan = (image = "a".repeat(64)) => ({
-    source: "upload",
-    label: "plastic",
-    confidence: 1,
-    modelVersion: model.model_version,
-    imageDigest: image,
-  });
-  return { sqlite, call, scan };
-}
+import { fixture } from "./helpers.mjs";
+
 test("API persists the same card across sessions and awards one item exactly once", async () => {
   const { sqlite, call, scan } = fixture();
   try {

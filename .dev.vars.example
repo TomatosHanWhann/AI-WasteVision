@@ -1,1 +1,4 @@
 PHONE_HASH_SECRET=local-preview-only-change-this-before-any-production-deployment
+
+# Local preview only; production secret is configured through Sites
+REVIEW_ADMIN_SECRET=replace-with-local-review-secret-at-least-32-characters

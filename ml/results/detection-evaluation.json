@@ -1,0 +1,463 @@
+{
+  "model_version": "wastevision-ssdlite-v3",
+  "task": "object-detection",
+  "architecture": "COCO pretrained SSDLite320 MobileNetV3 frozen backbone; trained waste classification and regression heads",
+  "labels": [
+    "plastic",
+    "metal",
+    "paper",
+    "cardboard",
+    "food_organics",
+    "glass",
+    "film",
+    "multilayer",
+    "foam",
+    "battery",
+    "electronics",
+    "bulb",
+    "pressurised",
+    "broken_glass",
+    "unknown"
+  ],
+  "input_size": 320,
+  "input_scale": "RGB / 127.5 - 1; bilinear stretch",
+  "threshold": 0.55,
+  "nms_iou": 0.45,
+  "max_detections": 10,
+  "raw_candidate_limit": 150,
+  "best_epoch": 30,
+  "seed": 42,
+  "split_counts": {
+    "train": 2541,
+    "validation": 563,
+    "test": 548
+  },
+  "source_counts": {
+    "taco": 1499,
+    "ewaste": 2153
+  },
+  "unique_source_groups": 2654,
+  "objects_by_split": {
+    "train": {
+      "glass": 174,
+      "cardboard": 159,
+      "plastic": 1146,
+      "metal": 570,
+      "multilayer": 267,
+      "foam": 101,
+      "film": 365,
+      "pressurised": 7,
+      "paper": 228,
+      "unknown": 1109,
+      "broken_glass": 130,
+      "food_organics": 90,
+      "battery": 106,
+      "electronics": 381,
+      "bulb": 33
+    },
+    "validation": {
+      "plastic": 265,
+      "metal": 153,
+      "glass": 34,
+      "cardboard": 25,
+      "multilayer": 72,
+      "paper": 56,
+      "unknown": 242,
+      "film": 111,
+      "foam": 18,
+      "broken_glass": 6,
+      "food_organics": 13,
+      "pressurised": 1,
+      "battery": 26,
+      "electronics": 89,
+      "bulb": 4
+    },
+    "test": {
+      "metal": 104,
+      "plastic": 243,
+      "pressurised": 2,
+      "film": 70,
+      "glass": 35,
+      "multilayer": 85,
+      "unknown": 196,
+      "paper": 53,
+      "foam": 21,
+      "battery": 24,
+      "food_organics": 5,
+      "cardboard": 22,
+      "broken_glass": 2,
+      "electronics": 92,
+      "bulb": 6
+    }
+  },
+  "test": {
+    "precision": 0.6043478260869565,
+    "recall": 0.28958333333333336,
+    "f1": 0.39154929577464787,
+    "map50": 0.308873305157437,
+    "count_mae": 1.0583941605839415,
+    "count_exact_match": 0.5711678832116789,
+    "true_objects": 960,
+    "predicted_objects": 460,
+    "per_class": {
+      "plastic": {
+        "truth_objects": 243,
+        "precision": 0.5108695652173914,
+        "recall": 0.1934156378600823,
+        "ap50": 0.17476107905588406
+      },
+      "metal": {
+        "truth_objects": 104,
+        "precision": 0.3939393939393939,
+        "recall": 0.25,
+        "ap50": 0.21539993056207946
+      },
+      "paper": {
+        "truth_objects": 53,
+        "precision": 0.7560975609756098,
+        "recall": 0.5849056603773585,
+        "ap50": 0.5404011022630227
+      },
+      "cardboard": {
+        "truth_objects": 22,
+        "precision": 0.07692307692307693,
+        "recall": 0.045454545454545456,
+        "ap50": 0.023102310231023104
+      },
+      "food_organics": {
+        "truth_objects": 5,
+        "precision": 0.25,
+        "recall": 0.2,
+        "ap50": 0.10148514851485149
+      },
+      "glass": {
+        "truth_objects": 35,
+        "precision": 0.8181818181818182,
+        "recall": 0.5142857142857142,
+        "ap50": 0.5073078736445074
+      },
+      "film": {
+        "truth_objects": 70,
+        "precision": 0.14285714285714285,
+        "recall": 0.02857142857142857,
+        "ap50": 0.043841557941975334
+      },
+      "multilayer": {
+        "truth_objects": 85,
+        "precision": 0.2727272727272727,
+        "recall": 0.03529411764705882,
+        "ap50": 0.025040232471038492
+      },
+      "foam": {
+        "truth_objects": 21,
+        "precision": 0.2857142857142857,
+        "recall": 0.09523809523809523,
+        "ap50": 0.066006600660066
+      },
+      "battery": {
+        "truth_objects": 24,
+        "precision": 0.8571428571428571,
+        "recall": 0.5,
+        "ap50": 0.8147122360233187
+      },
+      "electronics": {
+        "truth_objects": 92,
+        "precision": 0.794392523364486,
+        "recall": 0.9239130434782609,
+        "ap50": 0.89919867606887
+      },
+      "bulb": {
+        "truth_objects": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "ap50": 1.0
+      },
+      "pressurised": {
+        "truth_objects": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ap50": 0.0
+      },
+      "broken_glass": {
+        "truth_objects": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ap50": 0.0
+      },
+      "unknown": {
+        "truth_objects": 196,
+        "precision": 0.7096774193548387,
+        "recall": 0.22448979591836735,
+        "ap50": 0.22184282992491805
+      }
+    },
+    "calibration_brier": 0.14265912693483568,
+    "calibration_ece": 0.0398177344289634,
+    "map50_95": 0.2116196490764012
+  },
+  "validation": {
+    "precision": 0.6252723311546841,
+    "recall": 0.25739910313901343,
+    "f1": 0.36467598475222357,
+    "map50": 0.3078962577707082,
+    "count_mae": 1.2824156305506216,
+    "count_exact_match": 0.5737122557726465,
+    "true_objects": 1115,
+    "predicted_objects": 459,
+    "per_class": {
+      "plastic": {
+        "truth_objects": 265,
+        "precision": 0.6190476190476191,
+        "recall": 0.24528301886792453,
+        "ap50": 0.2244117675250391
+      },
+      "metal": {
+        "truth_objects": 153,
+        "precision": 0.5657894736842105,
+        "recall": 0.28104575163398693,
+        "ap50": 0.25996128124934803
+      },
+      "paper": {
+        "truth_objects": 56,
+        "precision": 0.7333333333333333,
+        "recall": 0.39285714285714285,
+        "ap50": 0.40275948647496335
+      },
+      "cardboard": {
+        "truth_objects": 25,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ap50": 0.005357142857142858
+      },
+      "food_organics": {
+        "truth_objects": 13,
+        "precision": 0.5555555555555556,
+        "recall": 0.38461538461538464,
+        "ap50": 0.34014758930121425
+      },
+      "glass": {
+        "truth_objects": 34,
+        "precision": 0.7777777777777778,
+        "recall": 0.4117647058823529,
+        "ap50": 0.4323807380738074
+      },
+      "film": {
+        "truth_objects": 111,
+        "precision": 0.19047619047619047,
+        "recall": 0.036036036036036036,
+        "ap50": 0.027796724281898746
+      },
+      "multilayer": {
+        "truth_objects": 72,
+        "precision": 0.125,
+        "recall": 0.013888888888888888,
+        "ap50": 0.0066006600660066
+      },
+      "foam": {
+        "truth_objects": 18,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ap50": 0.0
+      },
+      "battery": {
+        "truth_objects": 26,
+        "precision": 0.9,
+        "recall": 0.6923076923076923,
+        "ap50": 0.9030261770215177
+      },
+      "electronics": {
+        "truth_objects": 89,
+        "precision": 0.7722772277227723,
+        "recall": 0.8764044943820225,
+        "ap50": 0.8760747862640627
+      },
+      "bulb": {
+        "truth_objects": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "ap50": 1.0
+      },
+      "pressurised": {
+        "truth_objects": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ap50": 0.0
+      },
+      "broken_glass": {
+        "truth_objects": 6,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ap50": 0.0
+      },
+      "unknown": {
+        "truth_objects": 242,
+        "precision": 0.66,
+        "recall": 0.13636363636363635,
+        "ap50": 0.13992751344562185
+      }
+    }
+  },
+  "calibration": {
+    "method": "validation isotonic regression; object correctness means same class and IoU >= 0.5",
+    "x": [
+      0.02000293880701065,
+      0.03461667150259018,
+      0.03466324135661125,
+      0.08862703293561935,
+      0.08865202963352203,
+      0.09782858937978745,
+      0.09787605702877045,
+      0.21492049098014832,
+      0.21524502336978912,
+      0.23786449432373047,
+      0.23794496059417725,
+      0.2966618835926056,
+      0.2974265217781067,
+      0.3693521320819855,
+      0.3695105016231537,
+      0.39599883556365967,
+      0.3981168568134308,
+      0.4105503559112549,
+      0.4113563299179077,
+      0.5116584897041321,
+      0.5118693113327026,
+      0.5219808220863342,
+      0.5223360061645508,
+      0.64016193151474,
+      0.6418105959892273,
+      0.7151095867156982,
+      0.7169839143753052,
+      0.8495444059371948,
+      0.8558594584465027,
+      0.864404022693634,
+      0.8704373240470886,
+      0.8876822590827942,
+      0.8898805975914001,
+      0.9260451793670654,
+      0.9265445470809937,
+      0.9458897113800049,
+      0.9469380378723145,
+      0.9851840734481812,
+      0.985203742980957,
+      0.9879661202430725,
+      0.9881142973899841,
+      0.9968035221099854,
+      0.9969298243522644,
+      0.9977388381958008,
+      0.9978219270706177,
+      0.999366819858551,
+      0.9993991851806641,
+      0.9999998807907104
+    ],
+    "y": [
+      0.0,
+      0.0,
+      0.003484320557491289,
+      0.003484320557491289,
+      0.008,
+      0.008,
+      0.00966183574879227,
+      0.00966183574879227,
+      0.014598540145985401,
+      0.014598540145985401,
+      0.01904761904761905,
+      0.01904761904761905,
+      0.022222222222222223,
+      0.022222222222222223,
+      0.03125,
+      0.03125,
+      0.0625,
+      0.0625,
+      0.1375,
+      0.1375,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.17543859649122806,
+      0.17543859649122806,
+      0.23529411764705882,
+      0.23529411764705882,
+      0.25,
+      0.25,
+      0.42857142857142855,
+      0.42857142857142855,
+      0.4444444444444444,
+      0.4444444444444444,
+      0.5517241379310345,
+      0.5517241379310345,
+      0.6521739130434783,
+      0.6521739130434783,
+      0.676923076923077,
+      0.676923076923077,
+      0.75,
+      0.75,
+      0.8923076923076924,
+      0.8923076923076924,
+      0.9375,
+      0.9375,
+      0.9555555555555556,
+      0.9555555555555556,
+      1.0,
+      1.0
+    ],
+    "validation_predictions": 4019
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 6.006144715555059,
+      "validation_map50": 0.17340838140070094
+    },
+    {
+      "epoch": 5,
+      "loss": 3.5708608267442234,
+      "validation_map50": 0.28458968529979567
+    },
+    {
+      "epoch": 10,
+      "loss": 2.9294918715578957,
+      "validation_map50": 0.2908159392731937
+    },
+    {
+      "epoch": 15,
+      "loss": 2.593745877907711,
+      "validation_map50": 0.2946540569856377
+    },
+    {
+      "epoch": 20,
+      "loss": 2.3103799141428008,
+      "validation_map50": 0.2946046236909113
+    },
+    {
+      "epoch": 25,
+      "loss": 2.1384643038863658,
+      "validation_map50": 0.29303225029226393
+    },
+    {
+      "epoch": 30,
+      "loss": 1.9061418636789862,
+      "validation_map50": 0.3081538239460271
+    },
+    {
+      "epoch": 35,
+      "loss": 1.8752866154946621,
+      "validation_map50": 0.27693754522874625
+    },
+    {
+      "epoch": 40,
+      "loss": 1.8260879460370765,
+      "validation_map50": 0.2785052010207462
+    }
+  ],
+  "onnx_parity_max_error": 3.4868717193603516e-06,
+  "model_sha256": "6206ed7f802f965948d7ef5fd0f2aa8df173722855d3e41a1edf142ea5c408ff",
+  "physical_item_holdout_verified": false,
+  "limitations": [
+    "Image/source split is not verified physical-item holdout.",
+    "Public datasets are not Thai field validation.",
+    "Rare pressurised and broken-glass categories may have low recall.",
+    "Scores apply only to detected objects, not missing objects or overall image accuracy.",
+    "No automatic training from unreviewed feedback."
+  ],
+  "evaluation_runtime": "Exact ONNX export, top 150 candidates, class-agnostic NMS 0.45, maximum 10 objects; RGB Pillow bilinear 320 stretch",
+  "epoch_selection_candidate_limit": 30
+}

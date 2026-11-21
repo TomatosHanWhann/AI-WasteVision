@@ -1,0 +1,56 @@
+[
+  {
+    "image": "detection-examples/taco-representative-0.jpg",
+    "source": "taco",
+    "ground_truth_count": 2,
+    "source_group": "taco:1001",
+    "note": "Deterministic held-out examples by source group and 1\u20135 visible annotated objects; not selected by model score",
+    "license": "CC BY 4.0",
+    "source_url": "https://doi.org/10.5281/zenodo.3587843"
+  },
+  {
+    "image": "detection-examples/taco-representative-1.jpg",
+    "source": "taco",
+    "ground_truth_count": 2,
+    "source_group": "taco:1004",
+    "note": "Deterministic held-out examples by source group and 1\u20135 visible annotated objects; not selected by model score",
+    "license": "CC BY 4.0",
+    "source_url": "https://doi.org/10.5281/zenodo.3587843"
+  },
+  {
+    "image": "detection-examples/taco-representative-2.jpg",
+    "source": "taco",
+    "ground_truth_count": 3,
+    "source_group": "taco:1027",
+    "note": "Deterministic held-out examples by source group and 1\u20135 visible annotated objects; not selected by model score",
+    "license": "CC BY 4.0",
+    "source_url": "https://doi.org/10.5281/zenodo.3587843"
+  },
+  {
+    "image": "detection-examples/ewaste-representative-0.jpg",
+    "source": "ewaste",
+    "ground_truth_count": 1,
+    "source_group": "ewaste:IMG_20250803_215632",
+    "note": "Deterministic held-out examples by source group and 1\u20135 visible annotated objects; not selected by model score",
+    "license": "CC BY 4.0",
+    "source_url": "https://doi.org/10.17632/77383kmdnw.1"
+  },
+  {
+    "image": "detection-examples/ewaste-representative-1.jpg",
+    "source": "ewaste",
+    "ground_truth_count": 1,
+    "source_group": "ewaste:IMG_20250803_215727",
+    "note": "Deterministic held-out examples by source group and 1\u20135 visible annotated objects; not selected by model score",
+    "license": "CC BY 4.0",
+    "source_url": "https://doi.org/10.17632/77383kmdnw.1"
+  },
+  {
+    "image": "detection-examples/ewaste-representative-2.jpg",
+    "source": "ewaste",
+    "ground_truth_count": 1,
+    "source_group": "ewaste:IMG_20250803_215738",
+    "note": "Deterministic held-out examples by source group and 1\u20135 visible annotated objects; not selected by model score",
+    "license": "CC BY 4.0",
+    "source_url": "https://doi.org/10.17632/77383kmdnw.1"
+  }
+]

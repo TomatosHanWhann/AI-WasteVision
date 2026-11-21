@@ -1,4 +1,11 @@
 import model from "../public/model/metadata.json" with { type: "json" };
+import detector from "../public/model/detector-metadata.json" with { type: "json" };
+import { feedbackApi } from "./feedback.js";
+import {
+  SPECIAL,
+  OBJECT_NAMES,
+  calibratedScore,
+} from "../src/detection-domain.js";
 import {
   normalizePhone,
   cardSummary,
@@ -25,7 +32,7 @@ class ApiError extends Error {
     this.status = status;
   }
 }
-async function input(request) {
+async function input(request, maxBytes = 4096) {
   if (!request.headers.get("content-type")?.startsWith("application/json"))
     throw new ApiError("รูปแบบข้อมูลไม่ถูกต้อง", 415);
   const reader = request.body?.getReader();
@@ -37,7 +44,7 @@ async function input(request) {
     const { value, done } = await reader.read();
     if (done) break;
     size += value.byteLength;
-    if (size > 4096) {
+    if (size > maxBytes) {
       await reader.cancel();
       throw new ApiError("ข้อมูลมีขนาดเกินกำหนด", 413);
     }
@@ -122,6 +129,12 @@ export async function api(request, env) {
         "มีรายการต่อเนื่องจำนวนมาก กรุณารอหนึ่งนาทีแล้วลองใหม่",
         429,
       );
+    const feedbackResponse = await feedbackApi(request, env, {
+      json,
+      input,
+      modelVersion: detector.model_version,
+    });
+    if (feedbackResponse) return feedbackResponse;
     if (url.pathname === "/api/card" && request.method === "POST") {
       const data = await input(request);
       if (data.consent !== true)
@@ -169,13 +182,18 @@ export async function api(request, env) {
     if (url.pathname === "/api/scan-ticket" && request.method === "POST") {
       const s = await session(request, env),
         data = await input(request);
+      const activeModel = data.mode === "multiple" ? detector : model;
       if (
         !["camera", "upload"].includes(data.source) ||
-        !model.labels.includes(data.label) ||
+        !activeModel.labels.includes(data.label) ||
+        SPECIAL.has(data.label) ||
+        data.label === "unknown" ||
         !Number.isFinite(data.confidence) ||
-        data.confidence < model.threshold ||
+        data.confidence < activeModel.threshold ||
+        (data.mode === "multiple" &&
+          calibratedScore(data.confidence, detector.calibration) < 0.5) ||
         data.confidence > 1 ||
-        data.modelVersion !== model.model_version ||
+        data.modelVersion !== activeModel.model_version ||
         !/^[a-f0-9]{64}$/.test(data.imageDigest || "")
       )
         throw new ApiError(
@@ -186,7 +204,7 @@ export async function api(request, env) {
         member: s.member,
         image: data.imageDigest,
         label: data.label,
-        version: model.model_version,
+        version: activeModel.model_version,
         expires: now + 600000,
       });
       return json({ ticket });
@@ -203,9 +221,11 @@ export async function api(request, env) {
         now,
       );
       if (
-        !model.labels.includes(t.label) ||
+        !Object.hasOwn(OBJECT_NAMES, t.label) ||
+        SPECIAL.has(t.label) ||
+        t.label === "unknown" ||
         !/^[a-f0-9]{64}$/.test(t.image || "") ||
-        t.version !== model.model_version
+        ![model.model_version, detector.model_version].includes(t.version)
       )
         throw new ApiError("รายการวิเคราะห์ไม่ถูกต้อง");
       const start = new Date(now);
@@ -245,6 +265,7 @@ export async function api(request, env) {
       {
         error:
           e instanceof ApiError ||
+          (Number.isInteger(e.status) && e.status >= 400 && e.status < 500) ||
           e.message?.startsWith("กรุณา") ||
           e.message?.startsWith("รายการ")
             ? e.message

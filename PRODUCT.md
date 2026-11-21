@@ -32,3 +32,5 @@ Eight-page project plan supplied by the user; empty private GitHub repository To
 4. Keep team setup and changes simple.
 
 Approved extension: remove public team/developer content, use formal Thai, add presentation.html, increase Thai-market examples, and award grade A at 1,000 confirmed items. No delegation requested. The small Thai SKU holdout currently scores 25%; robust Thai-brand claims are prohibited.
+
+Approved multi-object extension: 1–10 separated objects, per-item boxes/counts and disposal profiles, special battery/e-waste precautions, 0–100 calibrated confidence and voluntary evaluation feedback. Preserve formal Thai and green identity. Confidence is never labelled measured per-frame accuracy. Metadata/image consent is explicit and separate; private review precedes training. No unreviewed automatic self-training. The current detector has low recall and remains experimental.
