@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": ">=22.13.0"
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -16,13 +16,19 @@
     "db:local": "wrangler d1 migrations apply wastevision --local"
   },
   "dependencies": {
+    "@fontsource/bodoni-moda": "^5.3.0",
     "@fontsource/noto-sans-thai": "5.2.5",
+    "@fontsource/noto-serif-thai": "^5.3.0",
     "drizzle-orm": "0.45.2",
     "lucide": "0.468.0",
     "onnxruntime-web": "1.23.2",
     "qrcode": "1.5.4"
   },
-  "overrides": {"@esbuild-kit/core-utils":{"esbuild":"0.28.1"}},
+  "overrides": {
+    "@esbuild-kit/core-utils": {
+      "esbuild": "0.28.1"
+    }
+  },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.70.1",
     "drizzle-kit": "0.31.10",

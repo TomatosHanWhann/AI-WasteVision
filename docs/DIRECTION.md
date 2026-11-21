@@ -1,14 +1,23 @@
-# ทิศทางส่วนติดต่อ
+# Mobile-first Italian luxury redesign
 
-ผู้ใช้อนุมัติการปรับหน้าเว็บสาธารณะให้มีเฉพาะส่วนผู้ใช้งาน ใช้ภาษาไทยแบบเขียนเป็นทางการ เพิ่มหน้าอธิบายระบบสำหรับนำเสนอ ภาพผลิตภัณฑ์แบรนด์ไทย และบัตรสะสมแต้มด้วยเบอร์โทร การเปรียบเทียบและถ้อยคำจากการระดมความคิดไม่ใช่เนื้อหาผลิตภัณฑ์
+Mode: Operate for scanner/card, Read for guide and system explanation. The user explicitly requested a complete Italian luxury redesign prioritising mobile, autonomous user-journey testing, publication and a README sufficient for handoff. This supersedes the earlier green/mint visual direction while preserving product truth, privacy, formal Thai and experimental model limitations.
 
-คงทิศทางสีเขียวป่าและพื้นมิ้นต์จากแผนเดิม ฟอนต์ Noto Sans Thai ภาพถ่ายจริงและคะแนนโมเดลเป็นเนื้อหาหลัก หน้าแรกแนะนำความสามารถและขอบเขต ตามด้วยวิธีใช้ จำแนก และบัตร ไม่มีหน้าแนะนำแบ่งงานทีมหรือข้อมูลเทคนิคที่ไม่ช่วยผู้ใช้
+## THESIS
+A calm, premium Thai mobile web app that makes choosing an image, checking each object and finding the correct disposal route feel clear and deliberate.
 
-ลำดับใช้งาน: อ่านขอบเขต → เลือก/ถ่ายหนึ่งชิ้น → ผลจริงหกวัสดุและ unknown → ระบุสภาพ → ยืนยันรายการด้วยบัตรเมื่อเข้าเงื่อนไข สถานะโหลด ผิดพลาด ไม่แน่ใจ และไม่เข้าเงื่อนไขต้องมองเห็นและมีทางไปต่อ
+## OWN-WORLD
+Florentine atelier stationery: warm ivory, deep olive, espresso ink and restrained matte brass. Bodoni Moda carries the Latin wordmark; Noto Serif Thai supplies short Thai headings; Noto Sans Thai remains the workhorse for controls and explanations. Flat paper surfaces and precise borders, no leather texture or ornamental illustration. Light surfaces suit daylight phone use.
 
-หน้า about ใช้ภาพผลิตภัณฑ์ที่ตรวจทานแล้วสามวัสดุและข้อความสั้นที่อ่านได้บนมือถือ บัตรใช้ลำดับยอดสะสม ความคืบหน้า และประวัติ ไม่ใช้ตัวเลขตกแต่ง บัตรตัวอย่าง A แยกจากข้อมูลจริงชัดเจน
+## FORM
+Conventional mobile app navigation fixed at the bottom, sticky compact brand header, labelled native fields and generous touch targets. Desktop has horizontal navigation and paired image/result workspaces. The material culture contributes typography, palette, density and one signature move, never unfamiliar controls.
 
-ตรวจ layout แบบ desktop/mobile คง focus rings, labelled controls, contrast และ reduced motion ทิศทางนี้เป็นส่วนขยายที่ผู้ใช้อนุมัติของงานเดิม ไม่ได้อ้างว่ามี comp หรือการเลือกจาก quality board ใหม่ การตรวจและเอกสารทำในงานเดียวตามคำขอไม่แบ่งงานให้ผู้อื่น
+## STORY
+Overview → instructions or scan → select/capture → real model result → inspect each numbered object, uncertainty and disposal → optional phone card and confirmed points → optional separately consented evaluation. Images are local by default. The presentation page and prototype limitations remain public; team internals stay in the repository.
 
+## FIRST VIEWPORT
+At 390px the scanner shows a compact title, mode selector, capture/upload actions and contained image stage. Analysis follows the stage; results continue immediately below. Bottom navigation remains reachable without covering controls or safe areas. At 1440px the image workspace and real results align side by side. The overview leads with one formal Thai promise, a scan action and actual product photography. No invented model benchmarks or marketing claims.
 
-ส่วนขยายที่อนุมัติ: โหมดหลายชิ้นอยู่ในหน้าจำแนกเดิม ภาพและกรอบหมายเลขคู่กับผลรายชิ้น แสดงจำนวนที่ตรวจพบและความมั่นใจเฉลี่ยเฉพาะรายการ ไม่เรียกคะแนนนี้ว่าความแม่นยำจริง ให้เลือกสภาพแล้วอ่านชื่อประเภท/จุดรับควบคู่สีถัง แยกคำแนะนำพิเศษและปิดแต้มตามเงื่อนไข ข้อมูลประเมินสมัครใจอยู่ท้ายผลโดยไม่ขัดขวางการจำแนก เน้นคำตอบที่ตรวจสอบได้และไม่รับรองความปลอดภัยจากภาพ
+## SIGNATURE
+A thin brass rule ties the object photograph, numbered olive outlines and aligned confidence/result rows together. A structured ivory-and-olive loyalty card uses the same typography and actual count. Prediction reveal is the single restrained authored motion; reduced-motion settings disable it.
+
+Seed evidence: 1b4a49a1, scope direction, mode operate, assigned index3, API source approved pool c3b204a1eed6. Seven grounded candidates in order: Milanese stone architecture; Italian book typography; Florentine atelier stationery (selected); Italian rationalist colour blocks; Murano jewel colour; Milan fashion editorial; Venetian ceramic palette. Selected world complies with the user's pinned Italian luxury request. Dealt cassette, orienteering, botanical, airport signage, streaming wall and data-field challengers were declined because their identities conflict with that request; their clarity disciplines inform timing, object numbering, scale consistency, wayfinding, discoverability and restraint respectively, without borrowing their clothes. Code-led implementation under the user's direct instruction to complete; no comp approval or independent review is claimed. Work remains in this chat, without delegation as requested.

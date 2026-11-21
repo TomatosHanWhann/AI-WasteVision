@@ -2,6 +2,9 @@ import "@fontsource/noto-sans-thai/400.css";
 import "@fontsource/noto-sans-thai/500.css";
 import "@fontsource/noto-sans-thai/600.css";
 import "@fontsource/noto-sans-thai/700.css";
+import "@fontsource/noto-serif-thai/500.css";
+import "@fontsource/noto-serif-thai/600.css";
+import "@fontsource/bodoni-moda/500.css";
 import "./style.css";
 import {
   createIcons,
@@ -23,6 +26,7 @@ import { LABELS, NAMES, COLORS, guidance } from "./domain.js";
 import { layout, icon } from "./views.js";
 import { renderMulti, clearBoxes, initReceipt } from "./multi-ui.js";
 import { cardRequest, renderCard } from "./loyalty.js";
+import { createCardController } from "./card-controller.js";
 const $ = (id) => document.getElementById(id);
 const base = import.meta.env.BASE_URL;
 const esc = (value) =>
@@ -87,6 +91,18 @@ function toast(message) {
 function sync() {
   const locked = busy || imageLoading || awardBusy;
   $("scan-mode").disabled = locked || !!modelLoading;
+  $("result-content").setAttribute("aria-busy", String(busy));
+  $("analyze").setAttribute("aria-busy", String(busy || !!modelLoading));
+  if (!busy) {
+    $("analyze").innerHTML =
+      icon("scan-line") +
+      (ready
+        ? "วิเคราะห์ภาพ"
+        : modelLoading
+          ? "กำลังโหลดโมเดล…"
+          : "เตรียมระบบวิเคราะห์");
+    icons();
+  }
   $("analyze").disabled =
     !ready || locked || !current || !!stream || cameraPending;
   $("choose-file").disabled = locked;
@@ -315,6 +331,7 @@ async function initModel() {
       sync();
     }
   })();
+  sync();
   return modelLoading;
 }
 $("retry-model").onclick = initModel;
@@ -456,51 +473,42 @@ function showCard() {
   updateAward();
   icons();
 }
+const cardController = createCardController({
+  request: cardRequest,
+  onChange: (next) => {
+    card = next;
+    showCard();
+  },
+  onMessage: (message) => ($("card-message").textContent = message),
+  onPending: (pending) => {
+    for (const id of [
+      "open-card",
+      "close-card",
+      "refresh-card",
+      "phone",
+      "phone-consent",
+    ])
+      $(id).disabled = pending;
+    $("card-form").setAttribute("aria-busy", String(pending));
+  },
+});
 $("card-form").onsubmit = async (event) => {
   event.preventDefault();
-  const button = $("open-card");
-  button.disabled = true;
-  $("card-message").textContent = "กำลังเปิดบัตรสะสม";
-  try {
-    card = await cardRequest("card", {
-      phone: $("phone").value,
-      consent: $("phone-consent").checked,
-    });
+  const opened = await cardController.open(
+    $("phone").value,
+    $("phone-consent").checked,
+  );
+  if (opened.success) {
     $("phone").value = "";
     $("phone-consent").checked = false;
-    $("card-message").textContent = "เปิดบัตรสะสมเรียบร้อยแล้ว";
-    showCard();
-  } catch (e) {
-    $("card-message").textContent = e.message;
-  } finally {
-    button.disabled = false;
   }
 };
-async function refreshCard(silent = false) {
-  try {
-    card = await cardRequest("card");
-    showCard();
-    if (!silent) $("card-message").textContent = "ปรับปรุงยอดสะสมเรียบร้อยแล้ว";
-  } catch (e) {
-    if (e.status === 401) {
-      card = null;
-      showCard();
-    }
-    if (!silent) $("card-message").textContent = e.message;
-  }
+function refreshCard(silent = false) {
+  return cardController.refresh(silent);
 }
 $("refresh-card").onclick = () => refreshCard();
-$("close-card").onclick = async () => {
-  try {
-    await cardRequest("card/close", {});
-    card = null;
-    showCard();
-    $("card-message").textContent =
-      "ปิดบัตรบนอุปกรณ์นี้แล้ว ยอดสะสมยังคงอยู่สำหรับเรียกดูด้วยหมายเลขเดิม";
-  } catch (e) {
-    $("card-message").textContent = e.message;
-  }
-};
+$("close-card").onclick = () => cardController.close();
+
 function renderExamples() {
   const visible = examples.filter(
     (x) => exampleFilter === "all" || x.label === exampleFilter,
@@ -649,6 +657,11 @@ function route() {
 }
 window.addEventListener("hashchange", () => {
   route();
+  const heading = document.querySelector(".page:not([hidden]) h1");
+  if (heading) {
+    heading.tabIndex = -1;
+    heading.focus({ preventScroll: true });
+  }
   window.scrollTo({ top: 0, behavior: "instant" });
 });
 window.addEventListener("pagehide", () => {
@@ -670,7 +683,7 @@ $("share").onclick = async () => {
     await QRCode.toCanvas($("qr"), url, {
       width: 216,
       margin: 2,
-      color: { dark: "#123e35", light: "#ffffff" },
+      color: { dark: "#283127", light: "#fffdf8" },
     });
   } catch {
     $("copy-status").textContent =

@@ -1,11 +1,11 @@
-# การพัฒนาต่อ
+# ส่งต่องาน
 
-เว็บสาธารณะมีเฉพาะเกี่ยวกับระบบ วิธีใช้งาน จำแนกขยะ และบัตรสะสมแต้ม รายละเอียดพัฒนาเก็บใน repository แทนหน้าเว็บ ไม่มีการกำหนดหรือแบ่งงานให้สมาชิกในรอบนี้
+เริ่มที่README.md: มีลิงก์หลัก สถานะรุ่นทดลอง วิธีใช้ โครงสร้างระบบ API runtime/secret การเปิดเครื่องพัฒนา การฝึก การเผยแพร่ การให้สิทธิ์GitHub/Sites และผลQAที่ยังไม่ครบ ไม่ต้องอาศัยประวัติแชต
 
-ก่อนแก้ให้ `git pull` สร้าง branch เฉพาะเรื่อง ตรวจ `npm test` และ `npm run build` แล้วส่ง Pull Request การฝึกใหม่ต้อง commit weights, metadata และรายงานพร้อมกัน อ่าน MODEL_CARD ก่อนเปลี่ยน preprocessing/ลำดับคลาส
+รอบล่าสุดเปลี่ยนUIเป็นmobile-first Italian luxury และเพิ่มcard-controllerป้องกันคำขอแข่งกัน โมเดลและthresholdเดิมไม่เปลี่ยน งานคงอยู่ในrepositoryและSitesโครงการเดิม ไม่มีการแบ่งงานให้บุคคลอื่น
 
-บัตรต้องใช้ D1 และ PHONE_HASH_SECRET ห้ามใช้ secret production ในเครื่องทดสอบ ห้ามหมุน secret โดยไม่ย้ายข้อมูล ห้ามเพิ่ม seed แต้ม/admin endpoint สู่ production ตัวอย่างบัตรระดับ A บนหน้าเว็บเป็นเพียงภาพสาธิตที่ระบุชัดเจนและไม่เขียนฐานข้อมูล
+ก่อนแก้ให้pull สร้างbranch รันnpm ci/test/build และเปิดPR การฝึกต้องแยกcandidate versionและcommitweights+metadata+reportร่วมกัน อ่านDETECTION_MODEL_CARD.mdและCONTINUOUS_IMPROVEMENT.mdก่อนอ้างความแม่นยำหรือใช้feedbackฝึก
 
-สิ่งที่ยังต้องเก็บเพิ่มเติม: ภาพบรรจุภัณฑ์ใช้แล้วในบริบทไทยที่แยกตามวัตถุจริง, holdout ที่ล็อกไว้, การทดลองกล้องบน Android/iPhone, latency p95 และผลทดลองผู้ใช้ การเพิ่ม catalog หรือ augmentation ไม่ทดแทนหลักฐานเหล่านี้
+Production secretอยู่ในSitesเท่านั้น GitHub collaboratorไม่ได้สิทธิ์ฐานข้อมูลหรือpublishโดยอัตโนมัติ ห้ามเปลี่ยนPHONE_HASH_SECRETโดยไม่มีแผนย้ายข้อมูล ไม่ลบหรือแก้migrationที่applyแล้ว ไม่เพิ่มseedแต้มในproduction
 
-การเปิด repository ยังไม่ได้ให้บัญชี GitHub ของผู้อื่นสิทธิ์แก้ไข เจ้าของสามารถเพิ่ม collaborator ตามบัญชีจริงภายหลัง
+สถานะการตรวจUIรอบนี้อยู่USER_JOURNEY_QA.md มีข้อจำกัดComputer Useช่วงupload จึงยังไม่เรียกว่าQAทุกฟังก์ชันผ่านครบวงจร ต้องตรวจกล้อง/อัปโหลด/แต้ม/feedbackบนอุปกรณ์จริงต่อ
