@@ -1,0 +1,11 @@
+RealWaste (2023)
+Sam Single, Saeid Iranmanesh, Raad Raad
+UCI Machine Learning Repository / Wollongong City Council
+https://doi.org/10.24432/C5SS4G
+https://archive.ics.uci.edu/dataset/908/realwaste
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+The five sample images are held-out dataset photographs, re-encoded as JPEG.
+They are used as clearly identified demonstration examples, not field-test evidence.
+The classifier was trained using the five material classes identified in its model card.
