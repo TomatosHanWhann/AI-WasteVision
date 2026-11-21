@@ -4,6 +4,7 @@ export const LABELS = [
   "paper",
   "cardboard",
   "food_organics",
+  "glass",
 ];
 export const NAMES = {
   plastic: "พลาสติก",
@@ -11,6 +12,7 @@ export const NAMES = {
   paper: "กระดาษ",
   cardboard: "กระดาษแข็ง",
   food_organics: "เศษอาหาร",
+  glass: "แก้ว",
   unknown: "ไม่แน่ใจ / นอกขอบเขต",
 };
 export const COLORS = {
@@ -19,17 +21,18 @@ export const COLORS = {
   paper: "#99712d",
   cardboard: "#9a5640",
   food_organics: "#648137",
+  glass: "#417e82",
   unknown: "#63736e",
 };
 export function decision(probs, threshold) {
   if (
-    probs.length !== 5 ||
+    probs.length !== LABELS.length + 1 ||
     probs.some((p) => !Number.isFinite(p) || p < 0 || p > 1) ||
     Math.abs(probs.reduce((a, b) => a + b, 0) - 1) > 0.01
   )
     throw new Error("ผลโมเดลไม่ถูกต้อง");
   const ranked = probs
-    .map((p, i) => ({ label: LABELS[i], p }))
+    .map((p, i) => ({ label: [...LABELS, "unknown"][i], p }))
     .sort((a, b) => b.p - a.p);
   return {
     label: ranked[0].p >= threshold ? ranked[0].label : "unknown",
@@ -42,7 +45,7 @@ export function guidance(label, condition) {
   if (condition === "hazardous")
     return "แยกเก็บและส่งจุดรับขยะอันตรายของพื้นที่ อย่าใส่รวมกับวัสดุรีไซเคิลทั่วไป";
   if (label === "unknown")
-    return "ยังไม่ควรเลือกถังจากผลนี้ ลองถ่ายวัตถุชิ้นเดียวให้ชัดขึ้น หรือสอบถามผู้ดูแลจุดทิ้งขยะ แก้ว ผ้า แบตเตอรี่ และขยะอันตรายอยู่นอก 5 ประเภทของโมเดล";
+    return "ระบบไม่สามารถระบุประเภทได้อย่างมั่นใจ กรุณาถ่ายภาพวัตถุหนึ่งชิ้นให้ชัดเจน หรือสอบถามผู้ดูแลจุดรับวัสดุ ผ้า แบตเตอรี่ ขยะอันตราย และบรรจุภัณฑ์หลายชั้นอยู่นอกขอบเขตของระบบ";
   if (!condition)
     return "เลือกสภาพของสิ่งของด้านล่าง เพื่อดูคำแนะนำที่เหมาะสม ภาพอย่างเดียวบอกชนิดพลาสติกหรือการปนเปื้อนไม่ได้";
   if (condition === "hazardous")
@@ -62,6 +65,8 @@ export function guidance(label, condition) {
       "เก็บให้สะอาดและแห้ง แยกกระดาษเคลือบหรือหลายชั้น แล้วตรวจชนิดที่จุดรับยอมรับ",
     cardboard:
       "แกะวัสดุอื่นที่ถอดได้ พับให้แบนและเก็บให้แห้งก่อนส่งจุดรับกระดาษแข็ง",
+    glass:
+      "เทของเหลวออก แยกฝาและวัสดุอื่นเมื่อทำได้ เก็บขวดหรือภาชนะแก้วอย่างระมัดระวัง แล้วตรวจเงื่อนไขจุดรับในพื้นที่ หากแตกให้ห่อและติดข้อความเตือน ไม่ปะปนกับขวดแก้วทั่วไป",
   }[label];
 }
 export function metrics(rows) {
@@ -83,7 +88,7 @@ export function metrics(rows) {
   return {
     n,
     accuracy: n ? correct / n : 0,
-    macroF1: f1.reduce((a, b) => a + b, 0) / 5,
+    macroF1: f1.reduce((a, b) => a + b, 0) / LABELS.length,
     matrix,
     labels,
     coverage: n ? rows.filter((r) => r.prediction !== "unknown").length / n : 0,

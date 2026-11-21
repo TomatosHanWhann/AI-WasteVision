@@ -1,105 +1,74 @@
 # AI WasteVision
 
-เว็บภาษาไทยสำหรับทดลองจำแนก **พลาสติก / โลหะ / กระดาษ / กระดาษแข็ง / เศษอาหาร** ด้วยโมเดลที่ฝึกจริง ภาพประมวลผลบนอุปกรณ์ผู้ใช้ ไม่ต้องมีบัญชีหรือ API key
+ระบบภาษาไทยสำหรับเรียนรู้การคัดแยกขยะจากภาพ รองรับพลาสติก โลหะ กระดาษ กระดาษแข็ง เศษอาหาร และแก้ว พร้อมผลนอกขอบเขต โมเดล ONNX ทำงานบนอุปกรณ์ ภาพไม่ถูกส่งไปจัดเก็บบนเซิร์ฟเวอร์
 
-**เว็บทดลอง:** https://ai-wastevision-th.tenderheron1024.chatgpt.site
+**เว็บไซต์:** https://ai-wastevision-th.tenderheron1024.chatgpt.site
 
-## เริ่มพัฒนาเว็บ (ไม่ต้องฝึกโมเดลใหม่)
+## เริ่มพัฒนา
 
-ติดตั้ง Node.js 22 ขึ้นไปและ Git จากนั้นเปิด terminal:
+ต้องใช้ Node.js 22.12 ขึ้นไป และ Git
 
 ```sh
 git clone https://github.com/TomatosHanWhann/AI-WasteVision.git
 cd AI-WasteVision
 npm ci
-npm run build
+```
+
+คัดลอก `.dev.vars.example` เป็น `.dev.vars` สำหรับสภาพแวดล้อมท้องถิ่นเท่านั้น แล้วรัน:
+
+```sh
+npm run db:local
 npm run dev
 ```
 
-เปิด URL ที่ terminal แสดง โดยทั่วไปคือ `http://127.0.0.1:5173` รุ่นโมเดลอยู่ใน repository แล้ว `npm run build` เตรียม runtime WASM ที่ต้องใช้ด้วย กล้องทำงานบน localhost หรือ HTTPS; เปิดเว็บผ่าน IP แบบ HTTP อาจใช้กล้องไม่ได้ แต่ยังเลือกภาพได้
+เปิด URL ที่ terminal แสดง กล้องต้องใช้ localhost หรือ HTTPS การจำแนกไม่ต้องมีบัญชี ส่วนบัตรสะสมแต้มต้องมี Worker + D1 และ `PHONE_HASH_SECRET` จึงไม่สามารถใช้ static hosting เพียงอย่างเดียวได้
 
-## ทดลองใช้
+## ความสามารถ
 
-1. เปิดกล้องแล้วถ่ายภาพ หรือเลือก JPG / PNG / WebP ไม่เกิน 15 MB
-2. จัดให้มีวัตถุหลักหนึ่งชิ้นตรงกลาง ระบบใช้ภาพสี่เหลี่ยมจัตุรัสกลางภาพ
-3. กด **วิเคราะห์ภาพ** ดูประเภท คะแนนทั้ง 5 และผลปฏิเสธเมื่อคะแนนต่ำ
-4. เลือกสภาพสิ่งของเพื่ออ่านคำแนะนำ จุดรับแต่ละพื้นที่อาจมีเงื่อนไขต่างกัน
-5. เลือกคำตอบจริงและอุปกรณ์ แล้วกดบันทึก ไปที่ **ผลทดสอบของฉัน** เพื่อส่งออก CSV
-6. ใช้ **แชร์ให้เพื่อน** เพื่อแสดง QR Code ของ URL ที่เปิดอยู่
+- หน้าเกี่ยวกับระบบและ `presentation.html` สำหรับนำเสนอ พร้อมคู่มือและข้อจำกัด
+- กล้อง/เลือก JPG, PNG, WebP สูงสุด 15 MB; วิเคราะห์สิ่งของหลักหนึ่งชิ้นด้วยโมเดลจริง
+- คะแนนวัสดุหกประเภทและผลนอกขอบเขต พร้อมคำแนะนำตามสภาพสิ่งของ
+- ภาพผลิตภัณฑ์ 23 ภาพจาก 9 แบรนด์ที่พบในประเทศไทย และตัวอย่าง RealWaste หกประเภท พร้อมที่มา
+- บัตรสะสมแต้มด้วยหมายเลขโทรศัพท์ไทย 1 รายการที่ยืนยัน = 1 แต้ม ครบ 1,000 ชิ้นแสดงระดับ A
+- ภาพตัวอย่าง ผลไม่แน่ใจ และสภาพอันตรายไม่เพิ่มแต้ม; ภาพเดิมไม่เพิ่มซ้ำในบัตรเดิม จำกัด 100 รายการต่อวัน
+- QR และลิงก์แบ่งปันเว็บไซต์ ไม่มีหน้าภายในทีมบนเว็บสาธารณะ
 
-ประวัติเก็บใน localStorage ของเบราว์เซอร์นั้น ไม่รวมอัตโนมัติระหว่างคนและไม่เก็บรูป ส่ง CSV ให้ผู้รับผิดชอบ QA รวบรวมก่อนล้างข้อมูลเว็บ รูปตัวอย่างเป็นภาพจากชุดทดสอบเดิม แยกจากผลทดสอบหน้างานด้วยคอลัมน์ `source`
+บัตรนี้เป็นต้นแบบที่ไม่มี OTP ผู้ที่ทราบเบอร์อาจเรียกดูยอดของเบอร์นั้นได้ ไม่เหมาะกับรางวัลที่มีมูลค่าหรือข้อมูลส่วนบุคคลเพิ่มเติม ยอดเป็นการยืนยันของผู้ใช้ ไม่ใช่หลักฐานรับขยะจริงหรือระบบป้องกันการทุจริตสมบูรณ์ เซิร์ฟเวอร์เก็บ HMAC ของเบอร์ เลขท้ายสี่หลัก session และรายการยืนยัน ไม่เก็บเบอร์เต็มหรือภาพ
 
-## ผลโมเดลรุ่นแรก
-
-MobileNetV2 pretrained ImageNet + multinomial logistic classifier (frozen feature transfer), seed 42
-
-| ตัวชี้วัด | ค่าที่วัดได้ |
-| --- | --- |
-| จำนวนภาพ 5 ประเภท | 3,083 |
-| ฝึก / validation / test | 2,156 / 462 / 465 |
-| Accuracy บน test ก่อนปฏิเสธ | 86.67% |
-| Macro F1 บน test ก่อนปฏิเสธ | 0.8660 |
-| เกณฑ์คะแนนสำหรับรับจำแนก | 0.95 |
-| สัดส่วนภาพในขอบเขตที่รับจำแนก | 42.58% |
-| ปฏิเสธภาพนอกขอบเขต (252 ภาพ) | 78.97% |
-
-**ข้อจำกัดที่ต้องอ่าน:** นี่คือการแบ่งตามภาพ ไม่ได้ยืนยันว่าวัตถุจริงเดียวกันไม่ข้ามชุด จึงยังไม่ผ่านเกณฑ์ holdout ตามวัตถุในแผน คะแนน 86.67% เป็นผลก่อนปฏิเสธ ไม่ใช่ความแม่นยำของทุกผลที่เว็บยอมรับ เกณฑ์ 0.95 ค่อนข้างเข้มงวดและอาจปฏิเสธภาพในขอบเขตจำนวนมาก ภาพนอกขอบเขตบางภาพยังได้คะแนนสูง
-
-ยังไม่มีการเก็บภาพบริบทไทย การทดลองวัตถุใหม่จริง การวัด Chrome/Safari บนมือถือจริง หรือการทดลองผู้ใช้ประมาณ 10 คน ดู [แผน QA](docs/TESTING.md)
-
-ผลละเอียดและหลักฐานอยู่ใน `ml/results/evaluation.json`, `ml/results/test-predictions.csv`, `ml/results/split-manifest.csv` เว็บอ่าน metadata รุ่นเดียวกันจาก `public/model/metadata.json`
-
-## โครงสร้างที่ทีมแก้ได้
+## โครงสร้าง
 
 ```text
-src/main.js           หน้าจอ กล้อง การยืนยันผล และการแชร์
-src/style.css         รูปแบบหน้าจอและมือถือ
-src/domain.js         คลาส กฎคำแนะนำ CSV และตัวชี้วัด
-src/inference.js      เตรียมภาพและเรียกโมเดลบนเบราว์เซอร์
-public/model/         โมเดล ONNX และ metadata ที่ใช้งานจริง
-public/samples/       ภาพตัวอย่าง RealWaste พร้อมเครดิต
-ml/                   ดาวน์โหลดข้อมูล ฝึก ส่งออก และประเมิน
-docs/                 การทดสอบ ส่งต่องาน และเผยแพร่
-tests/                การทดสอบกฎสำคัญ
+src/views.js         เนื้อหาและหน้าจอสาธารณะ
+src/main.js          กล้อง ผลวิเคราะห์ เส้นทาง และบัตร
+src/inference.js     เตรียมภาพและ ONNX Runtime Web
+src/domain.js        กฎการจำแนกและคำแนะนำ
+src/loyalty.js       ติดต่อ API บัตร
+worker/              API, session, HMAC และกฎสะสมแต้ม
+db/, drizzle/        schema และ migrations
+public/model/        โมเดลและ metadata
+public/examples/     ภาพผลิตภัณฑ์และแหล่งที่มา
+ml/                  ฝึก ส่งออก รายงาน และ manifest
+docs/                หลักฐานตรวจงานและคู่มือพัฒนา
 ```
 
-## ฝึกโมเดลใหม่
+## โมเดลและหลักฐาน
 
-ใช้ Python 3.13 รุ่น 64-bit ขั้นตอนนี้แยกจากการพัฒนาเว็บ ข้อมูลดาวน์โหลดประมาณ 657 MB และต้องมีพื้นที่ว่างสำหรับ zip/ภาพ/cache อย่างน้อย 3 GB
+MobileNetV2 ImageNet frozen features + balanced logistic classifier มีหกวัสดุและคลาส unknown ที่ฝึกจริง ใช้ภาพเต็มรักษาสัดส่วน เติมพื้นขาวเป็น 224×224 ไม่ตัดกลางภาพ เลือก hyperparameter และเกณฑ์ปฏิเสธจาก validation เท่านั้น
 
-```sh
-python -m venv .venv
-# Windows PowerShell
-.venv/Scripts/python -m pip install -r ml/requirements.txt
-.venv/Scripts/python ml/download_data.py
-.venv/Scripts/python ml/train.py
-# macOS/Linux ใช้ .venv/bin/python แทน .venv/Scripts/python
-npm run build
-```
+ผลปัจจุบันอยู่ใน `ml/results/evaluation.json` และ `public/model/metadata.json` พร้อมผลรายภาพและ split manifest อ่าน `docs/MODEL_CARD.md` ก่อนอ้างความแม่นยำ ภาพ RealWaste แบ่งตามภาพ ส่วนผลิตภัณฑ์แยกตาม SKU ยังไม่ใช่การประเมินวัตถุใช้แล้วในสภาพแวดล้อมไทยหรือการรับรองการจำแนกแบรนด์
 
-น้ำหนัก ImageNet จะดาวน์โหลดครั้งแรก การฝึกใช้ CPU ได้ ผลฝึกจะเขียนทับโมเดลและรายงานปัจจุบัน จึงควรทำบน branch ใหม่ `ml/cache` เก็บ feature cache เพื่อลดเวลาทดลองครั้งถัดไป
-
-ถ้าทีมเก็บภาพตามวัตถุแล้ว ให้สร้าง CSV แบบ `ml/manifest.example.csv` และรัน `python ml/train.py --manifest path/to/manifest.csv` เส้นทางภาพอ้างจากโฟลเดอร์ที่มี CSV ทุกภาพของวัตถุเดียวกันต้องมี `group_id` เดียวกันและอยู่ split เดียว สคริปต์ตรวจทั้ง group และไฟล์ภาพซ้ำข้าม split ชุด default จะไม่อ้างว่า item-disjoint
-
-## ตรวจงานก่อนส่ง
+## ตรวจและฝึก
 
 ```sh
 npm test
 npm run build
+python ml/check_model.py
 ```
 
-GitHub Actions รันสองคำสั่งนี้ทุก push และ Pull Request รวมถึงตรวจ hash/รูปแบบโมเดล การตรวจ browser และกล้องจริงทำตาม `docs/TESTING.md` CI ไม่ได้อ้างว่าแทนการทดสอบบนมือถือจริง
+การฝึกต้องใช้ Python และ `ml/requirements.txt`; รัน `ml/download_data.py` แล้ว `ml/train.py` ภาพแบรนด์ที่ตรวจทานแล้วอยู่ใน repository พร้อม catalog; อย่ารันตัวรวบรวมทับป้ายกำกับที่ตรวจแล้วโดยไม่ตรวจทานใหม่ ข้อมูลและ feature cache ไม่เข้า Git หากมีภาพวัตถุจริงให้ใช้ manifest ตาม `ml/manifest.example.csv` เก็บทุกภาพของชิ้นเดียวกันไว้ split เดียว
 
-## เผยแพร่และทำงานร่วมกัน
+## เผยแพร่
 
-อ่าน [CONTRIBUTING.md](CONTRIBUTING.md), [คู่มือเผยแพร่](docs/DEPLOYMENT.md), [บันทึกส่งต่องาน](docs/HANDOFF.md) และ [model card](docs/MODEL_CARD.md)
+Sites ใช้โครงการเดิมใน `.openai/hosting.json` พร้อม D1 binding `DB` และ secret `PHONE_HASH_SECRET` ที่เก็บใน runtime เท่านั้น ไม่ใส่ secret ลง Git การ push GitHub ยังไม่เผยแพร่ Sites อัตโนมัติ ต้อง build/push/save/deploy source commit เดียวกัน ดู `docs/DEPLOYMENT.md`
 
-ใช้ ONNX Runtime Web แทน TF.js ที่เสนอในแผน เพื่อส่งออกจาก Python/PyTorch ได้โดยตรง แต่ยังคงสถาปัตยกรรม static web + client inference ไม่มี backend รับภาพ
-
-## แหล่งข้อมูลและสิทธิ์
-
-- RealWaste: Single, S., Iranmanesh, S., & Raad, R. (2023), UCI, DOI [10.24432/C5SS4G](https://doi.org/10.24432/C5SS4G), CC BY 4.0 ภาพตัวอย่างถูกย่อ/บีบอัดจากต้นฉบับ
-- [Torchvision MobileNetV2](https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v2.html) pretrained ImageNet1K V2; ดูสิทธิ์และเงื่อนไขข้อมูลต้นทางก่อนใช้นอกโครงงาน
-- ONNX Runtime (MIT), Lucide (ISC), Noto Sans Thai (OFL-1.1), QRCode (MIT), Vite (MIT)
-
-โค้ดยังไม่ได้กำหนดใบอนุญาตเผยแพร่สาธารณะของทีม Repository คงสถานะ private ตามเดิม เว็บทดลองเท่านั้นที่เปิดให้ผู้มีลิงก์เข้าถึงได้
+แหล่งข้อมูล: RealWaste CC BY 4.0, Open Food Facts photographs CC BY-SA 3.0 ดูเครดิตและ URL รายภาพใน catalog ภาพผลิตภัณฑ์ไม่ได้แสดงถึงความร่วมมือหรือการรับรองจากเจ้าของแบรนด์ Repository ยังเป็น private; เว็บทดลองเปิดให้ผู้มีลิงก์

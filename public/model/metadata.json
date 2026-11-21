@@ -1,74 +1,115 @@
 {
-  "model_version": "realwaste-mobilenetv2-v1",
-  "created_at": "2026-11-21T08:12:30.916299+00:00",
+  "model_version": "realwaste-thai-mobilenetv2-v2",
+  "created_at": "2026-11-21T09:52:38.417717+00:00",
   "seed": 42,
   "labels": [
     "plastic",
     "metal",
     "paper",
     "cardboard",
-    "food_organics"
+    "food_organics",
+    "glass"
   ],
-  "split_method": "stratified-image-level-exploratory",
+  "output_labels": [
+    "plastic",
+    "metal",
+    "paper",
+    "cardboard",
+    "food_organics",
+    "glass",
+    "unknown"
+  ],
+  "unknown_class_trained": true,
+  "split_method": "stratified-image-level-plus-product-group-catalogue",
   "physical_item_holdout_verified": false,
   "selected_C": 0.1,
-  "validation_macro_f1": 0.9132674977937973,
-  "test_accuracy": 0.8666666666666667,
-  "test_macro_f1": 0.865987421376189,
+  "thai_training_sample_weight": 12.0,
+  "selection_rule": "0.8 * RealWaste validation macro F1 + 0.2 * Thai product validation accuracy; no test tuning",
+  "validation_macro_f1": 0.8807312949636528,
+  "test_accuracy": 0.8214285714285714,
+  "test_macro_f1": 0.8423286017628303,
   "confusion_matrix": [
     [
-      122,
-      11,
+      110,
+      9,
       2,
       3,
-      1
+      1,
+      9,
+      6
     ],
     [
-      12,
-      103,
+      5,
+      101,
       1,
-      1,
-      2
+      2,
+      2,
+      2,
+      8
     ],
     [
       0,
       1,
-      62,
-      12,
+      63,
+      11,
+      0,
+      0,
       0
     ],
     [
       2,
-      5,
-      8,
+      3,
+      6,
       55,
-      0
+      0,
+      0,
+      4
     ],
     [
       0,
       0,
       0,
+      0,
+      58,
+      0,
+      4
+    ],
+    [
+      5,
+      4,
       1,
-      61
+      1,
+      0,
+      50,
+      3
+    ],
+    [
+      3,
+      6,
+      2,
+      2,
+      15,
+      0,
+      162
     ]
   ],
   "classification_report": {
     "plastic": {
-      "precision": 0.8970588235294118,
-      "recall": 0.8776978417266187,
-      "f1-score": 0.8872727272727273,
-      "support": 139.0
+      "precision": 0.9016393442622951,
+      "recall": 0.7857142857142857,
+      "f1-score": 0.8396946564885496,
+      "support": 140.0
     },
     "metal": {
-      "precision": 0.8583333333333333,
-      "recall": 0.865546218487395,
-      "f1-score": 0.8619246861924686,
-      "support": 119.0
+      "precision": 0.8559322033898306,
+      "recall": 0.8347107438016529,
+      "f1-score": 0.8451882845188284,
+      "support": 121.0
     },
     "paper": {
-      "precision": 0.8493150684931506,
-      "recall": 0.8266666666666667,
-      "f1-score": 0.8378378378378378,
+      "precision": 0.863013698630137,
+      "recall": 0.84,
+      "f1-score": 0.8513513513513513,
       "support": 75.0
     },
     "cardboard": {
@@ -78,60 +119,86 @@
       "support": 70.0
     },
     "food_organics": {
-      "precision": 0.953125,
-      "recall": 0.9838709677419355,
-      "f1-score": 0.9682539682539683,
+      "precision": 0.9508196721311475,
+      "recall": 0.9354838709677419,
+      "f1-score": 0.943089430894309,
       "support": 62.0
     },
-    "accuracy": 0.8666666666666667,
+    "glass": {
+      "precision": 0.819672131147541,
+      "recall": 0.78125,
+      "f1-score": 0.8,
+      "support": 64.0
+    },
+    "micro avg": {
+      "precision": 0.8619329388560157,
+      "recall": 0.8214285714285714,
+      "f1-score": 0.8411934552454283,
+      "support": 532.0
+    },
     "macro avg": {
-      "precision": 0.8643442228489568,
-      "recall": 0.8678991960673802,
-      "f1-score": 0.865987421376189,
-      "support": 465.0
+      "precision": 0.8591609897416399,
+      "recall": 0.8271455310329943,
+      "f1-score": 0.8423286017628303,
+      "support": 532.0
     },
     "weighted avg": {
-      "precision": 0.8668762268741149,
-      "recall": 0.8666666666666667,
-      "f1-score": 0.8666556617851028,
-      "support": 465.0
+      "precision": 0.863543967090126,
+      "recall": 0.8214285714285714,
+      "f1-score": 0.841303162621522,
+      "support": 532.0
     }
   },
   "split_counts": {
     "train": {
-      "plastic": 644,
-      "metal": 553,
+      "plastic": 674,
+      "metal": 583,
       "paper": 350,
       "cardboard": 322,
       "food_organics": 287,
-      "unknown": 0
+      "glass": 306,
+      "unknown": 873
     },
     "validation": {
-      "plastic": 138,
-      "metal": 118,
+      "plastic": 139,
+      "metal": 120,
       "paper": 75,
       "cardboard": 69,
       "food_organics": 62,
-      "unknown": 250
+      "glass": 64,
+      "unknown": 189
     },
     "test": {
-      "plastic": 139,
-      "metal": 119,
+      "plastic": 140,
+      "metal": 121,
       "paper": 75,
       "cardboard": 70,
       "food_organics": 62,
-      "unknown": 252
+      "glass": 64,
+      "unknown": 190
     }
   },
-  "threshold": 0.95,
-  "test_known_coverage": 0.4258064516129032,
-  "test_unknown_rejection_rate": 0.7896825396825397,
+  "threshold": 0.5,
+  "test_known_coverage": 0.8721804511278195,
+  "test_unknown_rejection_rate": 0.8842105263157894,
   "onnx_parity_max_error": 1.1324882507324219e-06,
-  "desktop_python_inference_median_ms": 13.195100000302773,
-  "model_sha256": "56d58833cf2b6cad63688403e6c1c1fe35c6298458e47404e74854664b9c0675",
+  "desktop_python_inference_median_ms": 9.020800000143936,
+  "model_sha256": "678c31ff1ee94ee32f26387325bb86576223fdd867ff24bd6008d640d3f9a81b",
+  "thai_product_source_images": 23,
+  "thai_product_augmented_images": 60,
+  "domain_evaluation": {
+    "realwaste": {
+      "known_test_images": 528,
+      "accuracy_before_rejection": 0.8257575757575758
+    },
+    "thai-product": {
+      "known_test_images": 4,
+      "accuracy_before_rejection": 0.25
+    }
+  },
   "limitations": [
     "Exploratory image split is not proof of generalization to unseen physical objects.",
-    "No Thai-local domain adaptation or human/device field test has been collected.",
+    "Thai product catalogue adaptation is not a physical Thai-waste field test; product photographs differ from used packaging.",
     "Softmax threshold cannot reliably detect every out-of-scope image.",
     "Python latency is not browser or mobile latency."
   ],
@@ -142,7 +209,7 @@
     "authors": "Single, Iranmanesh, Raad (2023)"
   },
   "preprocessing": {
-    "crop": "center square",
+    "crop": "none; full-image aspect-preserving white letterbox",
     "resize": [
       224,
       224

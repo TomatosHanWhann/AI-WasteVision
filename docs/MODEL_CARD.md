@@ -1,29 +1,38 @@
-# Model card: realwaste-mobilenetv2-v1
+# Model card: realwaste-thai-mobilenetv2-v2
 
 ## Intended use
 
-Experimental Thai educational waste-sorting demo. One dominant item in the center of a photo. Five material classes in this exact order: plastic, metal, paper, cardboard, food_organics. Not a detector, object counter, hazardous-material classifier, or automated disposal authority.
+Experimental Thai educational material-sorting system. One dominant object per image. Six materials in order: plastic, metal, paper, cardboard, food_organics, glass. Seventh output is an explicitly trained unknown class. Not a brand recognizer, object counter, hazard detector, or confirmation of actual recycling.
 
-## Architecture and provenance
+## Architecture and preprocessing
 
-Torchvision MobileNetV2 with IMAGENET1K_V2 pretrained weights. Frozen 1,280-dimensional pooled features; balanced multinomial logistic regression head selected from C={0.01,0.1,1,10} by validation macro F1. C=0.1 selected. The head and softmax are exported with the feature extractor into one float32 ONNX opset-17 model. This is feature transfer, not end-to-end fine tuning.
+Frozen ImageNet1K_V2 MobileNetV2 pooled features (1,280 dimensions), balanced logistic classifier and softmax exported together to float32 ONNX opset 17. Input NCHW [1,3,224,224], full-image aspect-preserving white letterbox, bilinear resizing, /255 and ImageNet mean/std. Browser canvas interpolation may differ slightly from Pillow. This is feature transfer, not full-network fine tuning.
 
-Input: RGB, EXIF orientation applied by image decoder, center-square crop, bilinear resize 224×224, /255 then ImageNet mean [0.485,0.456,0.406] and std [0.229,0.224,0.225], NCHW [1,3,224,224]. Browser canvas and Pillow interpolation can have small numerical differences. Browser tests must check the final export in addition to Python parity.
+Hyperparameters C={0.01,0.1,1,10} and Thai training sample weights={1,4,12} selected exclusively by validation score (0.8 RealWaste macro F1 + 0.2 Thai catalogue accuracy). Selected C=0.1, product weight=12.0. Threshold 0.5 selected on validation for known acceptance and unknown rejection.
 
-Dataset: RealWaste, 2023, Single/Iranmanesh/Raad, CC BY 4.0, https://doi.org/10.24432/C5SS4G. Official archive SHA256: `1ede08b32358ee62065bcc1c8cb47a2ece04e8dff5b1fb53342bb8750895b2f3`. Selected five classes: 3,083 images. Other classes provide validation/test negatives only; they are not a learned sixth output.
+## Data and splitting
 
-## Evidence and limitations
+4835 training/validation/test images including 60 augmented training views. RealWaste (Single, Iranmanesh, Raad 2023), CC BY 4.0, DOI https://doi.org/10.24432/C5SS4G. Miscellaneous Trash, Textile Trash and Vegetation provide the learned unknown class. RealWaste uses stratified image-level 70/15/15 split; physical object IDs are unavailable, so related views may cross partitions.
 
-Seed 42, per-folder stratified 70/15/15 image split. Train 2,156, validation 462 known + 250 negatives, test 465 known + 252 negatives. Exact-file duplicate checks pass. Physical-item identifiers are unavailable in this baseline; visually related images may cross splits. Results are exploratory, not the physical-item holdout promised by the final project plan.
+23 manually reviewed Thai-market product photographs across 9 brands, sourced from Open Food Facts contributors (photos CC BY-SA 3.0). Catalogue records source URL, checksum, material review and SKU split. Augmented views are training only. Product packaging labels describe reviewed materials, not recycling eligibility. Multilayer Tipco cartons and Mama pouches are outside supported materials. Marketing/product photographs differ from used waste in real settings.
 
-Test accuracy before rejection: 0.8666667; macro F1: 0.8659874. Full per-class precision, recall, F1, confusion matrix and individual predictions are in `ml/results/`.
+## Measured results
 
-Threshold 0.95 selected on validation data to balance known acceptance and unknown rejection across candidate thresholds 0.50–0.95. Known test coverage 0.4258065; unknown test rejection 0.7896825. This trade-off is conservative: most known test images are rejected. Softmax is uncalibrated and thresholding cannot reliably detect arbitrary out-of-domain objects. The headline classification metrics exclude rejection; local web metrics count rejected known images as wrong. Do not compare the two definitions without disclosing this difference.
+| Measure | Value |
+| --- | --- |
+| Known test images | 532 |
+| Unknown test images | 190 |
+| Known accuracy before rejection | 82.1429% |
+| Known macro F1 before rejection | 0.8423 |
+| Known coverage after threshold | 87.2180% |
+| Unknown rejection | 88.4211% |
+| Thai product known holdout | 1 correct / 4 images (25%) |
+| PyTorch/ONNX max difference | 0.0000011325 |
 
-Export parity on one preprocessed image: max absolute PyTorch/ONNX probability difference 0.0000011325. All test examples are evaluated through the deployed ONNX file. Python CPU timing is not browser/mobile timing. Ground-truth labels are dataset labels, not proof of recyclability.
+All held-out images were evaluated with the exported ONNX. Per-image predictions and seven-output confusion matrix are in ml/results. The six-class macro F1 treats unknown predictions on known items as errors. Coverage is acceptance fraction, not accepted-output accuracy. Softmax scores are uncalibrated and arbitrary out-of-domain detection remains unreliable.
 
-No local Thai adaptation, unseen-object field test, user-benefit study, physical-camera test or real iOS Safari timing has been collected. Model B remains future work until local samples and a frozen physical-item holdout exist.
+**Thai product evidence is inadequate:** only four in-scope SKU-heldout images and 25% accuracy. Do not claim robust Thai-brand recognition or use overall accuracy as evidence for Thai packaging. Several gallery images belong to training and are examples, not independent tests. No physical-item field holdout or user-benefit study has been completed. Python timing is not mobile/browser timing.
 
-## Replacement checklist
+## Versioning and next validation
 
-Keep old results on a Git branch/tag. Supply a reviewed physical-group manifest, freeze test IDs, train using train and validation only, update version, run ONNX contract/parity checks, test browser preprocessing, commit model + metadata + results together, then publish the matching source build. Do not silently lower the threshold to make a demonstration look more confident.
+Preserve the baseline in Git. Add used Thai packaging photographed in real environments, verify material manually, group all views by physical item, freeze a sufficiently sized holdout, then retrain without tuning on it. Commit model, metadata and results together and verify browser preprocessing. Do not override predictions with catalogue labels or lower thresholds just to make examples look correct.

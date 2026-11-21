@@ -450,7 +450,19 @@
         "name": "single-column-max",
         "value": "680px"
       }
-    ]
+    ],
+    "publicProductExtension": {
+      "navigation": [
+        "about",
+        "guide",
+        "scan",
+        "card"
+      ],
+      "imageTreatment": "contained full-image product photos; aspect-preserving inference letterbox",
+      "loyalty": "confirmed count, 1000-item progress, grade, separate labelled demo",
+      "privacy": "visible phone consent and no-OTP limitation",
+      "glass": "#417e82"
+    }
   },
   "components": [
     {

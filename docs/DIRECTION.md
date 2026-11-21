@@ -1,29 +1,11 @@
-# Scanner direction
+# ทิศทางส่วนติดต่อ
 
-## THESIS
+ผู้ใช้อนุมัติการปรับหน้าเว็บสาธารณะให้มีเฉพาะส่วนผู้ใช้งาน ใช้ภาษาไทยแบบเขียนเป็นทางการ เพิ่มหน้าอธิบายระบบสำหรับนำเสนอ ภาพผลิตภัณฑ์แบรนด์ไทย และบัตรสะสมแต้มด้วยเบอร์โทร การเปรียบเทียบและถ้อยคำจากการระดมความคิดไม่ใช่เนื้อหาผลิตภัณฑ์
 
-Help a Thai visitor inspect one photographed item, understand the model's uncertainty, then choose conditional sorting guidance and optionally confirm test truth.
+คงทิศทางสีเขียวป่าและพื้นมิ้นต์จากแผนเดิม ฟอนต์ Noto Sans Thai ภาพถ่ายจริงและคะแนนโมเดลเป็นเนื้อหาหลัก หน้าแรกแนะนำความสามารถและขอบเขต ตามด้วยวิธีใช้ จำแนก และบัตร ไม่มีหน้าแนะนำแบ่งงานทีมหรือข้อมูลเทคนิคที่ไม่ช่วยผู้ใช้
 
-## FORM
+ลำดับใช้งาน: อ่านขอบเขต → เลือก/ถ่ายหนึ่งชิ้น → ผลจริงหกวัสดุและ unknown → ระบุสภาพ → ยืนยันรายการด้วยบัตรเมื่อเข้าเงื่อนไข สถานะโหลด ผิดพลาด ไม่แน่ใจ และไม่เข้าเงื่อนไขต้องมองเห็นและมีทางไปต่อ
 
-Conventional working web UI: header, familiar navigation, capture area and result area. Concept seed evidence from the executed Impeccable command: key `879fc46c`, scope `direction`, mode `operate`, candidate count 7, assigned index 6. The first call was degraded by sandbox networking; a second network-enabled call returned source `api`, approved pool `c3b204a1eed6`, 306/564 human-approved. The command explicitly states a user- or brief-pinned decision overrides the roll. The user confirmed the PDF's green direction and instructed implementation to continue; that binding direction governed this Operate surface. No challenger or quality-board selection is claimed.
+หน้า about ใช้ภาพผลิตภัณฑ์ที่ตรวจทานแล้วสามวัสดุและข้อความสั้นที่อ่านได้บนมือถือ บัตรใช้ลำดับยอดสะสม ความคืบหน้า และประวัติ ไม่ใช้ตัวเลขตกแต่ง บัตรตัวอย่าง A แยกจากข้อมูลจริงชัดเจน
 
-## OWN-WORLD
-
-Forest green product shell, quiet mint ground, self-hosted Noto Sans Thai, white bordered working surfaces, actual RealWaste item photographs. The identity is the user's confirmed project-plan direction.
-
-## STORY
-
-Pick or capture one image, optionally record an unaided answer, run actual inference, read five probabilities and rejection, declare contamination, then confirm human ground truth for local CSV evidence. Sample images remain visibly identified as existing dataset examples.
-
-## FIRST VIEWPORT
-
-Desktop: header and navigation, task title, large image work area and adjacent results. Mobile: compact header and four navigation destinations above a single-column scanner; results follow the image controls. A material probability strip is the signature reveal. Loading/retry, error, ready, accepted, rejected and saved states are real application states. Reduced motion disables the reveal.
-
-Mode: Operate. User-approved Thai interface, green direction from the project plan, public demo and three-person GitHub handoff. This explicit brief governs the design. Code-led implementation for this session; no persistent image-first workflow preference was inferred.
-
-First viewport: dark forest product header with share action; conventional navigation; a prominent capture/upload work area and an adjacent results work area on desktop. On mobile, top navigation and a single-column task flow. The actual photographed object and live model probabilities carry the visual content. Quiet mint ground, white work surfaces, forest text, self-hosted Noto Sans Thai and consistent Lucide line icons.
-
-Signature interaction: a compact material confidence strip reveals the five class probabilities next to the actual image. Conditional guidance follows, then an explicit human ground-truth record. Unknown results use warm amber. No fabricated analysis or decorative dashboard values.
-
-States: model loading/retry, no image, image ready, processing, confident result, rejection, storage failure and saved test. Reduced motion removes reveal animation. Focus rings and native labelled controls remain familiar. Responsive checks: 1440 desktop and 390 mobile, plus actual default desktop preview. No comp image or quality-board claims.
+ตรวจ layout แบบ desktop/mobile คง focus rings, labelled controls, contrast และ reduced motion ทิศทางนี้เป็นส่วนขยายที่ผู้ใช้อนุมัติของงานเดิม ไม่ได้อ้างว่ามี comp หรือการเลือกจาก quality board ใหม่ การตรวจและเอกสารทำในงานเดียวตามคำขอไม่แบ่งงานให้ผู้อื่น

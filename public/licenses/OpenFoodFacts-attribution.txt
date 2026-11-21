@@ -1,0 +1,13 @@
+Product photographs: Open Food Facts contributors.
+Source product URLs, original image URLs and SHA256 checksums are recorded in examples/catalog.json.
+Images licensed under Creative Commons Attribution-ShareAlike 3.0 Unported.
+https://creativecommons.org/licenses/by-sa/3.0/
+https://world.openfoodfacts.org/terms-of-use
+Open Food Facts database: Open Database License (ODbL).
+Individual data contents: Database Contents License (DbCL).
+
+Photographs are reproduced for educational material-classification examples.
+Some training photographs are rotated or have colour/brightness variations;
+these derivatives remain under the same CC BY-SA 3.0 image license.
+No brand affiliation, product endorsement or trademark license is implied.
+These examples are not evidence of a physical-waste field trial.

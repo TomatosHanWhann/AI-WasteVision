@@ -29,6 +29,8 @@ colors:
   paper: "#99712d"
   cardboard: "#9a5640"
   food-organics: "#648137"
+  glass: "#417e82"
+  glass: "#417e82"
 typography:
   display:
     fontFamily: '"Noto Sans Thai", sans-serif'
@@ -181,14 +183,14 @@ The primary palette is botanical green, with quiet neutral greens and functional
 **Display Font:** Noto Sans Thai, with sans-serif fallback.
 **Body Font:** Noto Sans Thai, with sans-serif fallback.
 
-The app self-hosts weights 400, 500, 600 and 700. Most hierarchy uses 400–600; no separate display family is introduced. Paragraphs have generous leading for Thai reading.
+The app self-hosts weights 400, 500, 600 and 700. Most hierarchy uses 400โ€“600; no separate display family is introduced. Paragraphs have generous leading for Thai reading.
 
 ### Hierarchy
 
 - **Display:** the fluid page heading, balanced with slightly tightened tracking.
 - **Headline:** the accepted or uncertain prediction title.
 - **Title:** panel and document section headings. Ordinary tertiary headings use a smaller semibold step (1.05rem).
-- **Body:** the root reading size; explanatory page prose is commonly reduced to 0.9–0.95rem. Long model and team prose is constrained to roughly 67–75ch.
+- **Body:** the root reading size; explanatory page prose is commonly reduced to 0.9โ€“0.95rem. Long model and team prose is constrained to roughly 67โ€“75ch.
 - **Label:** medium-weight action text. Desktop navigation uses 0.875rem; smaller responsive navigation is a compact component treatment, not a general body size.
 - **Caption:** model status, caveats and metadata. Some desktop supporting labels use 0.75rem.
 
@@ -228,7 +230,7 @@ Image and result panels share white backgrounds, thin line-colored borders and p
 
 ### Inputs / Fields
 
-Select fields remain native controls with visible labels, a white background, green border, field corners, a minimum height (44px) and a small SVG chevron. The optional unaided-answer checkbox uses the brand green accent. The share URL is a readonly bordered field. Keyboard focus follows the shared outline treatment; errors appear as warm tinted text blocks with explicit messages.
+Select fields remain native controls with visible labels, a white background, green border, field corners, a minimum height (44px) and a small SVG chevron. The consent checkbox uses the brand green accent. The share URL is a readonly bordered field. Keyboard focus follows the shared outline treatment; errors appear as warm tinted text blocks with explicit messages.
 
 ### Navigation
 
@@ -256,3 +258,13 @@ Prediction reveal lasts (0.32s) using `cubic-bezier(0.16, 1, 0.3, 1)`, clipping 
 - **Don't** substitute a new display family for the existing Thai heading face.
 - **Don't** use the success-green prediction treatment for explicit model rejection.
 - **Don't** turn informational material tags into selected filter controls without implementing that behavior.
+
+
+## Public information and loyalty extension
+
+The public destinations are About, Guide, Scanner and Loyalty card. About uses reviewed product photographs with contained proportions and clear material captions. Scanner keeps actual seven-output probabilities, explicit uncertainty and conditional guidance. Product filters are functioning native buttons. Loyalty presents the confirmed item count, 1,000-item progress, grade and five recent records; its separately labelled A example never writes data. Phone consent and the no-OTP limitation are visible. Full-image previews preserve bottle silhouettes. Technical team pages and local QA dashboards are absent from public navigation.
+
+
+## Public information and loyalty extension
+
+The public destinations are About, Guide, Scanner and Loyalty card. About uses reviewed product photographs with contained proportions and clear material captions. Scanner keeps actual seven-output probabilities, explicit uncertainty and conditional guidance. Product filters are functioning native buttons. Loyalty presents the confirmed item count, 1,000-item progress, grade and five recent records; its separately labelled A example never writes data. Phone consent and the no-OTP limitation are visible. Full-image previews preserve bottle silhouettes. Technical team pages and local QA dashboards are absent from public navigation.

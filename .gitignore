@@ -1,6 +1,9 @@
 node_modules/
 dist/
 public/ort/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
 .venv/
 __pycache__/
 *.pyc

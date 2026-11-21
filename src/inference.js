@@ -26,8 +26,7 @@ export function imageTensor(source) {
   const w = source.videoWidth || source.naturalWidth || source.width,
     h = source.videoHeight || source.naturalHeight || source.height;
   if (!w || !h) throw new Error("ภาพยังไม่พร้อม");
-  const side = Math.min(w, h),
-    canvas = document.createElement("canvas");
+  const canvas = document.createElement("canvas");
   canvas.width = 224;
   canvas.height = 224;
   const ctx = canvas.getContext("2d", { willReadFrequently: true });
@@ -35,16 +34,19 @@ export function imageTensor(source) {
   ctx.fillRect(0, 0, 224, 224);
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = "low";
+  const scale = Math.min(224 / w, 224 / h),
+    dw = Math.round(w * scale),
+    dh = Math.round(h * scale);
   ctx.drawImage(
     source,
-    Math.floor((w - side) / 2),
-    Math.floor((h - side) / 2),
-    side,
-    side,
     0,
     0,
-    224,
-    224,
+    w,
+    h,
+    Math.floor((224 - dw) / 2),
+    Math.floor((224 - dh) / 2),
+    dw,
+    dh,
   );
   const data = ctx.getImageData(0, 0, 224, 224).data,
     out = new Float32Array(3 * 224 * 224);
@@ -70,5 +72,22 @@ export async function predict(source) {
   } finally {
     tensor.dispose();
     Object.values(result).forEach((x) => x.dispose());
+  }
+}
+export async function imageDigest(source) {
+  const tensor = imageTensor(source);
+  try {
+    const bytes = new Uint8Array(
+      tensor.data.buffer,
+      tensor.data.byteOffset,
+      tensor.data.byteLength,
+    );
+    return Array.from(
+      new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)),
+    )
+      .map((v) => v.toString(16).padStart(2, "0"))
+      .join("");
+  } finally {
+    tensor.dispose();
   }
 }

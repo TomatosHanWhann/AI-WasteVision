@@ -1,21 +1,22 @@
-# เผยแพร่เว็บ
+# การเผยแพร่
 
-เว็บเป็น static build ไม่มี backend และไม่มี secret สำหรับ inference โมเดลและ runtime โหลดจาก host เดียวกัน `npm run build` สร้าง `dist/` พร้อมใช้งาน
+ใช้โครงการ Sites เดิมใน `.openai/hosting.json` และคงผู้ชมแบบ public ลิงก์ปัจจุบัน: https://ai-wastevision-th.tenderheron1024.chatgpt.site
 
-## เว็บทดลองที่ส่งมอบ
+## Runtime
 
-https://ai-wastevision-th.tenderheron1024.chatgpt.site
+Vite + Cloudflare Worker; static assets อยู่ `dist/client`, Worker อยู่ `dist/server/index.js` และ config อยู่ `dist/server/wrangler.json` ฐานข้อมูล D1 binding `DB` เปิดผ่าน hosting metadata; migrations ที่สร้างด้วย Drizzle อยู่ `drizzle/` และคัดลอกเป็น `dist/.openai/drizzle/` ตอน build
 
-Hosting: Sites โดย `.openai/hosting.json` เก็บ project ID และ dist directory ไม่มี credential/token อยู่ใน Git การแก้ GitHub เพียงอย่างเดียว **ยังไม่เผยแพร่ขึ้น Sites อัตโนมัติ** ต้อง build + publish รุ่นใหม่ผ่าน Sites จาก source commit ที่ตรวจแล้ว
+กำหนด `PHONE_HASH_SECRET` เป็น secret สุ่มที่มีความยาวเพียงพอผ่าน Sites runtime ก่อน deploy ห้ามใส่ค่าจริงลง Git ห้ามเปลี่ยน secret โดยไม่มีแผนย้ายข้อมูล เพราะ HMAC ของสมาชิกเดิมจะเปลี่ยน `.dev.vars` ใช้เฉพาะท้องถิ่นและถูกลบออกจาก build output โดย build hook
 
-## ทางเลือกที่ทีมดูแลจาก GitHub ได้เอง
+## ขั้นตอน
 
-ใช้ Cloudflare Pages หรือ Vercel เชื่อม private repository นี้ เลือก production branch `main`, build `npm run build`, output `dist`, Node.js 22 ไม่ต้องเพิ่ม environment variable ทุกครั้งที่ merge main ผู้ให้บริการจึงจะ build/deploy อัตโนมัติ ต้องมีบัญชีและเชื่อม GitHub ของเจ้าของด้วยตัวเอง ไม่จำเป็นต้องเปลี่ยน repo เป็น public
+1. รัน `npm test`, `python ml/check_model.py`, `npm run build`
+2. ตรวจว่าไม่มี `.dev.vars` ใน artifact และมี presentation.html, โมเดล, runtime, migration ครบ
+3. ใช้ source workflow ของ Sites เพื่อ commit/push และสร้าง archive จาก dist ของ source เดียวกัน
+4. บันทึก version ด้วย exact commit SHA และ archive แล้ว deploy saved version
+5. ตรวจหน้า public, metadata, การโหลดโมเดล, บัตร และ persistence หลังเปิด session ใหม่
+6. push commit เดียวกันไป GitHub เพื่อให้ทีมแก้ต่อได้
 
-หากเลือก GitHub Pages ให้ตรวจสิทธิ์ Pages ของแผนบัญชีสำหรับ private repository ก่อน และใช้ base path `/AI-WasteVision/` กับ Vite อย่างถูกต้อง ไม่ควรเปิดเผย repository เพียงเพื่อให้ได้ลิงก์ demo
+GitHub Actions ตรวจโค้ด/build/model แต่ไม่ publish Sites อัตโนมัติ หากย้าย host ต้องมี Worker/D1 หรือ backend ที่เทียบเท่า การส่ง dist/client ขึ้น static host เพียงอย่างเดียวจะใช้บัตรไม่ได้
 
-## ตรวจหลังเผยแพร่
-
-เปิด URL จากมือถือคนละเครือข่าย รอโมเดลพร้อม ลองภาพจริงหนึ่งภาพ และส่งออก CSV ตรวจว่า `/model/metadata.json` เป็นรุ่นเดียวกับโมเดล เปิด HTTPS เท่านั้นเมื่อใช้กล้อง ตั้ง cache ของไฟล์ model/metadata ให้ revalidate เมื่อเปลี่ยนรุ่น หลีกเลี่ยง cache ยาวกับชื่อโมเดลคงที่
-
-เมื่อ rollback ให้คืนทั้งไฟล์โมเดล metadata และโค้ดจาก commit เดียวกัน อย่าคืนเฉพาะ weights เพราะ label order หรือ preprocessing อาจต่างกัน
+ย้อนกลับให้คืนทั้ง Worker, assets, โมเดล และ metadata ที่ตรงกัน หลีกเลี่ยงการย้อน schema ที่ทำให้ข้อมูลหาย HTTPS จำเป็นต่อกล้องและ cookie Secure
