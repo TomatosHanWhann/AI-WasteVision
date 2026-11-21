@@ -1,0 +1,164 @@
+{
+  "model_version": "realwaste-mobilenetv2-v1",
+  "created_at": "2026-11-21T08:12:30.916299+00:00",
+  "seed": 42,
+  "labels": [
+    "plastic",
+    "metal",
+    "paper",
+    "cardboard",
+    "food_organics"
+  ],
+  "split_method": "stratified-image-level-exploratory",
+  "physical_item_holdout_verified": false,
+  "selected_C": 0.1,
+  "validation_macro_f1": 0.9132674977937973,
+  "test_accuracy": 0.8666666666666667,
+  "test_macro_f1": 0.865987421376189,
+  "confusion_matrix": [
+    [
+      122,
+      11,
+      2,
+      3,
+      1
+    ],
+    [
+      12,
+      103,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      62,
+      12,
+      0
+    ],
+    [
+      2,
+      5,
+      8,
+      55,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      61
+    ]
+  ],
+  "classification_report": {
+    "plastic": {
+      "precision": 0.8970588235294118,
+      "recall": 0.8776978417266187,
+      "f1-score": 0.8872727272727273,
+      "support": 139.0
+    },
+    "metal": {
+      "precision": 0.8583333333333333,
+      "recall": 0.865546218487395,
+      "f1-score": 0.8619246861924686,
+      "support": 119.0
+    },
+    "paper": {
+      "precision": 0.8493150684931506,
+      "recall": 0.8266666666666667,
+      "f1-score": 0.8378378378378378,
+      "support": 75.0
+    },
+    "cardboard": {
+      "precision": 0.7638888888888888,
+      "recall": 0.7857142857142857,
+      "f1-score": 0.7746478873239436,
+      "support": 70.0
+    },
+    "food_organics": {
+      "precision": 0.953125,
+      "recall": 0.9838709677419355,
+      "f1-score": 0.9682539682539683,
+      "support": 62.0
+    },
+    "accuracy": 0.8666666666666667,
+    "macro avg": {
+      "precision": 0.8643442228489568,
+      "recall": 0.8678991960673802,
+      "f1-score": 0.865987421376189,
+      "support": 465.0
+    },
+    "weighted avg": {
+      "precision": 0.8668762268741149,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.8666556617851028,
+      "support": 465.0
+    }
+  },
+  "split_counts": {
+    "train": {
+      "plastic": 644,
+      "metal": 553,
+      "paper": 350,
+      "cardboard": 322,
+      "food_organics": 287,
+      "unknown": 0
+    },
+    "validation": {
+      "plastic": 138,
+      "metal": 118,
+      "paper": 75,
+      "cardboard": 69,
+      "food_organics": 62,
+      "unknown": 250
+    },
+    "test": {
+      "plastic": 139,
+      "metal": 119,
+      "paper": 75,
+      "cardboard": 70,
+      "food_organics": 62,
+      "unknown": 252
+    }
+  },
+  "threshold": 0.95,
+  "test_known_coverage": 0.4258064516129032,
+  "test_unknown_rejection_rate": 0.7896825396825397,
+  "onnx_parity_max_error": 1.1324882507324219e-06,
+  "desktop_python_inference_median_ms": 13.195100000302773,
+  "model_sha256": "56d58833cf2b6cad63688403e6c1c1fe35c6298458e47404e74854664b9c0675",
+  "limitations": [
+    "Exploratory image split is not proof of generalization to unseen physical objects.",
+    "No Thai-local domain adaptation or human/device field test has been collected.",
+    "Softmax threshold cannot reliably detect every out-of-scope image.",
+    "Python latency is not browser or mobile latency."
+  ],
+  "source": {
+    "name": "RealWaste",
+    "url": "https://archive.ics.uci.edu/dataset/908/realwaste",
+    "license": "CC BY 4.0",
+    "authors": "Single, Iranmanesh, Raad (2023)"
+  },
+  "preprocessing": {
+    "crop": "center square",
+    "resize": [
+      224,
+      224
+    ],
+    "interpolation": "bilinear",
+    "layout": "NCHW",
+    "scale": 255,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  }
+}

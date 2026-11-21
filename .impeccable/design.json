@@ -1,0 +1,562 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T08:34:16.324413+00:00",
+  "title": "Design System: AI WasteVision",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest",
+        "tonalRamp": [
+          "oklch(15.00% 0.05059 176.99)",
+          "oklch(26.43% 0.05059 176.99)",
+          "oklch(37.86% 0.05059 176.99)",
+          "oklch(49.29% 0.05059 176.99)",
+          "oklch(60.71% 0.05059 176.99)",
+          "oklch(72.14% 0.05059 176.99)",
+          "oklch(83.57% 0.05059 176.99)",
+          "oklch(95.00% 0.05059 176.99)"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.08740 168.27)",
+          "oklch(26.43% 0.08740 168.27)",
+          "oklch(37.86% 0.08740 168.27)",
+          "oklch(49.29% 0.08740 168.27)",
+          "oklch(60.71% 0.08740 168.27)",
+          "oklch(72.14% 0.08740 168.27)",
+          "oklch(83.57% 0.08740 168.27)",
+          "oklch(95.00% 0.08740 168.27)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Primary Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.07892 162.68)",
+          "oklch(26.43% 0.07892 162.68)",
+          "oklch(37.86% 0.07892 162.68)",
+          "oklch(49.29% 0.07892 162.68)",
+          "oklch(60.71% 0.07892 162.68)",
+          "oklch(72.14% 0.07892 162.68)",
+          "oklch(83.57% 0.07892 162.68)",
+          "oklch(95.00% 0.07892 162.68)"
+        ]
+      },
+      "analysis-hover": {
+        "role": "primary",
+        "displayName": "Analysis Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.07086 166.38)",
+          "oklch(26.43% 0.07086 166.38)",
+          "oklch(37.86% 0.07086 166.38)",
+          "oklch(49.29% 0.07086 166.38)",
+          "oklch(60.71% 0.07086 166.38)",
+          "oklch(72.14% 0.07086 166.38)",
+          "oklch(83.57% 0.07086 166.38)",
+          "oklch(95.00% 0.07086 166.38)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.04565 175.24)",
+          "oklch(26.43% 0.04565 175.24)",
+          "oklch(37.86% 0.04565 175.24)",
+          "oklch(49.29% 0.04565 175.24)",
+          "oklch(60.71% 0.04565 175.24)",
+          "oklch(72.14% 0.04565 175.24)",
+          "oklch(83.57% 0.04565 175.24)",
+          "oklch(95.00% 0.04565 175.24)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "tonalRamp": [
+          "oklch(15.00% 0.00579 153.78)",
+          "oklch(26.43% 0.00579 153.78)",
+          "oklch(37.86% 0.00579 153.78)",
+          "oklch(49.29% 0.00579 153.78)",
+          "oklch(60.71% 0.00579 153.78)",
+          "oklch(72.14% 0.00579 153.78)",
+          "oklch(83.57% 0.00579 153.78)",
+          "oklch(95.00% 0.00579 153.78)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.02873 167.34)",
+          "oklch(26.43% 0.02873 167.34)",
+          "oklch(37.86% 0.02873 167.34)",
+          "oklch(49.29% 0.02873 167.34)",
+          "oklch(60.71% 0.02873 167.34)",
+          "oklch(72.14% 0.02873 167.34)",
+          "oklch(83.57% 0.02873 167.34)",
+          "oklch(95.00% 0.02873 167.34)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15.00% 0.01254 156.98)",
+          "oklch(26.43% 0.01254 156.98)",
+          "oklch(37.86% 0.01254 156.98)",
+          "oklch(49.29% 0.01254 156.98)",
+          "oklch(60.71% 0.01254 156.98)",
+          "oklch(72.14% 0.01254 156.98)",
+          "oklch(83.57% 0.01254 156.98)",
+          "oklch(95.00% 0.01254 156.98)"
+        ]
+      },
+      "nav-selected": {
+        "role": "neutral",
+        "displayName": "Nav Selected",
+        "tonalRamp": [
+          "oklch(15.00% 0.02335 153.44)",
+          "oklch(26.43% 0.02335 153.44)",
+          "oklch(37.86% 0.02335 153.44)",
+          "oklch(49.29% 0.02335 153.44)",
+          "oklch(60.71% 0.02335 153.44)",
+          "oklch(72.14% 0.02335 153.44)",
+          "oklch(83.57% 0.02335 153.44)",
+          "oklch(95.00% 0.02335 153.44)"
+        ]
+      },
+      "nav-selected-ink": {
+        "role": "neutral",
+        "displayName": "Nav Selected Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.06467 167.31)",
+          "oklch(26.43% 0.06467 167.31)",
+          "oklch(37.86% 0.06467 167.31)",
+          "oklch(49.29% 0.06467 167.31)",
+          "oklch(60.71% 0.06467 167.31)",
+          "oklch(72.14% 0.06467 167.31)",
+          "oklch(83.57% 0.06467 167.31)",
+          "oklch(95.00% 0.06467 167.31)"
+        ]
+      },
+      "nav-hover": {
+        "role": "neutral",
+        "displayName": "Nav Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.01503 151.76)",
+          "oklch(26.43% 0.01503 151.76)",
+          "oklch(37.86% 0.01503 151.76)",
+          "oklch(49.29% 0.01503 151.76)",
+          "oklch(60.71% 0.01503 151.76)",
+          "oklch(72.14% 0.01503 151.76)",
+          "oklch(83.57% 0.01503 151.76)",
+          "oklch(95.00% 0.01503 151.76)"
+        ]
+      },
+      "secondary-ink": {
+        "role": "neutral",
+        "displayName": "Secondary Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.05504 166.48)",
+          "oklch(26.43% 0.05504 166.48)",
+          "oklch(37.86% 0.05504 166.48)",
+          "oklch(49.29% 0.05504 166.48)",
+          "oklch(60.71% 0.05504 166.48)",
+          "oklch(72.14% 0.05504 166.48)",
+          "oklch(83.57% 0.05504 166.48)",
+          "oklch(95.00% 0.05504 166.48)"
+        ]
+      },
+      "secondary-border": {
+        "role": "neutral",
+        "displayName": "Secondary Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.03540 154.66)",
+          "oklch(26.43% 0.03540 154.66)",
+          "oklch(37.86% 0.03540 154.66)",
+          "oklch(49.29% 0.03540 154.66)",
+          "oklch(60.71% 0.03540 154.66)",
+          "oklch(72.14% 0.03540 154.66)",
+          "oklch(83.57% 0.03540 154.66)",
+          "oklch(95.00% 0.03540 154.66)"
+        ]
+      },
+      "secondary-hover": {
+        "role": "neutral",
+        "displayName": "Secondary Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.01159 153.67)",
+          "oklch(26.43% 0.01159 153.67)",
+          "oklch(37.86% 0.01159 153.67)",
+          "oklch(49.29% 0.01159 153.67)",
+          "oklch(60.71% 0.01159 153.67)",
+          "oklch(72.14% 0.01159 153.67)",
+          "oklch(83.57% 0.01159 153.67)",
+          "oklch(95.00% 0.01159 153.67)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.03278 156.98)",
+          "oklch(26.43% 0.03278 156.98)",
+          "oklch(37.86% 0.03278 156.98)",
+          "oklch(49.29% 0.03278 156.98)",
+          "oklch(60.71% 0.03278 156.98)",
+          "oklch(72.14% 0.03278 156.98)",
+          "oklch(83.57% 0.03278 156.98)",
+          "oklch(95.00% 0.03278 156.98)"
+        ]
+      },
+      "viewfinder": {
+        "role": "neutral",
+        "displayName": "Viewfinder",
+        "tonalRamp": [
+          "oklch(15.00% 0.01294 141.81)",
+          "oklch(26.43% 0.01294 141.81)",
+          "oklch(37.86% 0.01294 141.81)",
+          "oklch(49.29% 0.01294 141.81)",
+          "oklch(60.71% 0.01294 141.81)",
+          "oklch(72.14% 0.01294 141.81)",
+          "oklch(83.57% 0.01294 141.81)",
+          "oklch(95.00% 0.01294 141.81)"
+        ]
+      },
+      "prediction": {
+        "role": "neutral",
+        "displayName": "Prediction",
+        "tonalRamp": [
+          "oklch(15.00% 0.01667 151.10)",
+          "oklch(26.43% 0.01667 151.10)",
+          "oklch(37.86% 0.01667 151.10)",
+          "oklch(49.29% 0.01667 151.10)",
+          "oklch(60.71% 0.01667 151.10)",
+          "oklch(72.14% 0.01667 151.10)",
+          "oklch(83.57% 0.01667 151.10)",
+          "oklch(95.00% 0.01667 151.10)"
+        ]
+      },
+      "uncertain": {
+        "role": "secondary",
+        "displayName": "Uncertain",
+        "tonalRamp": [
+          "oklch(15.00% 0.03087 86.46)",
+          "oklch(26.43% 0.03087 86.46)",
+          "oklch(37.86% 0.03087 86.46)",
+          "oklch(49.29% 0.03087 86.46)",
+          "oklch(60.71% 0.03087 86.46)",
+          "oklch(72.14% 0.03087 86.46)",
+          "oklch(83.57% 0.03087 86.46)",
+          "oklch(95.00% 0.03087 86.46)"
+        ]
+      },
+      "uncertain-ink": {
+        "role": "secondary",
+        "displayName": "Uncertain Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.08059 75.44)",
+          "oklch(26.43% 0.08059 75.44)",
+          "oklch(37.86% 0.08059 75.44)",
+          "oklch(49.29% 0.08059 75.44)",
+          "oklch(60.71% 0.08059 75.44)",
+          "oklch(72.14% 0.08059 75.44)",
+          "oklch(83.57% 0.08059 75.44)",
+          "oklch(95.00% 0.08059 75.44)"
+        ]
+      },
+      "danger": {
+        "role": "secondary",
+        "displayName": "Danger",
+        "tonalRamp": [
+          "oklch(15.00% 0.14734 26.98)",
+          "oklch(26.43% 0.14734 26.98)",
+          "oklch(37.86% 0.14734 26.98)",
+          "oklch(49.29% 0.14734 26.98)",
+          "oklch(60.71% 0.14734 26.98)",
+          "oklch(72.14% 0.14734 26.98)",
+          "oklch(83.57% 0.14734 26.98)",
+          "oklch(95.00% 0.14734 26.98)"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.12638 61.01)",
+          "oklch(26.43% 0.12638 61.01)",
+          "oklch(37.86% 0.12638 61.01)",
+          "oklch(49.29% 0.12638 61.01)",
+          "oklch(60.71% 0.12638 61.01)",
+          "oklch(72.14% 0.12638 61.01)",
+          "oklch(83.57% 0.12638 61.01)",
+          "oklch(95.00% 0.12638 61.01)"
+        ]
+      },
+      "plastic": {
+        "role": "secondary",
+        "displayName": "Plastic",
+        "tonalRamp": [
+          "oklch(15.00% 0.09237 165.96)",
+          "oklch(26.43% 0.09237 165.96)",
+          "oklch(37.86% 0.09237 165.96)",
+          "oklch(49.29% 0.09237 165.96)",
+          "oklch(60.71% 0.09237 165.96)",
+          "oklch(72.14% 0.09237 165.96)",
+          "oklch(83.57% 0.09237 165.96)",
+          "oklch(95.00% 0.09237 165.96)"
+        ]
+      },
+      "metal": {
+        "role": "secondary",
+        "displayName": "Metal",
+        "tonalRamp": [
+          "oklch(15.00% 0.08123 243.26)",
+          "oklch(26.43% 0.08123 243.26)",
+          "oklch(37.86% 0.08123 243.26)",
+          "oklch(49.29% 0.08123 243.26)",
+          "oklch(60.71% 0.08123 243.26)",
+          "oklch(72.14% 0.08123 243.26)",
+          "oklch(83.57% 0.08123 243.26)",
+          "oklch(95.00% 0.08123 243.26)"
+        ]
+      },
+      "paper": {
+        "role": "secondary",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.09815 77.65)",
+          "oklch(26.43% 0.09815 77.65)",
+          "oklch(37.86% 0.09815 77.65)",
+          "oklch(49.29% 0.09815 77.65)",
+          "oklch(60.71% 0.09815 77.65)",
+          "oklch(72.14% 0.09815 77.65)",
+          "oklch(83.57% 0.09815 77.65)",
+          "oklch(95.00% 0.09815 77.65)"
+        ]
+      },
+      "cardboard": {
+        "role": "secondary",
+        "displayName": "Cardboard",
+        "tonalRamp": [
+          "oklch(15.00% 0.09645 38.65)",
+          "oklch(26.43% 0.09645 38.65)",
+          "oklch(37.86% 0.09645 38.65)",
+          "oklch(49.29% 0.09645 38.65)",
+          "oklch(60.71% 0.09645 38.65)",
+          "oklch(72.14% 0.09645 38.65)",
+          "oklch(83.57% 0.09645 38.65)",
+          "oklch(95.00% 0.09645 38.65)"
+        ]
+      },
+      "food-organics": {
+        "role": "secondary",
+        "displayName": "Food Organics",
+        "tonalRamp": [
+          "oklch(15.00% 0.10700 127.36)",
+          "oklch(26.43% 0.10700 127.36)",
+          "oklch(37.86% 0.10700 127.36)",
+          "oklch(49.29% 0.10700 127.36)",
+          "oklch(60.71% 0.10700 127.36)",
+          "oklch(72.14% 0.10700 127.36)",
+          "oklch(83.57% 0.10700 127.36)",
+          "oklch(95.00% 0.10700 127.36)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Fluid Thai page headings."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Predicted material or uncertainty title."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Panel and document section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Root reading text and generous paragraph leading."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Action labels."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Supporting model status and caveats."
+      }
+    },
+    "shadows": [
+      {
+        "name": "share-dialog",
+        "value": "0 16px 70px #0b271b40",
+        "purpose": "Modal share dialog only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-fill",
+        "value": "background 0.16s ease",
+        "purpose": "Button hover fill."
+      },
+      {
+        "name": "sample-fill",
+        "value": "background 0.15s",
+        "purpose": "Sample card hover fill."
+      },
+      {
+        "name": "result-reveal",
+        "value": "0.32s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Prediction inset clipping reveal; disabled under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1150px"
+      },
+      {
+        "name": "top-navigation-max",
+        "value": "900px"
+      },
+      {
+        "name": "single-column-max",
+        "value": "680px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary capture button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary capture button extracted from the shipped interface.",
+      "html": "<button class=\"ds-primary\">เปิดกล้อง</button>",
+      "css": ".ds-primary{font-family:\"Noto Sans Thai\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;border-radius:8px;padding:11px 17px;font-size:.9rem;font-weight:500;line-height:1.5;border:1px solid transparent;cursor:pointer;transition:background .16s ease;background:var(--green,#1e7057);color:var(--white,#fff);}.ds-primary:hover{background:#17593f}.ds-primary:focus-visible{outline:3px solid #bc7228;outline-offset:4px}.ds-primary:disabled{opacity:.48;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary button extracted from the shipped interface.",
+      "html": "<button class=\"ds-secondary\">เลือกภาพ</button>",
+      "css": ".ds-secondary{font-family:\"Noto Sans Thai\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;border-radius:8px;padding:11px 17px;font-size:.9rem;font-weight:500;line-height:1.5;border:1px solid transparent;cursor:pointer;transition:background .16s ease;background:var(--white,#fff);color:#244e3e;border-color:#a8c0af;}.ds-secondary:hover{background:#edf5ef}.ds-secondary:focus-visible{outline:3px solid #bc7228;outline-offset:4px}.ds-secondary:disabled{opacity:.48;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Analysis button",
+      "kind": "button",
+      "refersTo": "button-analysis",
+      "description": "Analysis button extracted from the shipped interface.",
+      "html": "<button class=\"ds-analysis\">วิเคราะห์ภาพ</button>",
+      "css": ".ds-analysis{font-family:\"Noto Sans Thai\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;border-radius:8px;padding:11px 17px;font-size:.9rem;font-weight:500;line-height:1.5;border:1px solid transparent;cursor:pointer;transition:background .16s ease;background:var(--forest,#123e35);color:var(--white,#fff);width:100%;}.ds-analysis:hover{background:#205b46}.ds-analysis:focus-visible{outline:3px solid #bc7228;outline-offset:4px}.ds-analysis:disabled{opacity:.48;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-analysis{transition:none}}"
+    },
+    {
+      "name": "Native select",
+      "kind": "input",
+      "refersTo": "field-select",
+      "description": "Native select extracted from the shipped interface.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-condition\">สภาพสิ่งของ<select class=\"ds-select\" id=\"ds-condition\"><option>เลือกสภาพ</option><option>สะอาดและแห้ง</option></select></label>",
+      "css": ".ds-field-label{font-family:\"Noto Sans Thai\",sans-serif;display:block;font-size:.85rem;color:var(--forest,#123e35)}.ds-select{font-family:\"Noto Sans Thai\",sans-serif;display:block;margin-top:6px;width:100%;min-height:44px;color:var(--forest,#123e35);background:#fff;border:1px solid #a8bfb0;border-radius:7px;padding:10px 36px 10px 12px;font-size:.875rem;appearance:none;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23395545' stroke-width='1.5'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:right 12px center}.ds-select:focus-visible{outline:3px solid #bc7228;outline-offset:4px}"
+    },
+    {
+      "name": "Navigation link",
+      "kind": "nav",
+      "refersTo": "navigation-selected",
+      "description": "Navigation link extracted from the shipped interface.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Preview\"><a href=\"#scan\" aria-current=\"page\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M3 7V5a2 2 0 0 1 2-2h2\"/><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"/><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"/><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"/><path d=\"M7 12h10\"/></svg><span>สแกนสิ่งของ</span></a></nav>",
+      "css": ".ds-nav{font-family:\"Noto Sans Thai\",sans-serif;}.ds-nav a{display:flex;align-items:center;gap:11px;padding:13px 12px;border-radius:8px;color:#4d675b;text-decoration:none;font-size:.875rem;font-weight:500}.ds-nav a:hover{background:#e4eee6}.ds-nav a[aria-current]{background:#dcece0;color:#174d3b}.ds-nav a:focus-visible{outline:3px solid #bc7228;outline-offset:4px}"
+    },
+    {
+      "name": "Material tag",
+      "kind": "chip",
+      "refersTo": "material-tag",
+      "description": "Material tag extracted from the shipped interface.",
+      "html": "<span class=\"ds-tag\">พลาสติก</span>",
+      "css": ".ds-tag{font-family:\"Noto Sans Thai\",sans-serif;display:inline-block;font-size:.75rem;background:#e4eee6;color:#3b6850;padding:7px 11px;border-radius:5px}"
+    },
+    {
+      "name": "Work panel",
+      "kind": "card",
+      "refersTo": "work-panel",
+      "description": "Work panel extracted from the shipped interface.",
+      "html": "<section class=\"ds-panel\"><h2>ผลการจำแนก</h2><p>รอภาพของคุณ</p></section>",
+      "css": ".ds-panel{font-family:\"Noto Sans Thai\",sans-serif;background:var(--white,#fff);color:#193e35;border:1px solid var(--line,#dce5df);border-radius:14px;padding:22px}.ds-panel h2{margin:0 0 18px;font-size:1.125rem;font-weight:600}.ds-panel p{margin:0;font-size:.8rem;line-height:1.8;color:var(--muted,#596e65)}@media(max-width:1150px){.ds-panel{padding:17px}}@media(max-width:680px){.ds-panel{padding:18px}}"
+    },
+    {
+      "name": "Prediction inset",
+      "kind": "custom",
+      "refersTo": "prediction",
+      "description": "Prediction inset extracted from the shipped interface.",
+      "html": "<section class=\"ds-prediction\"><span>AI คาดว่าเป็น</span><h3>พลาสติก</h3></section>",
+      "css": ".ds-prediction{font-family:\"Noto Sans Thai\",sans-serif;background:#e7f2e9;color:#193e35;padding:18px;border-radius:9px;margin-bottom:20px;animation:ds-reveal .32s cubic-bezier(.16,1,.3,1)}.ds-prediction span{font-size:.85rem;color:#487053}.ds-prediction h3{margin:0;font-size:1.7rem;font-weight:600;line-height:1.6}.ds-prediction.ds-uncertain{background:#fbf1db;color:#73521e}.ds-prediction.ds-uncertain span{color:#73521e}@keyframes ds-reveal{from{clip-path:inset(0 0 35% 0);background:#d2e7d8}to{clip-path:inset(0);background:#e7f2e9}}@media(prefers-reduced-motion:reduce){.ds-prediction{animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Forest green product workspace",
+    "overview": "The shipped identity follows the approved green project plan: a deep forest shell, pale green ground and white working surfaces. Thai typography and restrained line icons keep the interface familiar and readable. Real photographs supply the visual content.\n\nThe interface is calm and practical. Borders and tonal insets separate tasks; compact labels sit beside generous image areas. Color communicates material class and uncertainty as well as brand identity. This record describes the implementation in `src/style.css`, `src/main.js` and `src/domain.js`; `docs/DIRECTION.md` contains the surface composition and interaction story.",
+    "keyCharacteristics": [
+      "Forest shell and pale green ground.",
+      "Self-hosted Thai typography with moderate weight contrast.",
+      "White bordered panels with softly rounded corners.",
+      "Actual item photography and labelled material probabilities.",
+      "Warm uncertainty feedback and visible keyboard focus."
+    ],
+    "rules": [
+      {
+        "name": "The Labelled Color Rule",
+        "body": "Pair class and uncertainty colors with text; probability bars also retain numeric scores.",
+        "section": "colors"
+      },
+      {
+        "name": "The Thai Reading Rule",
+        "body": "Keep Noto Sans Thai across headings, labels and body; preserve the generous paragraph leading and visible labels on native fields.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Work Surface Rule",
+        "body": "Use borders and tonal separation for normal panels; reserve the existing overlay shadow for the modal dialog.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use forest for the shell and analysis action, green for capture actions, and white bordered work panels.",
+      "**Do** keep material labels and numeric scores alongside class colors.",
+      "**Do** retain Thai field labels, visible focus and the upload alternative beside camera capture.",
+      "**Do** preserve contained image previews, cropped sample thumbnails and actual photograph attribution.",
+      "**Do** honor reduced motion for prediction reveal and result scrolling."
+    ],
+    "donts": [
+      "**Don't** apply resting card shadows to the flat working panels.",
+      "**Don't** substitute a new display family for the existing Thai heading face.",
+      "**Don't** use the success-green prediction treatment for explicit model rejection.",
+      "**Don't** turn informational material tags into selected filter controls without implementing that behavior."
+    ]
+  }
+}

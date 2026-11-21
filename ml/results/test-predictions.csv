@@ -1,0 +1,718 @@
+path,truth,prediction,confidence,decision,latency_ms
+Cardboard_125.jpg,cardboard,paper,0.4579823911190033,unknown,7.224299999506911
+Cardboard_420.jpg,cardboard,cardboard,0.9799990057945251,cardboard,15.398600000480656
+Cardboard_86.jpg,cardboard,cardboard,0.859017550945282,unknown,10.766200000034587
+Cardboard_103.jpg,cardboard,cardboard,0.660697340965271,unknown,13.134800000443647
+Cardboard_288.jpg,cardboard,cardboard,0.8664822578430176,unknown,11.911599999621103
+Cardboard_168.jpg,cardboard,cardboard,0.9469307661056519,unknown,8.41240000045218
+Cardboard_167.jpg,cardboard,cardboard,0.6607850790023804,unknown,9.817199999815784
+Cardboard_366.jpg,cardboard,cardboard,0.9267569184303284,unknown,15.105200000107288
+Cardboard_69.jpg,cardboard,cardboard,0.7385764718055725,unknown,15.484399999877496
+Cardboard_303.jpg,cardboard,cardboard,0.9842305779457092,cardboard,12.56550000016432
+Cardboard_323.jpg,cardboard,paper,0.5408387184143066,unknown,15.703300000495801
+Cardboard_237.jpg,cardboard,cardboard,0.961118221282959,cardboard,12.09000000017113
+Cardboard_261.jpg,cardboard,cardboard,0.9748342037200928,cardboard,26.161199999478413
+Cardboard_1.jpg,cardboard,cardboard,0.677315890789032,unknown,47.46710000017629
+Cardboard_222.jpg,cardboard,paper,0.7428370118141174,unknown,33.04169999955775
+Cardboard_374.jpg,cardboard,cardboard,0.8712079524993896,unknown,25.60170000015205
+Cardboard_456.jpg,cardboard,cardboard,0.9998915195465088,cardboard,25.16780000041763
+Cardboard_258.jpg,cardboard,cardboard,0.7450352311134338,unknown,22.585499999877356
+Cardboard_305.jpg,cardboard,cardboard,0.7371081113815308,unknown,24.324199999682605
+Cardboard_184.jpg,cardboard,metal,0.3582654297351837,unknown,17.72530000016559
+Cardboard_149.jpg,cardboard,metal,0.5504443049430847,unknown,12.129700000514276
+Cardboard_367.jpg,cardboard,paper,0.7364997267723083,unknown,16.655399999763176
+Cardboard_433.jpg,cardboard,cardboard,0.9050971865653992,unknown,17.273200000090583
+Cardboard_210.jpg,cardboard,cardboard,0.7458810806274414,unknown,17.925999999533815
+Cardboard_373.jpg,cardboard,cardboard,0.9587979912757874,cardboard,11.850800000502204
+Cardboard_254.jpg,cardboard,cardboard,0.9762986302375793,cardboard,13.621099999909347
+Cardboard_199.jpg,cardboard,cardboard,0.9863495230674744,cardboard,31.066999999893596
+Cardboard_50.jpg,cardboard,cardboard,0.9638703465461731,cardboard,59.32940000002418
+Cardboard_162.jpg,cardboard,cardboard,0.9477081298828125,unknown,30.402600000343227
+Cardboard_240.jpg,cardboard,cardboard,0.8382485508918762,unknown,28.9465999994718
+Cardboard_91.jpg,cardboard,paper,0.5796833038330078,unknown,15.999500000361877
+Cardboard_427.jpg,cardboard,cardboard,0.49581536650657654,unknown,57.74039999960223
+Cardboard_175.jpg,cardboard,cardboard,0.5197540521621704,unknown,32.89799999947718
+Cardboard_425.jpg,cardboard,paper,0.884193480014801,unknown,18.83769999949436
+Cardboard_384.jpg,cardboard,cardboard,0.9930357336997986,cardboard,9.231099999851722
+Cardboard_164.jpg,cardboard,plastic,0.9097864627838135,unknown,15.799900000274647
+Cardboard_137.jpg,cardboard,metal,0.4279840886592865,unknown,24.123799999870243
+Cardboard_421.jpg,cardboard,cardboard,0.9772368669509888,cardboard,36.790799999835144
+Cardboard_150.jpg,cardboard,cardboard,0.8718392252922058,unknown,31.817999999475433
+Cardboard_301.jpg,cardboard,cardboard,0.9960632920265198,cardboard,17.472800000177813
+Cardboard_53.jpg,cardboard,cardboard,0.8591622710227966,unknown,18.8453999999183
+Cardboard_115.jpg,cardboard,cardboard,0.8020319938659668,unknown,22.38099999976839
+Cardboard_391.jpg,cardboard,cardboard,0.8635556697845459,unknown,13.060399999631045
+Cardboard_60.jpg,cardboard,cardboard,0.9448238611221313,unknown,10.439399999995658
+Cardboard_112.jpg,cardboard,cardboard,0.9904826879501343,cardboard,23.326499999711814
+Cardboard_113.jpg,cardboard,cardboard,0.9994588494300842,cardboard,55.76970000038273
+Cardboard_307.jpg,cardboard,cardboard,0.7166486978530884,unknown,14.877800000249408
+Cardboard_266.jpg,cardboard,cardboard,0.9331936836242676,unknown,16.02550000006886
+Cardboard_438.jpg,cardboard,paper,0.5851830244064331,unknown,14.383599999746366
+Cardboard_204.jpg,cardboard,cardboard,0.9838107824325562,cardboard,14.047100000425417
+Cardboard_170.jpg,cardboard,cardboard,0.9590364098548889,cardboard,16.968099999758124
+Cardboard_35.jpg,cardboard,metal,0.6484349370002747,unknown,13.575400000263471
+Cardboard_324.jpg,cardboard,cardboard,0.8660642504692078,unknown,18.843499999093183
+Cardboard_78.jpg,cardboard,metal,0.42382705211639404,unknown,31.441000000086206
+Cardboard_156.jpg,cardboard,plastic,0.5681031942367554,unknown,19.420200000240584
+Cardboard_17.jpg,cardboard,cardboard,0.7223683595657349,unknown,16.948699999375094
+Cardboard_68.jpg,cardboard,cardboard,0.9970420002937317,cardboard,18.025700000180223
+Cardboard_370.jpg,cardboard,cardboard,0.8568960428237915,unknown,20.943399999850953
+Cardboard_14.jpg,cardboard,cardboard,0.9931655526161194,cardboard,15.983700000106182
+Cardboard_169.jpg,cardboard,cardboard,0.975378692150116,cardboard,9.760399999322544
+Cardboard_31.jpg,cardboard,cardboard,0.9290508031845093,unknown,22.70189999944705
+Cardboard_452.jpg,cardboard,cardboard,0.9990102052688599,cardboard,14.34750000044005
+Cardboard_57.jpg,cardboard,cardboard,0.9407356977462769,unknown,22.896299999956682
+Cardboard_445.jpg,cardboard,cardboard,0.9856326580047607,cardboard,131.22370000019146
+Cardboard_109.jpg,cardboard,cardboard,0.8863309025764465,unknown,89.59520000007615
+Cardboard_116.jpg,cardboard,paper,0.5514810681343079,unknown,26.01090000007389
+Cardboard_121.jpg,cardboard,cardboard,0.5594261884689331,unknown,31.829300000026706
+Cardboard_275.jpg,cardboard,cardboard,0.9879569411277771,cardboard,10.809500000505068
+Cardboard_282.jpg,cardboard,cardboard,0.7345545887947083,unknown,28.86359999956767
+Cardboard_159.jpg,cardboard,cardboard,0.652252197265625,unknown,15.132000000448897
+Food Organics_107.jpg,food_organics,food_organics,0.9684547781944275,food_organics,49.761400000534195
+Food Organics_322.jpg,food_organics,food_organics,0.998497486114502,food_organics,102.2701000001689
+Food Organics_1.jpg,food_organics,food_organics,0.9992350339889526,food_organics,218.48159999990457
+Food Organics_312.jpg,food_organics,food_organics,0.929016649723053,unknown,18.923800000266056
+Food Organics_80.jpg,food_organics,food_organics,0.9991549253463745,food_organics,15.812099999493512
+Food Organics_282.jpg,food_organics,food_organics,0.9859445095062256,food_organics,15.567300000839168
+Food Organics_388.jpg,food_organics,food_organics,0.9831274747848511,food_organics,21.6058999994857
+Food Organics_153.jpg,food_organics,food_organics,0.9812878370285034,food_organics,11.817300000075193
+Food Organics_59.jpg,food_organics,food_organics,0.929804801940918,unknown,17.58940000036091
+Food Organics_63.jpg,food_organics,food_organics,0.9923751950263977,food_organics,20.224700000653684
+Food Organics_149.jpg,food_organics,food_organics,0.9472529888153076,unknown,34.457100000508945
+Food Organics_265.jpg,food_organics,food_organics,0.9979041814804077,food_organics,42.71980000066833
+Food Organics_62.jpg,food_organics,food_organics,0.8896845579147339,unknown,28.26420000019425
+Food Organics_222.jpg,food_organics,food_organics,0.9936007857322693,food_organics,45.08170000008249
+Food Organics_190.jpg,food_organics,food_organics,0.9970113039016724,food_organics,102.6294000002963
+Food Organics_39.jpg,food_organics,food_organics,0.8590865135192871,unknown,29.757100000097125
+Food Organics_175.jpg,food_organics,food_organics,0.9297845959663391,unknown,22.958700000344834
+Food Organics_367.jpg,food_organics,food_organics,0.961775541305542,food_organics,18.54079999975511
+Food Organics_17.jpg,food_organics,food_organics,0.9933618307113647,food_organics,29.381800000010116
+Food Organics_116.jpg,food_organics,food_organics,0.887125551700592,unknown,260.2460999996765
+Food Organics_379.jpg,food_organics,food_organics,0.9976237416267395,food_organics,19.95459999943705
+Food Organics_4.jpg,food_organics,food_organics,0.916421115398407,unknown,19.02650000010908
+Food Organics_255.jpg,food_organics,food_organics,0.963342010974884,food_organics,34.13540000019566
+Food Organics_296.jpg,food_organics,food_organics,0.9794411659240723,food_organics,21.65839999997843
+Food Organics_53.jpg,food_organics,food_organics,0.8199670314788818,unknown,20.122099999753118
+Food Organics_314.jpg,food_organics,food_organics,0.9981335997581482,food_organics,72.29070000084903
+Food Organics_407.jpg,food_organics,cardboard,0.4780479669570923,unknown,14.603099999476399
+Food Organics_180.jpg,food_organics,food_organics,0.9922084212303162,food_organics,22.662800000034622
+Food Organics_15.jpg,food_organics,food_organics,0.8984383344650269,unknown,21.35660000021744
+Food Organics_201.jpg,food_organics,food_organics,0.9867438077926636,food_organics,18.062099999951897
+Food Organics_81.jpg,food_organics,food_organics,0.9995206594467163,food_organics,17.253999999411462
+Food Organics_351.jpg,food_organics,food_organics,0.9823924899101257,food_organics,9.066200000233948
+Food Organics_169.jpg,food_organics,food_organics,0.9961203336715698,food_organics,18.865699999878416
+Food Organics_257.jpg,food_organics,food_organics,0.9988497495651245,food_organics,23.315800000091258
+Food Organics_307.jpg,food_organics,food_organics,0.9557415843009949,food_organics,19.98269999967306
+Food Organics_193.jpg,food_organics,food_organics,0.9804611802101135,food_organics,19.16110000001936
+Food Organics_340.jpg,food_organics,food_organics,0.9225521683692932,unknown,20.448299999770825
+Food Organics_184.jpg,food_organics,food_organics,0.9746246337890625,food_organics,26.75950000048033
+Food Organics_225.jpg,food_organics,food_organics,0.9207066297531128,unknown,25.606600000173785
+Food Organics_324.jpg,food_organics,food_organics,0.9977311491966248,food_organics,11.904099999810569
+Food Organics_331.jpg,food_organics,food_organics,0.9920783638954163,food_organics,15.278200000466313
+Food Organics_71.jpg,food_organics,food_organics,0.7134157419204712,unknown,15.711299999566108
+Food Organics_91.jpg,food_organics,food_organics,0.8453055024147034,unknown,17.736499999955413
+Food Organics_203.jpg,food_organics,food_organics,0.9968205690383911,food_organics,17.973899999560672
+Food Organics_164.jpg,food_organics,food_organics,0.9969568252563477,food_organics,7.521700000324927
+Food Organics_126.jpg,food_organics,food_organics,0.8417003750801086,unknown,10.55739999992511
+Food Organics_35.jpg,food_organics,food_organics,0.991885781288147,food_organics,7.889000000432134
+Food Organics_183.jpg,food_organics,food_organics,0.9959335923194885,food_organics,25.20730000014737
+Food Organics_150.jpg,food_organics,food_organics,0.8750301003456116,unknown,20.137800000156858
+Food Organics_94.jpg,food_organics,food_organics,0.9887696504592896,food_organics,15.915899999527028
+Food Organics_173.jpg,food_organics,food_organics,0.9566642642021179,food_organics,19.32340000075783
+Food Organics_168.jpg,food_organics,food_organics,0.9871535897254944,food_organics,18.007700000453042
+Food Organics_199.jpg,food_organics,food_organics,0.9492654204368591,unknown,22.950099999434315
+Food Organics_218.jpg,food_organics,food_organics,0.9395326375961304,unknown,10.377499999776774
+Food Organics_137.jpg,food_organics,food_organics,0.7630763053894043,unknown,7.615600000463019
+Food Organics_217.jpg,food_organics,food_organics,0.9939371347427368,food_organics,14.085900000281981
+Food Organics_274.jpg,food_organics,food_organics,0.9979840517044067,food_organics,17.982499999561696
+Food Organics_120.jpg,food_organics,food_organics,0.9536969661712646,food_organics,40.39250000005268
+Food Organics_112.jpg,food_organics,food_organics,0.8586100339889526,unknown,34.74809999988793
+Food Organics_226.jpg,food_organics,food_organics,0.9654926061630249,food_organics,34.942400000545604
+Food Organics_96.jpg,food_organics,food_organics,0.8189479112625122,unknown,60.403299999961746
+Food Organics_358.jpg,food_organics,food_organics,0.9983038902282715,food_organics,62.91830000009213
+Glass_344.jpg,unknown,plastic,0.8611969947814941,unknown,12.366899999506131
+Glass_307.jpg,unknown,plastic,0.7904951572418213,unknown,23.10970000053203
+Glass_390.jpg,unknown,plastic,0.566052258014679,unknown,22.41279999998369
+Glass_137.jpg,unknown,plastic,0.6805075407028198,unknown,17.868999999336665
+Glass_289.jpg,unknown,plastic,0.9803361296653748,plastic,12.140399999225338
+Glass_183.jpg,unknown,metal,0.8739635348320007,unknown,11.82299999982206
+Glass_203.jpg,unknown,plastic,0.7281919121742249,unknown,10.863999999855878
+Glass_116.jpg,unknown,metal,0.5438064932823181,unknown,20.490899999458634
+Glass_410.jpg,unknown,metal,0.7713946104049683,unknown,11.773299999731535
+Glass_200.jpg,unknown,plastic,0.9221670627593994,unknown,17.121999999289983
+Glass_96.jpg,unknown,plastic,0.9740414023399353,plastic,17.028100000061386
+Glass_371.jpg,unknown,plastic,0.6696102619171143,unknown,21.113299999342416
+Glass_296.jpg,unknown,plastic,0.8072088360786438,unknown,8.759299999837822
+Glass_352.jpg,unknown,plastic,0.981554388999939,plastic,34.0502999997625
+Glass_87.jpg,unknown,metal,0.5773406028747559,unknown,16.544099999919126
+Glass_276.jpg,unknown,plastic,0.6203457117080688,unknown,14.746500000001106
+Glass_237.jpg,unknown,metal,0.8655033111572266,unknown,13.757699999587203
+Glass_162.jpg,unknown,plastic,0.5959331393241882,unknown,7.592599999952654
+Glass_35.jpg,unknown,paper,0.8039498925209045,unknown,20.915200000672485
+Glass_184.jpg,unknown,plastic,0.9886322617530823,plastic,12.775600000168197
+Glass_59.jpg,unknown,plastic,0.8550220131874084,unknown,13.31560000016907
+Glass_15.jpg,unknown,plastic,0.9702640771865845,plastic,14.495200000055775
+Glass_355.jpg,unknown,plastic,0.9742873311042786,plastic,8.140300000377465
+Glass_23.jpg,unknown,paper,0.42764216661453247,unknown,14.047600000594684
+Glass_351.jpg,unknown,plastic,0.7378554344177246,unknown,8.461399999760033
+Glass_167.jpg,unknown,plastic,0.527954638004303,unknown,15.755000000353903
+Glass_255.jpg,unknown,plastic,0.8507068753242493,unknown,7.8808000007484225
+Glass_52.jpg,unknown,food_organics,0.4478329122066498,unknown,16.749299999901268
+Glass_238.jpg,unknown,metal,0.9705934524536133,metal,17.831699999987904
+Glass_190.jpg,unknown,plastic,0.9806481003761292,plastic,9.86170000032871
+Glass_367.jpg,unknown,plastic,0.7448030114173889,unknown,12.282799999411509
+Glass_149.jpg,unknown,plastic,0.8957583904266357,unknown,21.041500000137603
+Glass_364.jpg,unknown,plastic,0.9538220167160034,plastic,21.295900000041
+Glass_282.jpg,unknown,plastic,0.8284755945205688,unknown,17.52329999999347
+Glass_197.jpg,unknown,plastic,0.9540769457817078,plastic,13.906700000006822
+Glass_92.jpg,unknown,plastic,0.7432922720909119,unknown,9.709100000691251
+Glass_14.jpg,unknown,plastic,0.919437050819397,unknown,14.13090000005468
+Glass_411.jpg,unknown,plastic,0.6761955618858337,unknown,14.364300000124786
+Glass_95.jpg,unknown,plastic,0.5672187209129333,unknown,13.421100000414299
+Glass_121.jpg,unknown,cardboard,0.5517070293426514,unknown,17.72140000048239
+Glass_212.jpg,unknown,plastic,0.9272702932357788,unknown,21.619799999825773
+Glass_396.jpg,unknown,food_organics,0.7192224860191345,unknown,14.293199999883655
+Glass_50.jpg,unknown,plastic,0.6520096659660339,unknown,8.201399999961723
+Glass_103.jpg,unknown,plastic,0.7684613466262817,unknown,8.29150000026857
+Glass_164.jpg,unknown,plastic,0.9983546137809753,plastic,10.058500000013737
+Glass_274.jpg,unknown,plastic,0.8287295699119568,unknown,10.958500000015192
+Glass_254.jpg,unknown,plastic,0.7023371458053589,unknown,14.42510000015318
+Glass_417.jpg,unknown,plastic,0.9925746917724609,plastic,11.637299999165407
+Glass_38.jpg,unknown,metal,0.518884539604187,unknown,8.45359999948414
+Glass_343.jpg,unknown,plastic,0.8516353368759155,unknown,10.730099999818776
+Glass_150.jpg,unknown,plastic,0.9869558811187744,plastic,10.233299999526935
+Glass_55.jpg,unknown,plastic,0.8429663777351379,unknown,7.495000000744767
+Glass_165.jpg,unknown,plastic,0.9375474452972412,unknown,11.286899999504385
+Glass_339.jpg,unknown,plastic,0.7924983501434326,unknown,10.120900000401889
+Glass_105.jpg,unknown,metal,0.5398038625717163,unknown,12.617899999895599
+Glass_335.jpg,unknown,plastic,0.9512755870819092,plastic,11.785000000600121
+Glass_112.jpg,unknown,plastic,0.9129132032394409,unknown,40.59739999956946
+Glass_265.jpg,unknown,plastic,0.9784883260726929,plastic,34.896000000117056
+Glass_107.jpg,unknown,paper,0.4918917715549469,unknown,23.851400000239664
+Glass_54.jpg,unknown,food_organics,0.4013576805591583,unknown,21.337400000447815
+Glass_402.jpg,unknown,plastic,0.6403964757919312,unknown,13.97830000041722
+Glass_114.jpg,unknown,plastic,0.6569657921791077,unknown,24.913899999774003
+Glass_222.jpg,unknown,plastic,0.8285010457038879,unknown,48.33059999964462
+Metal_396.jpg,metal,metal,0.7099502682685852,unknown,25.305000000116706
+Metal_16.jpg,metal,metal,0.9943152070045471,metal,14.1671999999744
+Metal_104.jpg,metal,metal,0.9406377077102661,unknown,9.000199999718461
+Metal_38.jpg,metal,metal,0.7991416454315186,unknown,16.44040000064706
+Metal_610.jpg,metal,metal,0.9050944447517395,unknown,8.334900000591006
+Metal_752.jpg,metal,cardboard,0.4575827717781067,unknown,23.908699999992677
+Metal_222.jpg,metal,metal,0.9371773600578308,unknown,10.064000000056694
+Metal_218.jpg,metal,plastic,0.5843065977096558,unknown,13.850299999830895
+Metal_338.jpg,metal,metal,0.9898203611373901,metal,9.929799999554234
+Metal_505.jpg,metal,metal,0.9796237349510193,metal,10.635399999955553
+Metal_561.jpg,metal,food_organics,0.8340332508087158,unknown,12.13480000023992
+Metal_382.jpg,metal,metal,0.9479253888130188,unknown,19.14550000037707
+Metal_424.jpg,metal,plastic,0.6005736589431763,unknown,23.009999999885622
+Metal_721.jpg,metal,metal,0.9666491150856018,metal,18.835500000022876
+Metal_621.jpg,metal,metal,0.9651934504508972,metal,15.544400000180758
+Metal_307.jpg,metal,plastic,0.709010899066925,unknown,19.82970000062778
+Metal_12.jpg,metal,metal,0.8232364058494568,unknown,12.018000000352913
+Metal_81.jpg,metal,metal,0.992657482624054,metal,6.9965000002412125
+Metal_614.jpg,metal,metal,0.7326059937477112,unknown,11.595900000429538
+Metal_96.jpg,metal,metal,0.93637615442276,unknown,11.88670000010461
+Metal_221.jpg,metal,metal,0.8732811808586121,unknown,22.539900000083435
+Metal_164.jpg,metal,metal,0.980369508266449,metal,10.955099999591766
+Metal_468.jpg,metal,metal,0.680544376373291,unknown,8.282499999950232
+Metal_458.jpg,metal,metal,0.9830337166786194,metal,12.43109999995795
+Metal_593.jpg,metal,metal,0.9654141664505005,metal,9.49639999998908
+Metal_584.jpg,metal,metal,0.9390213489532471,unknown,6.545700000060606
+Metal_612.jpg,metal,metal,0.9981239438056946,metal,15.630399999281508
+Metal_540.jpg,metal,metal,0.9695555567741394,metal,12.123899999096466
+Metal_395.jpg,metal,metal,0.7214288711547852,unknown,15.090500000042084
+Metal_321.jpg,metal,plastic,0.32931816577911377,unknown,11.523500000294007
+Metal_283.jpg,metal,metal,0.9830852150917053,metal,6.849000000329397
+Metal_332.jpg,metal,metal,0.9904474020004272,metal,10.268200000609795
+Metal_303.jpg,metal,plastic,0.714057207107544,unknown,6.29919999937556
+Metal_454.jpg,metal,metal,0.6863105297088623,unknown,12.845000000197615
+Metal_490.jpg,metal,metal,0.9877405762672424,metal,17.015299999911804
+Metal_630.jpg,metal,metal,0.9834068417549133,metal,7.576199999675737
+Metal_239.jpg,metal,metal,0.6980293393135071,unknown,13.455100000101083
+Metal_562.jpg,metal,food_organics,0.9854108095169067,food_organics,7.567499999822758
+Metal_585.jpg,metal,metal,0.9483884572982788,unknown,12.860199999522592
+Metal_444.jpg,metal,metal,0.9293997883796692,unknown,13.315000000147847
+Metal_766.jpg,metal,metal,0.9797717928886414,metal,11.22140000006766
+Metal_556.jpg,metal,metal,0.9976521134376526,metal,7.7934999999342836
+Metal_722.jpg,metal,metal,0.9385399222373962,unknown,14.706200000546232
+Metal_175.jpg,metal,metal,0.9652998447418213,metal,17.675900000540423
+Metal_241.jpg,metal,metal,0.9322834014892578,unknown,13.188899999477144
+Metal_425.jpg,metal,plastic,0.4634809195995331,unknown,9.856499999841617
+Metal_725.jpg,metal,metal,0.9856987595558167,metal,14.522399999805202
+Metal_708.jpg,metal,metal,0.706130862236023,unknown,14.34770000014396
+Metal_262.jpg,metal,metal,0.8630300164222717,unknown,9.874100000160979
+Metal_455.jpg,metal,metal,0.9949458241462708,metal,12.42629999978817
+Metal_4.jpg,metal,metal,0.8343455791473389,unknown,13.430999999400228
+Metal_66.jpg,metal,metal,0.9609036445617676,metal,11.590099999921222
+Metal_139.jpg,metal,metal,0.9761348366737366,metal,9.390500000336033
+Metal_767.jpg,metal,metal,0.9955737590789795,metal,15.105299999959243
+Metal_289.jpg,metal,metal,0.5788743495941162,unknown,13.518400000066322
+Metal_776.jpg,metal,metal,0.940773606300354,unknown,15.999100000044564
+Metal_716.jpg,metal,metal,0.7421237230300903,unknown,10.93239999954676
+Metal_456.jpg,metal,metal,0.9807006120681763,metal,28.11649999966903
+Metal_407.jpg,metal,metal,0.9987952709197998,metal,98.28740000011749
+Metal_232.jpg,metal,plastic,0.6535210609436035,unknown,45.772600000418606
+Metal_156.jpg,metal,metal,0.9020660519599915,unknown,28.165599999738333
+Metal_375.jpg,metal,metal,0.9872303605079651,metal,24.90600000055565
+Metal_364.jpg,metal,metal,0.8934873938560486,unknown,28.174599999147176
+Metal_328.jpg,metal,metal,0.9808893799781799,metal,31.227100000251085
+Metal_360.jpg,metal,metal,0.9665170311927795,metal,66.50730000001204
+Metal_225.jpg,metal,metal,0.8495389223098755,unknown,27.17540000048757
+Metal_529.jpg,metal,metal,0.8489354848861694,unknown,32.944900000074995
+Metal_125.jpg,metal,metal,0.9958158135414124,metal,16.276399999696878
+Metal_319.jpg,metal,metal,0.6862853765487671,unknown,17.82999999977619
+Metal_575.jpg,metal,metal,0.7362961173057556,unknown,12.093199999981152
+Metal_172.jpg,metal,metal,0.9926953315734863,metal,13.505500000064785
+Metal_52.jpg,metal,metal,0.8340936303138733,unknown,9.713199999168864
+Metal_781.jpg,metal,metal,0.9678603410720825,metal,13.278100000206905
+Metal_482.jpg,metal,metal,0.9695309996604919,metal,15.59850000012375
+Metal_486.jpg,metal,metal,0.9909281134605408,metal,12.819100000342587
+Metal_293.jpg,metal,metal,0.7523740530014038,unknown,12.223499999890919
+Metal_671.jpg,metal,metal,0.5771738290786743,unknown,16.316100000040024
+Metal_136.jpg,metal,metal,0.9794658422470093,metal,12.392499999805295
+Metal_74.jpg,metal,metal,0.9588064551353455,metal,12.11330000023736
+Metal_764.jpg,metal,metal,0.8635768890380859,unknown,11.035599999559054
+Metal_127.jpg,metal,metal,0.939105749130249,unknown,16.168999999536027
+Metal_371.jpg,metal,metal,0.9858204126358032,metal,14.731299999766634
+Metal_124.jpg,metal,metal,0.9694129824638367,metal,14.847800000097777
+Metal_100.jpg,metal,plastic,0.9617804884910583,plastic,8.483399999931862
+Metal_87.jpg,metal,metal,0.7957018613815308,unknown,10.511399999813875
+Metal_256.jpg,metal,metal,0.6030253767967224,unknown,13.026899999204034
+Metal_43.jpg,metal,metal,0.9975213408470154,metal,25.144999999611173
+Metal_654.jpg,metal,metal,0.8823064565658569,unknown,13.09419999961392
+Metal_624.jpg,metal,metal,0.998059093952179,metal,42.31019999951968
+Metal_727.jpg,metal,metal,0.7933074235916138,unknown,10.186599999542523
+Metal_732.jpg,metal,metal,0.963240921497345,metal,14.953200000491051
+Metal_219.jpg,metal,metal,0.830634593963623,unknown,21.29270000023098
+Metal_95.jpg,metal,metal,0.9509002566337585,metal,19.829500000014377
+Metal_190.jpg,metal,metal,0.927741289138794,unknown,14.556500000253436
+Metal_248.jpg,metal,metal,0.599240243434906,unknown,25.595099999918602
+Metal_31.jpg,metal,plastic,0.5799463987350464,unknown,12.922800000524148
+Metal_504.jpg,metal,metal,0.8335867524147034,unknown,9.163799999441835
+Metal_158.jpg,metal,metal,0.9394227266311646,unknown,18.495700000130455
+Metal_287.jpg,metal,plastic,0.6788021922111511,unknown,12.743100000079721
+Metal_428.jpg,metal,metal,0.9820709824562073,metal,10.175999999773921
+Metal_647.jpg,metal,metal,0.9710801839828491,metal,13.710500000343018
+Metal_641.jpg,metal,metal,0.9637917280197144,metal,13.948900000286812
+Metal_533.jpg,metal,metal,0.8038501739501953,unknown,8.654700000079174
+Metal_403.jpg,metal,paper,0.5645880699157715,unknown,8.167999999386666
+Metal_510.jpg,metal,metal,0.9936030507087708,metal,10.95919999988837
+Metal_640.jpg,metal,metal,0.9846481084823608,metal,34.78280000035738
+Metal_56.jpg,metal,metal,0.9955463409423828,metal,18.31159999983356
+Metal_29.jpg,metal,metal,0.4564303457736969,unknown,29.630200000610785
+Metal_5.jpg,metal,metal,0.9015637636184692,unknown,6.835999999566411
+Metal_207.jpg,metal,metal,0.9504016637802124,metal,46.29289999957109
+Metal_739.jpg,metal,metal,0.9438532590866089,unknown,16.917699999794422
+Metal_760.jpg,metal,plastic,0.507579505443573,unknown,30.16569999999774
+Metal_741.jpg,metal,metal,0.8785474896430969,unknown,20.784399999683956
+Metal_247.jpg,metal,metal,0.6256968379020691,unknown,7.792800000061106
+Metal_419.jpg,metal,metal,0.9887689352035522,metal,12.81239999934769
+Metal_205.jpg,metal,metal,0.9504122138023376,metal,9.718400000565453
+Metal_653.jpg,metal,metal,0.5276592373847961,unknown,9.74580000001879
+Metal_649.jpg,metal,plastic,0.5260146260261536,unknown,12.64530000025843
+Metal_573.jpg,metal,metal,0.9582869410514832,metal,12.579299999742943
+Miscellaneous Trash_161.jpg,unknown,paper,0.5428056716918945,unknown,9.708499999760534
+Miscellaneous Trash_222.jpg,unknown,food_organics,0.9351160526275635,unknown,24.655199999870092
+Miscellaneous Trash_80.jpg,unknown,metal,0.8193954229354858,unknown,28.47719999954279
+Miscellaneous Trash_173.jpg,unknown,paper,0.9290976524353027,unknown,21.257999999761523
+Miscellaneous Trash_307.jpg,unknown,food_organics,0.9784601330757141,food_organics,7.100000000718865
+Miscellaneous Trash_168.jpg,unknown,metal,0.7561973333358765,unknown,12.018100000204868
+Miscellaneous Trash_72.jpg,unknown,metal,0.48096010088920593,unknown,6.395799999154406
+Miscellaneous Trash_232.jpg,unknown,plastic,0.7356366515159607,unknown,14.234899999792106
+Miscellaneous Trash_346.jpg,unknown,plastic,0.8129778504371643,unknown,11.108300000159943
+Miscellaneous Trash_217.jpg,unknown,cardboard,0.33954858779907227,unknown,11.02089999949385
+Miscellaneous Trash_304.jpg,unknown,food_organics,0.7099928855895996,unknown,8.577699999477773
+Miscellaneous Trash_324.jpg,unknown,food_organics,0.9274451732635498,unknown,8.275099999991653
+Miscellaneous Trash_287.jpg,unknown,food_organics,0.9932928085327148,food_organics,12.744300000122166
+Miscellaneous Trash_107.jpg,unknown,paper,0.6491696834564209,unknown,10.802200000398443
+Miscellaneous Trash_90.jpg,unknown,cardboard,0.5212695598602295,unknown,14.774400000533205
+Miscellaneous Trash_470.jpg,unknown,food_organics,0.8214465975761414,unknown,14.674699999886798
+Miscellaneous Trash_159.jpg,unknown,paper,0.4049419164657593,unknown,12.37940000009985
+Miscellaneous Trash_321.jpg,unknown,food_organics,0.9453939199447632,unknown,6.549599999743805
+Miscellaneous Trash_46.jpg,unknown,plastic,0.4893413186073303,unknown,14.300799999546143
+Miscellaneous Trash_150.jpg,unknown,cardboard,0.6940519213676453,unknown,11.979500000052212
+Miscellaneous Trash_160.jpg,unknown,paper,0.5544271469116211,unknown,11.91940000080649
+Miscellaneous Trash_119.jpg,unknown,metal,0.7265963554382324,unknown,11.603499999182532
+Miscellaneous Trash_43.jpg,unknown,metal,0.6865997910499573,unknown,14.158500000121421
+Miscellaneous Trash_200.jpg,unknown,plastic,0.4375353157520294,unknown,9.853700000348908
+Miscellaneous Trash_399.jpg,unknown,food_organics,0.9705341458320618,food_organics,12.68270000036864
+Miscellaneous Trash_461.jpg,unknown,metal,0.4020312428474426,unknown,12.835599999561964
+Miscellaneous Trash_261.jpg,unknown,plastic,0.9055660367012024,unknown,11.774600000535429
+Miscellaneous Trash_416.jpg,unknown,food_organics,0.9617739915847778,food_organics,12.582199999997101
+Miscellaneous Trash_109.jpg,unknown,metal,0.7188685536384583,unknown,16.989599999760685
+Miscellaneous Trash_494.jpg,unknown,food_organics,0.3004382848739624,unknown,8.870099999512604
+Miscellaneous Trash_94.jpg,unknown,metal,0.8897416591644287,unknown,13.670499999534513
+Miscellaneous Trash_36.jpg,unknown,paper,0.6673501133918762,unknown,9.425899999769172
+Miscellaneous Trash_237.jpg,unknown,cardboard,0.3635603189468384,unknown,14.943499999390042
+Miscellaneous Trash_279.jpg,unknown,food_organics,0.47497501969337463,unknown,12.635300000511052
+Miscellaneous Trash_129.jpg,unknown,food_organics,0.5163825154304504,unknown,10.495699999410135
+Miscellaneous Trash_385.jpg,unknown,food_organics,0.855121910572052,unknown,10.513399999581452
+Miscellaneous Trash_391.jpg,unknown,food_organics,0.989349365234375,food_organics,13.891599999624304
+Miscellaneous Trash_84.jpg,unknown,metal,0.47288984060287476,unknown,11.251500000071246
+Miscellaneous Trash_4.jpg,unknown,paper,0.7384809255599976,unknown,11.014300000169897
+Miscellaneous Trash_225.jpg,unknown,food_organics,0.9879133105278015,food_organics,14.614300000175717
+Miscellaneous Trash_77.jpg,unknown,food_organics,0.9062095880508423,unknown,8.53579999966314
+Miscellaneous Trash_210.jpg,unknown,plastic,0.7780709862709045,unknown,13.423700000203098
+Miscellaneous Trash_405.jpg,unknown,paper,0.8122836947441101,unknown,11.126299999887124
+Miscellaneous Trash_59.jpg,unknown,metal,0.6734570264816284,unknown,39.02689999995346
+Miscellaneous Trash_193.jpg,unknown,food_organics,0.6747899651527405,unknown,48.27400000067428
+Miscellaneous Trash_86.jpg,unknown,metal,0.5154146552085876,unknown,30.154299999594514
+Miscellaneous Trash_338.jpg,unknown,food_organics,0.9788611531257629,food_organics,12.892400000055204
+Miscellaneous Trash_12.jpg,unknown,plastic,0.47870582342147827,unknown,10.372800000368443
+Miscellaneous Trash_32.jpg,unknown,food_organics,0.6232863068580627,unknown,19.564700000046287
+Miscellaneous Trash_121.jpg,unknown,metal,0.9914247989654541,metal,20.250499999747262
+Miscellaneous Trash_463.jpg,unknown,plastic,0.7607510685920715,unknown,17.567200000485172
+Miscellaneous Trash_70.jpg,unknown,food_organics,0.622839629650116,unknown,22.37610000065615
+Miscellaneous Trash_97.jpg,unknown,metal,0.9364572763442993,unknown,11.149799999657262
+Miscellaneous Trash_64.jpg,unknown,paper,0.5494396090507507,unknown,9.168200000203797
+Miscellaneous Trash_74.jpg,unknown,metal,0.7600512504577637,unknown,16.40179999958491
+Miscellaneous Trash_162.jpg,unknown,paper,0.692409098148346,unknown,31.597299999702955
+Miscellaneous Trash_169.jpg,unknown,food_organics,0.857936441898346,unknown,12.615900000128022
+Miscellaneous Trash_275.jpg,unknown,metal,0.933933436870575,unknown,7.555700000011711
+Miscellaneous Trash_1.jpg,unknown,cardboard,0.4268761873245239,unknown,10.317100000065693
+Miscellaneous Trash_445.jpg,unknown,food_organics,0.846300482749939,unknown,12.205800000629097
+Miscellaneous Trash_389.jpg,unknown,metal,0.5194414854049683,unknown,7.530400000177906
+Miscellaneous Trash_156.jpg,unknown,metal,0.31252527236938477,unknown,7.660799999939627
+Miscellaneous Trash_183.jpg,unknown,paper,0.33638060092926025,unknown,8.634300000267103
+Miscellaneous Trash_164.jpg,unknown,paper,0.9286099076271057,unknown,14.209999999366119
+Miscellaneous Trash_49.jpg,unknown,paper,0.6079187393188477,unknown,16.62910000050033
+Miscellaneous Trash_380.jpg,unknown,food_organics,0.9705154895782471,food_organics,17.90939999955299
+Miscellaneous Trash_112.jpg,unknown,plastic,0.8619299530982971,unknown,11.592300000302203
+Miscellaneous Trash_469.jpg,unknown,food_organics,0.9610087871551514,food_organics,14.060800000152085
+Miscellaneous Trash_255.jpg,unknown,food_organics,0.8633447289466858,unknown,61.33519999912096
+Miscellaneous Trash_442.jpg,unknown,food_organics,0.7698483467102051,unknown,37.203399999270914
+Miscellaneous Trash_238.jpg,unknown,food_organics,0.41405439376831055,unknown,32.57020000000921
+Miscellaneous Trash_100.jpg,unknown,metal,0.4463473856449127,unknown,47.99350000030245
+Miscellaneous Trash_53.jpg,unknown,metal,0.2722587287425995,unknown,52.50819999946543
+Miscellaneous Trash_273.jpg,unknown,plastic,0.7539207935333252,unknown,51.52280000038445
+Miscellaneous Trash_55.jpg,unknown,metal,0.5192676782608032,unknown,25.28600000005099
+Paper_360.jpg,paper,paper,0.9920437932014465,paper,41.405500000109896
+Paper_384.jpg,paper,paper,0.9946539402008057,paper,76.65099999940139
+Paper_204.jpg,paper,cardboard,0.6292777061462402,unknown,7.799299999533105
+Paper_59.jpg,paper,paper,0.8174701929092407,unknown,20.95610000014858
+Paper_340.jpg,paper,paper,0.8156022429466248,unknown,12.014699999781442
+Paper_401.jpg,paper,paper,0.995071291923523,paper,29.406200000266836
+Paper_170.jpg,paper,cardboard,0.8257808685302734,unknown,14.315200000055484
+Paper_287.jpg,paper,cardboard,0.709852933883667,unknown,10.68669999949634
+Paper_313.jpg,paper,paper,0.606971800327301,unknown,22.14910000020609
+Paper_79.jpg,paper,paper,0.9934145212173462,paper,8.238899999923888
+Paper_222.jpg,paper,cardboard,0.5348082184791565,unknown,15.907099999822094
+Paper_465.jpg,paper,paper,0.997752845287323,paper,21.48140000008425
+Paper_468.jpg,paper,paper,0.9666533470153809,paper,10.744200000772253
+Paper_54.jpg,paper,paper,0.995762050151825,paper,10.022400000707421
+Paper_467.jpg,paper,paper,0.9940211176872253,paper,13.880600000447885
+Paper_232.jpg,paper,paper,0.5949857234954834,unknown,20.74739999989106
+Paper_399.jpg,paper,paper,0.9620034098625183,paper,12.06099999944854
+Paper_451.jpg,paper,paper,0.9486526250839233,unknown,33.92809999968449
+Paper_149.jpg,paper,cardboard,0.6405237913131714,unknown,11.908200000107172
+Paper_72.jpg,paper,paper,0.9967353940010071,paper,12.308999999731896
+Paper_40.jpg,paper,paper,0.9081582427024841,unknown,12.973300000339805
+Paper_282.jpg,paper,paper,0.5836691856384277,unknown,9.777199999916775
+Paper_97.jpg,paper,paper,0.9292585253715515,unknown,8.718800000679039
+Paper_212.jpg,paper,paper,0.8441104888916016,unknown,40.318399999705434
+Paper_200.jpg,paper,cardboard,0.9359267950057983,unknown,37.93789999963337
+Paper_339.jpg,paper,paper,0.9450200200080872,unknown,35.71639999972831
+Paper_398.jpg,paper,paper,0.9990167617797852,paper,33.289300000433286
+Paper_184.jpg,paper,paper,0.38884449005126953,unknown,66.65909999992436
+Paper_169.jpg,paper,cardboard,0.6680721044540405,unknown,24.426300000413903
+Paper_77.jpg,paper,paper,0.9983659386634827,paper,15.335199999753968
+Paper_351.jpg,paper,paper,0.6824536323547363,unknown,9.009499999592663
+Paper_449.jpg,paper,paper,0.9783713817596436,paper,11.893599999893922
+Paper_134.jpg,paper,cardboard,0.6765807867050171,unknown,34.42399999948975
+Paper_274.jpg,paper,paper,0.9930782914161682,paper,9.130500000537722
+Paper_86.jpg,paper,cardboard,0.6133755445480347,unknown,9.634499999265245
+Paper_12.jpg,paper,paper,0.9570066332817078,paper,6.55079999978625
+Paper_263.jpg,paper,paper,0.8505720496177673,unknown,11.819899999863992
+Paper_29.jpg,paper,paper,0.984889030456543,paper,13.972100000501086
+Paper_193.jpg,paper,cardboard,0.6305550932884216,unknown,14.107200000580633
+Paper_496.jpg,paper,paper,0.8171197772026062,unknown,12.641899999835005
+Paper_80.jpg,paper,paper,0.964878261089325,paper,9.762800000316929
+Paper_180.jpg,paper,paper,0.5376554131507874,unknown,5.926200000430981
+Paper_261.jpg,paper,paper,0.8036404252052307,unknown,9.856499999841617
+Paper_95.jpg,paper,paper,0.9884592890739441,paper,11.551599999620521
+Paper_107.jpg,paper,paper,0.9759742617607117,paper,10.2575999999317
+Paper_173.jpg,paper,paper,0.7928106188774109,unknown,7.970300000124553
+Paper_343.jpg,paper,paper,0.998053789138794,paper,11.892500000612927
+Paper_120.jpg,paper,paper,0.7655077576637268,unknown,8.470299999316921
+Paper_373.jpg,paper,paper,0.9846989512443542,paper,11.755399999856309
+Paper_218.jpg,paper,cardboard,0.5025082230567932,unknown,16.83459999912884
+Paper_177.jpg,paper,paper,0.9845550656318665,paper,26.43809999972291
+Paper_15.jpg,paper,paper,0.9888119697570801,paper,11.50820000020758
+Paper_55.jpg,paper,paper,0.9978188276290894,paper,20.902399999613408
+Paper_424.jpg,paper,paper,0.43589600920677185,unknown,35.86090000044351
+Paper_388.jpg,paper,paper,0.8616514801979065,unknown,15.832099999897764
+Paper_140.jpg,paper,paper,0.5261029005050659,unknown,23.162199999205768
+Paper_190.jpg,paper,cardboard,0.4804498255252838,unknown,15.18229999965115
+Paper_445.jpg,paper,paper,0.9840216040611267,paper,38.54200000023411
+Paper_129.jpg,paper,paper,0.9805012941360474,paper,46.519200000147976
+Paper_94.jpg,paper,paper,0.9344725012779236,unknown,45.14699999981531
+Paper_237.jpg,paper,paper,0.9998077750205994,paper,19.739600000320934
+Paper_168.jpg,paper,paper,0.9342690110206604,unknown,57.47289999999339
+Paper_64.jpg,paper,paper,0.9943828582763672,paper,37.321699999665725
+Paper_42.jpg,paper,paper,0.961628794670105,paper,14.185900000484253
+Paper_488.jpg,paper,paper,0.7494564056396484,unknown,18.281100000422157
+Paper_156.jpg,paper,paper,0.9738368391990662,paper,30.425599999944097
+Paper_411.jpg,paper,paper,0.9410578012466431,unknown,30.996899999991
+Paper_312.jpg,paper,paper,0.946552038192749,unknown,19.117300000289106
+Paper_109.jpg,paper,metal,0.7437995672225952,unknown,7.7625000003536115
+Paper_167.jpg,paper,paper,0.9680183529853821,paper,8.805499999652966
+Paper_121.jpg,paper,paper,0.9500651955604553,paper,35.39210000053572
+Paper_255.jpg,paper,paper,0.9212450981140137,unknown,14.513900000565627
+Paper_114.jpg,paper,paper,0.8626482486724854,unknown,15.404300000227522
+Paper_49.jpg,paper,paper,0.7990158796310425,unknown,11.626500000602391
+Paper_390.jpg,paper,paper,0.9930902123451233,paper,13.195100000302773
+Plastic_332.jpg,plastic,metal,0.554162859916687,unknown,11.563800000658375
+Plastic_641.jpg,plastic,plastic,0.9849467277526855,plastic,5.223900000601134
+Plastic_807.jpg,plastic,plastic,0.9869780540466309,plastic,9.763199999724748
+Plastic_906.jpg,plastic,plastic,0.9151114821434021,unknown,6.744600000274659
+Plastic_852.jpg,plastic,plastic,0.9644283056259155,plastic,9.99720000072557
+Plastic_502.jpg,plastic,plastic,0.9430734515190125,unknown,8.00139999955718
+Plastic_307.jpg,plastic,plastic,0.9047568440437317,unknown,7.895499999904132
+Plastic_694.jpg,plastic,plastic,0.9751428961753845,plastic,8.539299999938521
+Plastic_409.jpg,plastic,plastic,0.8945999145507812,unknown,8.335999999872001
+Plastic_883.jpg,plastic,plastic,0.9922323226928711,plastic,7.615199999236211
+Plastic_333.jpg,plastic,plastic,0.9051297903060913,unknown,11.507899999742222
+Plastic_450.jpg,plastic,plastic,0.8528971076011658,unknown,6.568300000253657
+Plastic_725.jpg,plastic,plastic,0.9979971051216125,plastic,9.102099999836355
+Plastic_296.jpg,plastic,plastic,0.9839355945587158,plastic,9.722099999635248
+Plastic_478.jpg,plastic,plastic,0.8007441759109497,unknown,11.39469999998255
+Plastic_915.jpg,plastic,cardboard,0.6018256545066833,unknown,10.822000000189291
+Plastic_634.jpg,plastic,plastic,0.9049328565597534,unknown,9.635800000069139
+Plastic_38.jpg,plastic,plastic,0.6165770888328552,unknown,18.152099999497295
+Plastic_699.jpg,plastic,plastic,0.9730501770973206,plastic,28.940899999724934
+Plastic_441.jpg,plastic,plastic,0.9789755940437317,plastic,28.33920000011858
+Plastic_783.jpg,plastic,plastic,0.8392247557640076,unknown,14.306500000202504
+Plastic_380.jpg,plastic,plastic,0.7614716291427612,unknown,8.626199999525852
+Plastic_916.jpg,plastic,cardboard,0.34834104776382446,unknown,14.26999999966938
+Plastic_715.jpg,plastic,plastic,0.9297253489494324,unknown,7.380399999419751
+Plastic_540.jpg,plastic,plastic,0.9994124174118042,plastic,8.949400000346941
+Plastic_283.jpg,plastic,plastic,0.8722772002220154,unknown,8.077599999523954
+Plastic_882.jpg,plastic,plastic,0.8206081986427307,unknown,9.015699999508797
+Plastic_687.jpg,plastic,plastic,0.8909035325050354,unknown,8.373099999516853
+Plastic_126.jpg,plastic,plastic,0.980158805847168,plastic,31.32240000013553
+Plastic_617.jpg,plastic,plastic,0.8164619207382202,unknown,37.67040000002453
+Plastic_310.jpg,plastic,plastic,0.8815881013870239,unknown,24.36279999983526
+Plastic_88.jpg,plastic,metal,0.516796350479126,unknown,13.303799999448529
+Plastic_744.jpg,plastic,metal,0.5035082697868347,unknown,13.882700000067416
+Plastic_37.jpg,plastic,metal,0.30772969126701355,unknown,16.51499999934458
+Plastic_152.jpg,plastic,plastic,0.8398575186729431,unknown,14.546700000209967
+Plastic_420.jpg,plastic,plastic,0.7476878762245178,unknown,14.314300000478397
+Plastic_324.jpg,plastic,plastic,0.6579925417900085,unknown,9.845700000369106
+Plastic_827.jpg,plastic,plastic,0.7365735173225403,unknown,6.923800000549818
+Plastic_543.jpg,plastic,plastic,0.9633637070655823,plastic,11.389299999791547
+Plastic_496.jpg,plastic,plastic,0.9287193417549133,unknown,11.892200000147568
+Plastic_670.jpg,plastic,plastic,0.9318878054618835,unknown,31.96459999981016
+Plastic_423.jpg,plastic,plastic,0.8052340149879456,unknown,10.296599999492173
+Plastic_517.jpg,plastic,plastic,0.9879491329193115,plastic,16.967300000032992
+Plastic_743.jpg,plastic,plastic,0.969475269317627,plastic,21.108099999764818
+Plastic_837.jpg,plastic,plastic,0.9690709710121155,plastic,19.26590000039141
+Plastic_29.jpg,plastic,metal,0.5319567322731018,unknown,12.298900000132562
+Plastic_763.jpg,plastic,plastic,0.8505136966705322,unknown,11.185500000465254
+Plastic_393.jpg,plastic,plastic,0.7970907688140869,unknown,12.374699999782024
+Plastic_581.jpg,plastic,plastic,0.9977684020996094,plastic,7.0120000000315486
+Plastic_813.jpg,plastic,plastic,0.9969618916511536,plastic,10.389699999905133
+Plastic_789.jpg,plastic,plastic,0.9032469391822815,unknown,10.879699999350123
+Plastic_357.jpg,plastic,plastic,0.9872283935546875,plastic,10.020499999882304
+Plastic_432.jpg,plastic,plastic,0.9941743016242981,plastic,9.75300000027346
+Plastic_177.jpg,plastic,plastic,0.9805155992507935,plastic,12.077800000042771
+Plastic_48.jpg,plastic,plastic,0.9896817803382874,plastic,6.449699999393488
+Plastic_272.jpg,plastic,plastic,0.6118695139884949,unknown,9.853499999735504
+Plastic_483.jpg,plastic,plastic,0.8386378288269043,unknown,7.3454000003039255
+Plastic_718.jpg,plastic,plastic,0.9143521785736084,unknown,14.690599999994447
+Plastic_207.jpg,plastic,plastic,0.7728233337402344,unknown,11.633300000539748
+Plastic_82.jpg,plastic,metal,0.5153231620788574,unknown,10.489800000868854
+Plastic_70.jpg,plastic,plastic,0.6323890089988708,unknown,7.802099999935308
+Plastic_395.jpg,plastic,plastic,0.816989004611969,unknown,6.974899999477202
+Plastic_575.jpg,plastic,plastic,0.9976441264152527,plastic,12.200899999697867
+Plastic_158.jpg,plastic,paper,0.6210789680480957,unknown,9.653000000071188
+Plastic_389.jpg,plastic,food_organics,0.4998369812965393,unknown,10.362899999563524
+Plastic_672.jpg,plastic,plastic,0.9388207793235779,unknown,13.83220000025176
+Plastic_643.jpg,plastic,plastic,0.9845114946365356,plastic,11.777300000176183
+Plastic_865.jpg,plastic,plastic,0.9987082481384277,plastic,17.430200000490004
+Plastic_17.jpg,plastic,plastic,0.9335346817970276,unknown,14.171799999530776
+Plastic_378.jpg,plastic,plastic,0.8257299065589905,unknown,12.306999999964319
+Plastic_415.jpg,plastic,metal,0.7619156837463379,unknown,9.716399999888381
+Plastic_815.jpg,plastic,plastic,0.9780153632164001,plastic,12.38909999938187
+Plastic_475.jpg,plastic,plastic,0.9995228052139282,plastic,11.804799999481475
+Plastic_846.jpg,plastic,paper,0.5265554189682007,unknown,12.823399999433605
+Plastic_134.jpg,plastic,plastic,0.8529994487762451,unknown,11.202099999536586
+Plastic_733.jpg,plastic,plastic,0.9753931164741516,plastic,11.122599999907834
+Plastic_276.jpg,plastic,plastic,0.7370744347572327,unknown,15.21220000086032
+Plastic_159.jpg,plastic,plastic,0.8541516661643982,unknown,12.962400000105845
+Plastic_384.jpg,plastic,plastic,0.9433350563049316,unknown,15.154400000028545
+Plastic_505.jpg,plastic,plastic,0.9974658489227295,plastic,16.342400000212365
+Plastic_463.jpg,plastic,plastic,0.9698447585105896,plastic,10.884500000429398
+Plastic_785.jpg,plastic,plastic,0.9307315349578857,unknown,8.419999999205174
+Plastic_172.jpg,plastic,plastic,0.9187131524085999,unknown,15.34300000002986
+Plastic_612.jpg,plastic,plastic,0.7553704977035522,unknown,35.89130000000296
+Plastic_222.jpg,plastic,plastic,0.9228746891021729,unknown,76.17249999930209
+Plastic_98.jpg,plastic,plastic,0.9517622590065002,plastic,41.47909999937838
+Plastic_651.jpg,plastic,plastic,0.9545827507972717,plastic,11.419099999329774
+Plastic_287.jpg,plastic,plastic,0.6420612335205078,unknown,8.660000000418222
+Plastic_170.jpg,plastic,plastic,0.6777710914611816,unknown,8.84440000027098
+Plastic_470.jpg,plastic,plastic,0.9226388931274414,unknown,14.868800000840565
+Plastic_776.jpg,plastic,metal,0.5815984010696411,unknown,29.36920000047394
+Plastic_196.jpg,plastic,plastic,0.7297337651252747,unknown,24.914999999964493
+Plastic_871.jpg,plastic,plastic,0.9899535775184631,plastic,14.284299999417271
+Plastic_364.jpg,plastic,plastic,0.5033992528915405,unknown,14.563599999746657
+Plastic_467.jpg,plastic,plastic,0.9917861819267273,plastic,21.779500000775442
+Plastic_293.jpg,plastic,plastic,0.6188254356384277,unknown,24.63279999938095
+Plastic_279.jpg,plastic,plastic,0.44259217381477356,unknown,16.14919999974518
+Plastic_256.jpg,plastic,plastic,0.6875689625740051,unknown,16.431399999419227
+Plastic_893.jpg,plastic,plastic,0.8675255179405212,unknown,15.74720000007801
+Plastic_168.jpg,plastic,plastic,0.9922709465026855,plastic,28.67679999963002
+Plastic_656.jpg,plastic,metal,0.7727469205856323,unknown,28.811299999688345
+Plastic_289.jpg,plastic,plastic,0.7268181443214417,unknown,19.44920000005368
+Plastic_577.jpg,plastic,plastic,0.9986968636512756,plastic,18.70610000059969
+Plastic_829.jpg,plastic,plastic,0.8747310042381287,unknown,13.453799999297189
+Plastic_449.jpg,plastic,plastic,0.9663809537887573,plastic,11.24580000032438
+Plastic_584.jpg,plastic,plastic,0.9994396567344666,plastic,14.302399999905901
+Plastic_375.jpg,plastic,plastic,0.710236668586731,unknown,7.0354999998016865
+Plastic_226.jpg,plastic,plastic,0.8787980675697327,unknown,9.021500000017113
+Plastic_291.jpg,plastic,plastic,0.8744634389877319,unknown,11.399900000469643
+Plastic_863.jpg,plastic,plastic,0.9984413981437683,plastic,9.973299999728624
+Plastic_887.jpg,plastic,plastic,0.9890607595443726,plastic,7.326500000090164
+Plastic_303.jpg,plastic,plastic,0.5766751170158386,unknown,5.9104000001752866
+Plastic_374.jpg,plastic,plastic,0.47525450587272644,unknown,11.243500000091444
+Plastic_766.jpg,plastic,plastic,0.6533275842666626,unknown,6.116900000051828
+Plastic_187.jpg,plastic,plastic,0.7603894472122192,unknown,13.904599999477796
+Plastic_777.jpg,plastic,plastic,0.8231305480003357,unknown,16.326099999787402
+Plastic_288.jpg,plastic,metal,0.5156638622283936,unknown,16.641200000776735
+Plastic_442.jpg,plastic,plastic,0.9718234539031982,plastic,12.235899999723188
+Plastic_495.jpg,plastic,plastic,0.9564872980117798,plastic,11.269800000263785
+Plastic_47.jpg,plastic,plastic,0.99846351146698,plastic,12.692900000729423
+Plastic_67.jpg,plastic,plastic,0.842258870601654,unknown,7.845199999792385
+Plastic_407.jpg,plastic,plastic,0.9919015765190125,plastic,8.49740000012389
+Plastic_143.jpg,plastic,metal,0.6076529026031494,unknown,12.53790000009758
+Plastic_290.jpg,plastic,plastic,0.8809237480163574,unknown,9.682500000053551
+Plastic_162.jpg,plastic,plastic,0.6084132194519043,unknown,11.680300000080024
+Plastic_784.jpg,plastic,plastic,0.96533203125,plastic,12.440299999980198
+Plastic_719.jpg,plastic,plastic,0.9286016225814819,unknown,11.044199999560078
+Plastic_127.jpg,plastic,plastic,0.7697594165802002,unknown,15.291099999558355
+Plastic_52.jpg,plastic,plastic,0.7294151186943054,unknown,10.074900000290654
+Plastic_890.jpg,plastic,cardboard,0.5802958607673645,unknown,10.589600000457722
+Plastic_635.jpg,plastic,plastic,0.9918175339698792,plastic,9.269300000596559
+Plastic_878.jpg,plastic,plastic,0.5135873556137085,unknown,9.807700000237674
+Plastic_443.jpg,plastic,plastic,0.9857432246208191,plastic,11.602000000493717
+Plastic_626.jpg,plastic,plastic,0.9482097625732422,unknown,20.112700000026962
+Plastic_781.jpg,plastic,plastic,0.7689200043678284,unknown,7.443200000125216
+Plastic_872.jpg,plastic,plastic,0.9970018267631531,plastic,16.809700000521843
+Plastic_561.jpg,plastic,plastic,0.9581392407417297,plastic,11.458099999799742
+Plastic_810.jpg,plastic,plastic,0.9743084907531738,plastic,14.458099999501428
+Plastic_485.jpg,plastic,plastic,0.9956724643707275,plastic,12.47869999951945
+Textile Trash_239.jpg,unknown,paper,0.3779022991657257,unknown,11.962799999309937
+Textile Trash_23.jpg,unknown,plastic,0.6713064312934875,unknown,19.64250000037282
+Textile Trash_313.jpg,unknown,plastic,0.754892110824585,unknown,19.49620000050345
+Textile Trash_37.jpg,unknown,food_organics,0.8271056413650513,unknown,12.624299999515642
+Textile Trash_38.jpg,unknown,paper,0.9520968198776245,paper,36.54459999961546
+Textile Trash_180.jpg,unknown,metal,0.36770397424697876,unknown,24.546200000258978
+Textile Trash_29.jpg,unknown,plastic,0.5560551881790161,unknown,34.100300000318384
+Textile Trash_68.jpg,unknown,paper,0.3707340359687805,unknown,9.68509999984235
+Textile Trash_165.jpg,unknown,metal,0.46889299154281616,unknown,12.112299999898823
+Textile Trash_315.jpg,unknown,plastic,0.41982343792915344,unknown,12.08889999998064
+Textile Trash_288.jpg,unknown,paper,0.9637868404388428,paper,9.631100000660808
+Textile Trash_212.jpg,unknown,plastic,0.6072300672531128,unknown,13.806500000100641
+Textile Trash_95.jpg,unknown,plastic,0.6430449485778809,unknown,7.5150000002395245
+Textile Trash_107.jpg,unknown,paper,0.9144663214683533,unknown,21.295099999406375
+Textile Trash_103.jpg,unknown,food_organics,0.9765831232070923,food_organics,6.849200000033306
+Textile Trash_79.jpg,unknown,paper,0.8691979050636292,unknown,13.352200000554149
+Textile Trash_247.jpg,unknown,paper,0.8391456604003906,unknown,11.220500000490574
+Textile Trash_277.jpg,unknown,paper,0.5290653705596924,unknown,10.420999999951164
+Textile Trash_14.jpg,unknown,food_organics,0.6104182600975037,unknown,10.217199999715376
+Textile Trash_126.jpg,unknown,paper,0.9461358785629272,unknown,6.019200000082492
+Textile Trash_105.jpg,unknown,paper,0.9699327349662781,paper,9.538399999655667
+Textile Trash_299.jpg,unknown,metal,0.8316720724105835,unknown,6.290399999670626
+Textile Trash_175.jpg,unknown,plastic,0.5588722825050354,unknown,6.652099999882921
+Textile Trash_92.jpg,unknown,plastic,0.4913691580295563,unknown,11.315599999761616
+Textile Trash_15.jpg,unknown,paper,0.9903841018676758,paper,8.609700000306475
+Textile Trash_203.jpg,unknown,metal,0.6869748830795288,unknown,8.026999999856343
+Textile Trash_250.jpg,unknown,paper,0.9648689031600952,paper,7.641800000783405
+Textile Trash_167.jpg,unknown,metal,0.646417498588562,unknown,6.38989999970363
+Textile Trash_101.jpg,unknown,food_organics,0.6246598958969116,unknown,7.84390000080748
+Textile Trash_265.jpg,unknown,metal,0.4225612282752991,unknown,8.280499999273161
+Textile Trash_201.jpg,unknown,metal,0.8762726187705994,unknown,6.221699999514385
+Textile Trash_9.jpg,unknown,paper,0.7436137199401855,unknown,7.1615000006204355
+Textile Trash_97.jpg,unknown,food_organics,0.8558993339538574,unknown,10.660899999493267
+Textile Trash_190.jpg,unknown,paper,0.3617173731327057,unknown,7.06499999978405
+Textile Trash_140.jpg,unknown,paper,0.7205172181129456,unknown,7.791500000166707
+Textile Trash_173.jpg,unknown,plastic,0.7262455224990845,unknown,7.630999999491905
+Textile Trash_169.jpg,unknown,metal,0.3420102596282959,unknown,7.378700000117533
+Textile Trash_266.jpg,unknown,metal,0.7507159113883972,unknown,7.321000000047206
+Textile Trash_63.jpg,unknown,metal,0.5522000789642334,unknown,9.44569999956002
+Textile Trash_81.jpg,unknown,paper,0.7605125904083252,unknown,6.03040000078181
+Textile Trash_267.jpg,unknown,metal,0.7485060691833496,unknown,7.416000000375789
+Textile Trash_41.jpg,unknown,paper,0.5718469619750977,unknown,12.114600000131759
+Textile Trash_129.jpg,unknown,metal,0.7775259613990784,unknown,8.176000000275963
+Textile Trash_312.jpg,unknown,metal,0.7221885919570923,unknown,7.743999999547668
+Textile Trash_309.jpg,unknown,plastic,0.8822634220123291,unknown,8.143399999426038
+Textile Trash_205.jpg,unknown,metal,0.5183847546577454,unknown,9.845900000073016
+Textile Trash_206.jpg,unknown,metal,0.6599254608154297,unknown,6.261999999878753
+Textile Trash_255.jpg,unknown,paper,0.8852724432945251,unknown,6.25080000008893
+Vegetation_116.jpg,unknown,food_organics,0.5055375695228577,unknown,10.977599999932863
+Vegetation_411.jpg,unknown,food_organics,0.9379866719245911,unknown,8.530500000233587
+Vegetation_237.jpg,unknown,food_organics,0.7605079412460327,unknown,10.317399999621557
+Vegetation_423.jpg,unknown,food_organics,0.939246416091919,unknown,5.832400000144844
+Vegetation_74.jpg,unknown,food_organics,0.940938413143158,unknown,7.478000000446627
+Vegetation_351.jpg,unknown,food_organics,0.8201911449432373,unknown,7.755100000395032
+Vegetation_200.jpg,unknown,food_organics,0.9713916778564453,food_organics,7.84509999994043
+Vegetation_45.jpg,unknown,food_organics,0.33556991815567017,unknown,7.786199999827659
+Vegetation_203.jpg,unknown,food_organics,0.8579719662666321,unknown,11.193199999979697
+Vegetation_162.jpg,unknown,food_organics,0.9724438786506653,food_organics,9.322400000201014
+Vegetation_303.jpg,unknown,food_organics,0.95528644323349,food_organics,8.846400000038557
+Vegetation_431.jpg,unknown,food_organics,0.9504758715629578,food_organics,5.759600000601495
+Vegetation_354.jpg,unknown,food_organics,0.825557291507721,unknown,6.244600000172795
+Vegetation_392.jpg,unknown,food_organics,0.8995339870452881,unknown,9.198300000207382
+Vegetation_236.jpg,unknown,food_organics,0.9722195863723755,food_organics,10.024799999882816
+Vegetation_83.jpg,unknown,food_organics,0.7508494257926941,unknown,8.088300000054005
+Vegetation_282.jpg,unknown,food_organics,0.8216363191604614,unknown,17.31649999965157
+Vegetation_32.jpg,unknown,food_organics,0.9276583194732666,unknown,19.41530000021885
+Vegetation_255.jpg,unknown,food_organics,0.9967652559280396,food_organics,6.766000000425265
+Vegetation_222.jpg,unknown,food_organics,0.812583327293396,unknown,42.26290000042354
+Vegetation_165.jpg,unknown,food_organics,0.9889687299728394,food_organics,52.802900000642694
+Vegetation_360.jpg,unknown,food_organics,0.9780664443969727,food_organics,13.815299999805575
+Vegetation_225.jpg,unknown,food_organics,0.9304631352424622,unknown,12.96730000012758
+Vegetation_167.jpg,unknown,food_organics,0.9976752400398254,food_organics,16.85379999980796
+Vegetation_258.jpg,unknown,metal,0.41143566370010376,unknown,16.056200000093668
+Vegetation_129.jpg,unknown,food_organics,0.7975268959999084,unknown,14.24700000006851
+Vegetation_137.jpg,unknown,food_organics,0.45296406745910645,unknown,14.507900000353402
+Vegetation_140.jpg,unknown,plastic,0.42628568410873413,unknown,16.93780000005063
+Vegetation_371.jpg,unknown,food_organics,0.987625777721405,food_organics,20.16910000020289
+Vegetation_62.jpg,unknown,food_organics,0.9820318222045898,food_organics,6.330199999865727
+Vegetation_301.jpg,unknown,food_organics,0.9358256459236145,unknown,11.303700000098615
+Vegetation_31.jpg,unknown,food_organics,0.9736604690551758,food_organics,17.44650000000547
+Vegetation_112.jpg,unknown,metal,0.48463085293769836,unknown,14.084299999922223
+Vegetation_193.jpg,unknown,food_organics,0.9411917924880981,unknown,8.447700000033365
+Vegetation_82.jpg,unknown,food_organics,0.7829445004463196,unknown,9.44340000023658
+Vegetation_250.jpg,unknown,food_organics,0.9775132536888123,food_organics,7.225199999993492
+Vegetation_71.jpg,unknown,food_organics,0.994536817073822,food_organics,12.0612999999139
+Vegetation_168.jpg,unknown,food_organics,0.9772828221321106,food_organics,11.149799999657262
+Vegetation_119.jpg,unknown,food_organics,0.7968509793281555,unknown,5.446500000289234
+Vegetation_126.jpg,unknown,food_organics,0.952085554599762,food_organics,12.300699999286735
+Vegetation_238.jpg,unknown,food_organics,0.8838474750518799,unknown,12.560799999846495
+Vegetation_432.jpg,unknown,food_organics,0.9306358098983765,unknown,6.209299999682116
+Vegetation_92.jpg,unknown,food_organics,0.6614670753479004,unknown,7.5370999993538135
+Vegetation_88.jpg,unknown,food_organics,0.938916027545929,unknown,7.8975000005812035
+Vegetation_358.jpg,unknown,food_organics,0.9607644081115723,food_organics,9.46849999945698
+Vegetation_122.jpg,unknown,food_organics,0.9296046495437622,unknown,12.798600000678562
+Vegetation_69.jpg,unknown,food_organics,0.8641043901443481,unknown,16.724999999496504
+Vegetation_376.jpg,unknown,food_organics,0.8163641095161438,unknown,8.416200000283425
+Vegetation_121.jpg,unknown,food_organics,0.8993421792984009,unknown,12.098999999579974
+Vegetation_218.jpg,unknown,food_organics,0.8880248665809631,unknown,13.850700000148208
+Vegetation_199.jpg,unknown,food_organics,0.9373676180839539,unknown,6.171699999867997
+Vegetation_87.jpg,unknown,food_organics,0.9939310550689697,food_organics,5.821099999593571
+Vegetation_418.jpg,unknown,food_organics,0.973048210144043,food_organics,8.528000000296743
+Vegetation_197.jpg,unknown,food_organics,0.9270912408828735,unknown,8.4911000003558
+Vegetation_212.jpg,unknown,food_organics,0.7561315298080444,unknown,6.1739000002489774
+Vegetation_36.jpg,unknown,food_organics,0.48246392607688904,unknown,8.394200000111596
+Vegetation_407.jpg,unknown,food_organics,0.73643559217453,unknown,11.03640000019368
+Vegetation_76.jpg,unknown,food_organics,0.8433437347412109,unknown,8.294199999909324
+Vegetation_361.jpg,unknown,food_organics,0.9964266419410706,food_organics,9.529500000098778
+Vegetation_324.jpg,unknown,food_organics,0.9941664934158325,food_organics,6.850599999779661
+Vegetation_164.jpg,unknown,food_organics,0.8054035902023315,unknown,10.69270000061806
+Vegetation_95.jpg,unknown,food_organics,0.9366608262062073,unknown,9.077800000341085
+Vegetation_105.jpg,unknown,food_organics,0.9599324464797974,food_organics,6.362000000081025
+Vegetation_44.jpg,unknown,cardboard,0.5959494113922119,unknown,36.16229999988718
+Vegetation_120.jpg,unknown,food_organics,0.9267833232879639,unknown,20.576299999447656
+Vegetation_173.jpg,unknown,food_organics,0.6660146117210388,unknown,48.31259999991744

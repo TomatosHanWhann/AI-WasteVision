@@ -1,0 +1,15 @@
+node_modules/
+dist/
+public/ort/
+.venv/
+__pycache__/
+*.pyc
+.env*
+!.env.example
+ml/data/
+ml/cache/
+ml/checkpoints/
+tmp/
+.impeccable/review/
+.impeccable/mocks/
+*.tar.gz

@@ -1,0 +1,5 @@
+path,label,split,group_id
+images/bottle-A-front.jpg,plastic,train,bottle-A
+images/bottle-A-back.jpg,plastic,train,bottle-A
+images/bottle-B.jpg,plastic,validation,bottle-B
+images/bottle-C.jpg,plastic,test,bottle-C
