@@ -1,0 +1,533 @@
+path,truth,baseline,cnn_archived
+data/realwaste-main/RealWaste/Cardboard/Cardboard_125.jpg,cardboard,plastic,paper
+data/realwaste-main/RealWaste/Cardboard/Cardboard_420.jpg,cardboard,paper,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_86.jpg,cardboard,food_organics,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_103.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_288.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_168.jpg,cardboard,plastic,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_167.jpg,cardboard,paper,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_366.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_69.jpg,cardboard,food_organics,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_303.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_323.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_237.jpg,cardboard,paper,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_261.jpg,cardboard,paper,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_1.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_222.jpg,cardboard,cardboard,paper
+data/realwaste-main/RealWaste/Cardboard/Cardboard_374.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_456.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_258.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_305.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_184.jpg,cardboard,metal,metal
+data/realwaste-main/RealWaste/Cardboard/Cardboard_149.jpg,cardboard,glass,unknown
+data/realwaste-main/RealWaste/Cardboard/Cardboard_367.jpg,cardboard,cardboard,unknown
+data/realwaste-main/RealWaste/Cardboard/Cardboard_433.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_210.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_373.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_254.jpg,cardboard,food_organics,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_199.jpg,cardboard,paper,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_50.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_162.jpg,cardboard,glass,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_240.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_91.jpg,cardboard,paper,paper
+data/realwaste-main/RealWaste/Cardboard/Cardboard_427.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_175.jpg,cardboard,metal,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_425.jpg,cardboard,cardboard,paper
+data/realwaste-main/RealWaste/Cardboard/Cardboard_384.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_164.jpg,cardboard,glass,plastic
+data/realwaste-main/RealWaste/Cardboard/Cardboard_137.jpg,cardboard,plastic,unknown
+data/realwaste-main/RealWaste/Cardboard/Cardboard_421.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_150.jpg,cardboard,food_organics,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_301.jpg,cardboard,glass,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_53.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_115.jpg,cardboard,food_organics,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_391.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_60.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_112.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_113.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_307.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_266.jpg,cardboard,glass,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_438.jpg,cardboard,metal,paper
+data/realwaste-main/RealWaste/Cardboard/Cardboard_204.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_170.jpg,cardboard,metal,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_35.jpg,cardboard,cardboard,metal
+data/realwaste-main/RealWaste/Cardboard/Cardboard_324.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_78.jpg,cardboard,metal,metal
+data/realwaste-main/RealWaste/Cardboard/Cardboard_156.jpg,cardboard,plastic,plastic
+data/realwaste-main/RealWaste/Cardboard/Cardboard_17.jpg,cardboard,glass,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_68.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_370.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_14.jpg,cardboard,metal,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_169.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_31.jpg,cardboard,paper,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_452.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_57.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_445.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_109.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_116.jpg,cardboard,food_organics,paper
+data/realwaste-main/RealWaste/Cardboard/Cardboard_121.jpg,cardboard,food_organics,unknown
+data/realwaste-main/RealWaste/Cardboard/Cardboard_275.jpg,cardboard,metal,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_282.jpg,cardboard,glass,cardboard
+data/realwaste-main/RealWaste/Cardboard/Cardboard_159.jpg,cardboard,cardboard,cardboard
+data/realwaste-main/RealWaste/Food Organics/Food Organics_107.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_322.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_1.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_312.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_80.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_282.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_388.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_153.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_59.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_63.jpg,food_organics,glass,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_149.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_265.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_62.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_222.jpg,food_organics,cardboard,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_190.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_39.jpg,food_organics,food_organics,unknown
+data/realwaste-main/RealWaste/Food Organics/Food Organics_175.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_367.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_17.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_116.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_379.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_4.jpg,food_organics,food_organics,unknown
+data/realwaste-main/RealWaste/Food Organics/Food Organics_255.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_296.jpg,food_organics,metal,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_53.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_314.jpg,food_organics,cardboard,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_407.jpg,food_organics,plastic,unknown
+data/realwaste-main/RealWaste/Food Organics/Food Organics_180.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_15.jpg,food_organics,metal,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_201.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_81.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_351.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_169.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_257.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_307.jpg,food_organics,metal,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_193.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_340.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_184.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_225.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_324.jpg,food_organics,food_organics,unknown
+data/realwaste-main/RealWaste/Food Organics/Food Organics_331.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_71.jpg,food_organics,glass,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_91.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_203.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_164.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_126.jpg,food_organics,paper,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_35.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_183.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_150.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_94.jpg,food_organics,glass,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_173.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_168.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_199.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_218.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_137.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_217.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_274.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_120.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_112.jpg,food_organics,plastic,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_226.jpg,food_organics,food_organics,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_96.jpg,food_organics,paper,food_organics
+data/realwaste-main/RealWaste/Food Organics/Food Organics_358.jpg,food_organics,glass,food_organics
+data/realwaste-main/RealWaste/Glass/Glass_344.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_307.jpg,glass,plastic,glass
+data/realwaste-main/RealWaste/Glass/Glass_390.jpg,glass,food_organics,glass
+data/realwaste-main/RealWaste/Glass/Glass_137.jpg,glass,cardboard,glass
+data/realwaste-main/RealWaste/Glass/Glass_289.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_183.jpg,glass,glass,metal
+data/realwaste-main/RealWaste/Glass/Glass_203.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_116.jpg,glass,plastic,glass
+data/realwaste-main/RealWaste/Glass/Glass_410.jpg,glass,metal,glass
+data/realwaste-main/RealWaste/Glass/Glass_200.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_96.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_371.jpg,glass,metal,glass
+data/realwaste-main/RealWaste/Glass/Glass_296.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_352.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_87.jpg,glass,metal,metal
+data/realwaste-main/RealWaste/Glass/Glass_276.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_237.jpg,glass,cardboard,glass
+data/realwaste-main/RealWaste/Glass/Glass_162.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_35.jpg,glass,food_organics,paper
+data/realwaste-main/RealWaste/Glass/Glass_184.jpg,glass,paper,glass
+data/realwaste-main/RealWaste/Glass/Glass_59.jpg,glass,food_organics,glass
+data/realwaste-main/RealWaste/Glass/Glass_15.jpg,glass,metal,glass
+data/realwaste-main/RealWaste/Glass/Glass_355.jpg,glass,cardboard,glass
+data/realwaste-main/RealWaste/Glass/Glass_23.jpg,glass,paper,unknown
+data/realwaste-main/RealWaste/Glass/Glass_351.jpg,glass,cardboard,glass
+data/realwaste-main/RealWaste/Glass/Glass_167.jpg,glass,food_organics,glass
+data/realwaste-main/RealWaste/Glass/Glass_255.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_52.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_238.jpg,glass,glass,metal
+data/realwaste-main/RealWaste/Glass/Glass_190.jpg,glass,paper,glass
+data/realwaste-main/RealWaste/Glass/Glass_367.jpg,glass,plastic,glass
+data/realwaste-main/RealWaste/Glass/Glass_149.jpg,glass,plastic,glass
+data/realwaste-main/RealWaste/Glass/Glass_364.jpg,glass,glass,plastic
+data/realwaste-main/RealWaste/Glass/Glass_282.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_197.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_92.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_14.jpg,glass,plastic,glass
+data/realwaste-main/RealWaste/Glass/Glass_411.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_95.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_121.jpg,glass,glass,cardboard
+data/realwaste-main/RealWaste/Glass/Glass_212.jpg,glass,plastic,glass
+data/realwaste-main/RealWaste/Glass/Glass_396.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_50.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_103.jpg,glass,glass,plastic
+data/realwaste-main/RealWaste/Glass/Glass_164.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_274.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_254.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_417.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_38.jpg,glass,glass,metal
+data/realwaste-main/RealWaste/Glass/Glass_343.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_150.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_55.jpg,glass,plastic,glass
+data/realwaste-main/RealWaste/Glass/Glass_165.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_339.jpg,glass,glass,plastic
+data/realwaste-main/RealWaste/Glass/Glass_105.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_335.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_112.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_265.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_107.jpg,glass,glass,unknown
+data/realwaste-main/RealWaste/Glass/Glass_54.jpg,glass,paper,unknown
+data/realwaste-main/RealWaste/Glass/Glass_402.jpg,glass,glass,plastic
+data/realwaste-main/RealWaste/Glass/Glass_114.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Glass/Glass_222.jpg,glass,glass,glass
+data/realwaste-main/RealWaste/Metal/Metal_396.jpg,metal,glass,unknown
+data/realwaste-main/RealWaste/Metal/Metal_16.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_104.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_38.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_610.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_752.jpg,metal,metal,cardboard
+data/realwaste-main/RealWaste/Metal/Metal_222.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_218.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_338.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_505.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_561.jpg,metal,metal,food_organics
+data/realwaste-main/RealWaste/Metal/Metal_382.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_424.jpg,metal,metal,glass
+data/realwaste-main/RealWaste/Metal/Metal_721.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_621.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_307.jpg,metal,plastic,plastic
+data/realwaste-main/RealWaste/Metal/Metal_12.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_81.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_614.jpg,metal,plastic,unknown
+data/realwaste-main/RealWaste/Metal/Metal_96.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_221.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_164.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_468.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_458.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_593.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_584.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_612.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_540.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_395.jpg,metal,metal,unknown
+data/realwaste-main/RealWaste/Metal/Metal_321.jpg,metal,plastic,unknown
+data/realwaste-main/RealWaste/Metal/Metal_283.jpg,metal,cardboard,metal
+data/realwaste-main/RealWaste/Metal/Metal_332.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_303.jpg,metal,paper,cardboard
+data/realwaste-main/RealWaste/Metal/Metal_454.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_490.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_630.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_239.jpg,metal,glass,metal
+data/realwaste-main/RealWaste/Metal/Metal_562.jpg,metal,metal,food_organics
+data/realwaste-main/RealWaste/Metal/Metal_585.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_444.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_766.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_556.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_722.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_175.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_241.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_425.jpg,metal,paper,metal
+data/realwaste-main/RealWaste/Metal/Metal_725.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_708.jpg,metal,metal,unknown
+data/realwaste-main/RealWaste/Metal/Metal_262.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_455.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_4.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_66.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_139.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_767.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_289.jpg,metal,plastic,glass
+data/realwaste-main/RealWaste/Metal/Metal_776.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_716.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_456.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_407.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_232.jpg,metal,glass,plastic
+data/realwaste-main/RealWaste/Metal/Metal_156.jpg,metal,glass,metal
+data/realwaste-main/RealWaste/Metal/Metal_375.jpg,metal,paper,metal
+data/realwaste-main/RealWaste/Metal/Metal_364.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_328.jpg,metal,glass,metal
+data/realwaste-main/RealWaste/Metal/Metal_360.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_225.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_529.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_125.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_319.jpg,metal,cardboard,metal
+data/realwaste-main/RealWaste/Metal/Metal_575.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_172.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_52.jpg,metal,food_organics,metal
+data/realwaste-main/RealWaste/Metal/Metal_781.jpg,metal,glass,metal
+data/realwaste-main/RealWaste/Metal/Metal_482.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_486.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_293.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_671.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_136.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_74.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_764.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_127.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_371.jpg,metal,paper,metal
+data/realwaste-main/RealWaste/Metal/Metal_124.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_100.jpg,metal,metal,plastic
+data/realwaste-main/RealWaste/Metal/Metal_87.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_256.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_43.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_654.jpg,metal,cardboard,metal
+data/realwaste-main/RealWaste/Metal/Metal_624.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_727.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_732.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_219.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_95.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_190.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_248.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_31.jpg,metal,glass,metal
+data/realwaste-main/RealWaste/Metal/Metal_504.jpg,metal,food_organics,metal
+data/realwaste-main/RealWaste/Metal/Metal_158.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_287.jpg,metal,metal,plastic
+data/realwaste-main/RealWaste/Metal/Metal_428.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_647.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_641.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_533.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_403.jpg,metal,metal,paper
+data/realwaste-main/RealWaste/Metal/Metal_510.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_640.jpg,metal,paper,metal
+data/realwaste-main/RealWaste/Metal/Metal_56.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_29.jpg,metal,metal,unknown
+data/realwaste-main/RealWaste/Metal/Metal_5.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_207.jpg,metal,glass,metal
+data/realwaste-main/RealWaste/Metal/Metal_739.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_760.jpg,metal,metal,unknown
+data/realwaste-main/RealWaste/Metal/Metal_741.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_247.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_419.jpg,metal,metal,metal
+data/realwaste-main/RealWaste/Metal/Metal_205.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Metal/Metal_653.jpg,metal,paper,unknown
+data/realwaste-main/RealWaste/Metal/Metal_649.jpg,metal,paper,metal
+data/realwaste-main/RealWaste/Metal/Metal_573.jpg,metal,plastic,metal
+data/realwaste-main/RealWaste/Paper/Paper_360.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_384.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_204.jpg,paper,glass,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_59.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_340.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_401.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_170.jpg,paper,cardboard,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_287.jpg,paper,paper,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_313.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_79.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_222.jpg,paper,paper,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_465.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_468.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_54.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_467.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_232.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_399.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_451.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_149.jpg,paper,paper,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_72.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_40.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_282.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_97.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_212.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_200.jpg,paper,cardboard,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_339.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_398.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_184.jpg,paper,glass,paper
+data/realwaste-main/RealWaste/Paper/Paper_169.jpg,paper,paper,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_77.jpg,paper,plastic,paper
+data/realwaste-main/RealWaste/Paper/Paper_351.jpg,paper,cardboard,paper
+data/realwaste-main/RealWaste/Paper/Paper_449.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_134.jpg,paper,paper,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_274.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_86.jpg,paper,paper,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_12.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_263.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_29.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_193.jpg,paper,cardboard,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_496.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_80.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_180.jpg,paper,glass,paper
+data/realwaste-main/RealWaste/Paper/Paper_261.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_95.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_107.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_173.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_343.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_120.jpg,paper,plastic,paper
+data/realwaste-main/RealWaste/Paper/Paper_373.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_218.jpg,paper,paper,cardboard
+data/realwaste-main/RealWaste/Paper/Paper_177.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_15.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_55.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_424.jpg,paper,food_organics,paper
+data/realwaste-main/RealWaste/Paper/Paper_388.jpg,paper,cardboard,paper
+data/realwaste-main/RealWaste/Paper/Paper_140.jpg,paper,cardboard,paper
+data/realwaste-main/RealWaste/Paper/Paper_190.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_445.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_129.jpg,paper,plastic,paper
+data/realwaste-main/RealWaste/Paper/Paper_94.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_237.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_168.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_64.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_42.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_488.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_156.jpg,paper,plastic,paper
+data/realwaste-main/RealWaste/Paper/Paper_411.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_312.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_109.jpg,paper,glass,metal
+data/realwaste-main/RealWaste/Paper/Paper_167.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_121.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_255.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_114.jpg,paper,metal,paper
+data/realwaste-main/RealWaste/Paper/Paper_49.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Paper/Paper_390.jpg,paper,paper,paper
+data/realwaste-main/RealWaste/Plastic/Plastic_332.jpg,plastic,metal,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_641.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_807.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_906.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_852.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_502.jpg,plastic,plastic,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_307.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_694.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_409.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_883.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_333.jpg,plastic,plastic,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_450.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_725.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_296.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_478.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_915.jpg,plastic,plastic,cardboard
+data/realwaste-main/RealWaste/Plastic/Plastic_634.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_38.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_699.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_441.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_783.jpg,plastic,glass,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_380.jpg,plastic,metal,unknown
+data/realwaste-main/RealWaste/Plastic/Plastic_916.jpg,plastic,plastic,cardboard
+data/realwaste-main/RealWaste/Plastic/Plastic_715.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_540.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_283.jpg,plastic,glass,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_882.jpg,plastic,paper,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_687.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_126.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_617.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_310.jpg,plastic,cardboard,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_88.jpg,plastic,plastic,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_744.jpg,plastic,glass,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_37.jpg,plastic,metal,unknown
+data/realwaste-main/RealWaste/Plastic/Plastic_152.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_420.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_324.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_827.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_543.jpg,plastic,plastic,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_496.jpg,plastic,glass,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_670.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_423.jpg,plastic,paper,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_517.jpg,plastic,glass,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_743.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_837.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_29.jpg,plastic,plastic,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_763.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_393.jpg,plastic,paper,unknown
+data/realwaste-main/RealWaste/Plastic/Plastic_581.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_813.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_789.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_357.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_432.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_177.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_48.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_272.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_483.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_718.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_207.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_82.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_70.jpg,plastic,paper,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_395.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_575.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_158.jpg,plastic,food_organics,paper
+data/realwaste-main/RealWaste/Plastic/Plastic_389.jpg,plastic,food_organics,food_organics
+data/realwaste-main/RealWaste/Plastic/Plastic_672.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_643.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_865.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_17.jpg,plastic,glass,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_378.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_415.jpg,plastic,plastic,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_815.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_475.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_846.jpg,plastic,plastic,paper
+data/realwaste-main/RealWaste/Plastic/Plastic_134.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_733.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_276.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_159.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_384.jpg,plastic,glass,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_505.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_463.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_785.jpg,plastic,plastic,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_172.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_612.jpg,plastic,paper,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_222.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_98.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_651.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_287.jpg,plastic,paper,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_170.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_470.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_776.jpg,plastic,glass,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_196.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_871.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_364.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_467.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_293.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_279.jpg,plastic,cardboard,unknown
+data/realwaste-main/RealWaste/Plastic/Plastic_256.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_893.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_168.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_656.jpg,plastic,plastic,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_289.jpg,plastic,glass,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_577.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_829.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_449.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_584.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_375.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_226.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_291.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_863.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_887.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_303.jpg,plastic,metal,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_374.jpg,plastic,paper,unknown
+data/realwaste-main/RealWaste/Plastic/Plastic_766.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_187.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_777.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_288.jpg,plastic,glass,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_442.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_495.jpg,plastic,glass,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_47.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_67.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_407.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_143.jpg,plastic,metal,metal
+data/realwaste-main/RealWaste/Plastic/Plastic_290.jpg,plastic,metal,glass
+data/realwaste-main/RealWaste/Plastic/Plastic_162.jpg,plastic,metal,unknown
+data/realwaste-main/RealWaste/Plastic/Plastic_784.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_719.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_127.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_52.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_890.jpg,plastic,metal,cardboard
+data/realwaste-main/RealWaste/Plastic/Plastic_635.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_878.jpg,plastic,food_organics,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_443.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_626.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_781.jpg,plastic,metal,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_872.jpg,plastic,cardboard,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_561.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_810.jpg,plastic,plastic,plastic
+data/realwaste-main/RealWaste/Plastic/Plastic_485.jpg,plastic,plastic,plastic
+../public/examples/thai-8850999320007.jpg,plastic,food_organics,glass
+../public/examples/thai-8851123240291.jpg,glass,metal,plastic
+../public/examples/thai-8851123222600.jpg,metal,cardboard,metal
+../public/examples/thai-8851123222457.jpg,metal,food_organics,plastic

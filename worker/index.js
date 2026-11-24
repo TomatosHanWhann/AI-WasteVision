@@ -1,3 +1,4 @@
+import { retrieveAdvice } from "../src/knowledge.js";
 import model from "../public/model/metadata.json" with { type: "json" };
 import detector from "../public/model/detector-metadata.json" with { type: "json" };
 import { feedbackApi } from "./feedback.js";
@@ -129,6 +130,14 @@ export async function api(request, env) {
         "มีรายการต่อเนื่องจำนวนมาก กรุณารอหนึ่งนาทีแล้วลองใหม่",
         429,
       );
+    if (url.pathname === "/api/advice" && request.method === "POST") {
+      const data = await input(request, 3000);
+      try {
+        return json(retrieveAdvice(data?.question));
+      } catch (error) {
+        throw new ApiError(error.message);
+      }
+    }
     const feedbackResponse = await feedbackApi(request, env, {
       json,
       input,

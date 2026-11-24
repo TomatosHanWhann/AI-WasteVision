@@ -19,3 +19,5 @@ jobs:
           python-version: '3.13'
       - run: python -m pip install onnx==1.23.2
       - run: python ml/check_model.py
+      - run: python ml/test_field_manifest.py
+      - run: npm run evaluate:retrieval

@@ -1,0 +1,4 @@
+path,label,split,physical_item_id,session_id,consent,license,group_id
+images/item-001.jpg,plastic,train,item-001,session-001,yes,team-owned,item-001
+images/item-002.jpg,plastic,validation,item-002,session-002,yes,team-owned,item-002
+images/item-003.jpg,plastic,test,item-003,session-003,yes,team-owned,item-003

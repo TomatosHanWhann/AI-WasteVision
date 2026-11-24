@@ -2149,3 +2149,41 @@ dialog > p {
     transition: none !important;
   }
 }
+
+.advice-panel {
+  margin-top: 2rem;
+  padding: clamp(20px, 4vw, 32px);
+  background: var(--paper, #fffdf8);
+  border: 1px solid #d9d2c4;
+  border-radius: 14px;
+  max-width: 780px;
+}
+.advice-panel textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  font: inherit;
+  font-size: 1rem;
+  padding: 12px;
+  margin-top: 8px;
+  background: #fffdf8;
+  color: #292b24;
+  border: 1px solid #68695c;
+  border-radius: 8px;
+}
+.advice-panel textarea:focus-visible {
+  outline: 2px solid #45533b;
+  outline-offset: 3px;
+}
+.advice-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.advice-examples button {
+  min-height: 44px;
+}
+#advice-answer {
+  overflow-wrap: anywhere;
+}

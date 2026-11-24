@@ -1,0 +1,196 @@
+{
+  "experiment": "ce564-hog-colour-svm-v1",
+  "seed": 42,
+  "task": "six-known-class-classification-before-rejection",
+  "manifest_sha256": "c73192975efbb3186110addc9eb0893a36ae82dcff019f455dcf1caf153a95dc",
+  "physical_item_holdout_verified": false,
+  "labels": [
+    "plastic",
+    "metal",
+    "paper",
+    "cardboard",
+    "food_organics",
+    "glass"
+  ],
+  "confusion_matrix_labels": [
+    "plastic",
+    "metal",
+    "paper",
+    "cardboard",
+    "food_organics",
+    "glass",
+    "unknown"
+  ],
+  "split_counts": {
+    "train": 2522,
+    "validation": 529,
+    "test": 532
+  },
+  "selection": "validation macro F1; test never used to select C",
+  "trials": [
+    {
+      "C": 0.01,
+      "validation_macro_f1": 0.5604934961405843,
+      "iterations": 238
+    },
+    {
+      "C": 0.1,
+      "validation_macro_f1": 0.5264967601098768,
+      "iterations": 1030
+    },
+    {
+      "C": 1.0,
+      "validation_macro_f1": 0.5183740798093475,
+      "iterations": 1576
+    }
+  ],
+  "selected_C": 0.01,
+  "baseline": {
+    "images": 532,
+    "accuracy": 0.6015037593984962,
+    "macro_f1": 0.6032997533684074,
+    "confusion_matrix": [
+      [
+        80,
+        24,
+        7,
+        3,
+        15,
+        11,
+        0
+      ],
+      [
+        26,
+        73,
+        7,
+        4,
+        3,
+        8,
+        0
+      ],
+      [
+        4,
+        11,
+        49,
+        6,
+        1,
+        4,
+        0
+      ],
+      [
+        4,
+        7,
+        7,
+        38,
+        7,
+        7,
+        0
+      ],
+      [
+        11,
+        3,
+        2,
+        2,
+        40,
+        4,
+        0
+      ],
+      [
+        7,
+        5,
+        4,
+        4,
+        4,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "cnn_archived_same_images": {
+    "images": 532,
+    "accuracy": 0.8214285714285714,
+    "macro_f1": 0.8423286017628303,
+    "confusion_matrix": [
+      [
+        110,
+        9,
+        2,
+        3,
+        1,
+        9,
+        6
+      ],
+      [
+        5,
+        101,
+        1,
+        2,
+        2,
+        2,
+        8
+      ],
+      [
+        0,
+        1,
+        63,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        6,
+        55,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        58,
+        0,
+        4
+      ],
+      [
+        5,
+        4,
+        1,
+        1,
+        0,
+        50,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "baseline_batch_prediction_ms_per_image_excludes_features": 0.0130187969959404,
+  "elapsed_seconds": 46.835059699980775,
+  "limitations": [
+    "Existing public and product images, not new Thai used-object field data.",
+    "Baseline excludes unknown training samples; deployed CNN was trained with unknown and extra Thai weights. This is a practical system comparison, not an architecture-only ablation.",
+    "CNN predictions are archived from v2, not retrained or timed in this run.",
+    "No inference latency comparison: feature extraction and device differences matter."
+  ]
+}

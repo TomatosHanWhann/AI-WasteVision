@@ -1,3 +1,4 @@
+import { initAdvice } from "./advice-ui.js";
 import "@fontsource/noto-sans-thai/400.css";
 import "@fontsource/noto-sans-thai/500.css";
 import "@fontsource/noto-sans-thai/600.css";
@@ -700,6 +701,7 @@ $("copy-url").onclick = async () => {
     $("copy-status").textContent = "กรุณาคัดลอกข้อความลิงก์ที่เลือกไว้";
   }
 };
+initAdvice();
 route();
 void initExamples();
 void readMetadata();

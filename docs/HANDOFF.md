@@ -9,3 +9,8 @@
 Production secretอยู่ในSitesเท่านั้น GitHub collaboratorไม่ได้สิทธิ์ฐานข้อมูลหรือpublishโดยอัตโนมัติ ห้ามเปลี่ยนPHONE_HASH_SECRETโดยไม่มีแผนย้ายข้อมูล ไม่ลบหรือแก้migrationที่applyแล้ว ไม่เพิ่มseedแต้มในproduction
 
 สถานะการตรวจUIรอบนี้อยู่USER_JOURNEY_QA.md มีข้อจำกัดComputer Useช่วงupload จึงยังไม่เรียกว่าQAทุกฟังก์ชันผ่านครบวงจร ต้องตรวจกล้อง/อัปโหลด/แต้ม/feedbackบนอุปกรณ์จริงต่อ
+
+
+## อัปเดต CE564
+
+อ่านส่วนอัปเดต 24 พฤศจิกายนใน README พร้อม docs/SLIDES_READY.md, COURSE_ALIGNMENT.md, EXPERIMENTS.md, KNOWLEDGE_ASSISTANT.md และ AI_USAGE_DISCLOSURE.md มีการค้น TF-IDF ใช้จริง แต่ LLM local/API เป็นเครื่องมือทดลองที่ยังต้องตั้งค่า ไม่มีการเปลี่ยน weights production

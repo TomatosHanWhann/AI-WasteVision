@@ -1,0 +1,223 @@
+{
+  "corpus_version": "thai-waste-guide-v1",
+  "cases": 24,
+  "answerable_cases": 18,
+  "unanswerable_cases": 6,
+  "hit_at_1": 1,
+  "hit_at_3": 1,
+  "abstention_accuracy": 1,
+  "false_abstention_rate": 0,
+  "retrieval_p95_ms": 0.6356999999999999,
+  "limitations": [
+    "Small developer-authored regression set, not independent field evaluation.",
+    "Retrieval hit is not answer correctness, LLM accuracy, safety validation or user satisfaction.",
+    "Threshold and vocabulary were designed for this curated corpus; no claim of unseen-question generalisation."
+  ],
+  "results": [
+    {
+      "question": "กล่องนมต้องล้างก่อนทิ้งไหม",
+      "expected": "carton",
+      "returned": [
+        "carton",
+        "plastic"
+      ],
+      "abstained": false,
+      "latency_ms": 0.8704000000000036
+    },
+    {
+      "question": "กล่องน้ำผลไม้ควรพับหรือไม่",
+      "expected": "carton",
+      "returned": [
+        "carton"
+      ],
+      "abstained": false,
+      "latency_ms": 0.3888999999999996
+    },
+    {
+      "question": "กล่องยูเอชทีจัดเป็นอะไร",
+      "expected": "carton",
+      "returned": [
+        "carton"
+      ],
+      "abstained": false,
+      "latency_ms": 0.2378
+    },
+    {
+      "question": "ขวดพลาสติกใสต้องทำอย่างไร",
+      "expected": "plastic",
+      "returned": [
+        "plastic"
+      ],
+      "abstained": false,
+      "latency_ms": 0.1401000000000039
+    },
+    {
+      "question": "ขวดน้ำยังมีน้ำเหลือทำอย่างไร",
+      "expected": "plastic",
+      "returned": [
+        "plastic"
+      ],
+      "abstained": false,
+      "latency_ms": 0.11580000000000013
+    },
+    {
+      "question": "กระดาษลังเปียกทิ้งได้ไหม",
+      "expected": "paper",
+      "returned": [
+        "paper"
+      ],
+      "abstained": false,
+      "latency_ms": 0.11540000000000106
+    },
+    {
+      "question": "กล่องพัสดุควรคัดแยกอย่างไร",
+      "expected": "paper",
+      "returned": [
+        "paper"
+      ],
+      "abstained": false,
+      "latency_ms": 0.6356999999999999
+    },
+    {
+      "question": "โทรศัพท์เก่าต้องลบข้อมูลไหม",
+      "expected": "electronics",
+      "returned": [
+        "electronics"
+      ],
+      "abstained": false,
+      "latency_ms": 0.2563999999999993
+    },
+    {
+      "question": "คอมพิวเตอร์เก่าทิ้งรวมได้ไหม",
+      "expected": "electronics",
+      "returned": [
+        "electronics"
+      ],
+      "abstained": false,
+      "latency_ms": 0.33030000000000115
+    },
+    {
+      "question": "แบตเตอรี่บวมควรจัดการอย่างไร",
+      "expected": "battery",
+      "returned": [
+        "battery"
+      ],
+      "abstained": false,
+      "latency_ms": 0.3293999999999997
+    },
+    {
+      "question": "ถ่านไฟฉายใช้แล้วทิ้งที่ไหน",
+      "expected": "battery",
+      "returned": [
+        "battery"
+      ],
+      "abstained": false,
+      "latency_ms": 0.20219999999999771
+    },
+    {
+      "question": "พาวเวอร์แบงค์เก่าทิ้งอย่างไร",
+      "expected": "battery",
+      "returned": [
+        "battery"
+      ],
+      "abstained": false,
+      "latency_ms": 0.17859999999999587
+    },
+    {
+      "question": "หลอดฟลูออเรสเซนต์ทิ้งรวมได้ไหม",
+      "expected": "bulb",
+      "returned": [
+        "bulb"
+      ],
+      "abstained": false,
+      "latency_ms": 0.2039000000000044
+    },
+    {
+      "question": "กระป๋องสเปรย์เป็นขยะอะไร",
+      "expected": "bulb",
+      "returned": [
+        "bulb"
+      ],
+      "abstained": false,
+      "latency_ms": 0.1629999999999967
+    },
+    {
+      "question": "เศษอาหารต้องแยกบรรจุภัณฑ์ไหม",
+      "expected": "food",
+      "returned": [
+        "food"
+      ],
+      "abstained": false,
+      "latency_ms": 0.19890000000000185
+    },
+    {
+      "question": "เปลือกผลไม้จัดการอย่างไร",
+      "expected": "food",
+      "returned": [
+        "food"
+      ],
+      "abstained": false,
+      "latency_ms": 0.18719999999999715
+    },
+    {
+      "question": "สีถังขยะเหมือนกันทุกพื้นที่ไหม",
+      "expected": "bins",
+      "returned": [
+        "bins"
+      ],
+      "abstained": false,
+      "latency_ms": 0.1740999999999957
+    },
+    {
+      "question": "ถังสีเหลืองรับวัสดุอะไร",
+      "expected": "bins",
+      "returned": [
+        "bins"
+      ],
+      "abstained": false,
+      "latency_ms": 0.49980000000000047
+    },
+    {
+      "question": "เมืองหลวงของฝรั่งเศสคืออะไร",
+      "expected": null,
+      "returned": [],
+      "abstained": true,
+      "latency_ms": 0.11619999999999919
+    },
+    {
+      "question": "แก้วเซรามิกมีจุดรับที่ไหน",
+      "expected": null,
+      "returned": [],
+      "abstained": true,
+      "latency_ms": 0.11870000000000402
+    },
+    {
+      "question": "ขอพิกัดจุดรับใกล้ฉัน",
+      "expected": null,
+      "returned": [],
+      "abstained": true,
+      "latency_ms": 0.09789999999999566
+    },
+    {
+      "question": "ราคาทองวันนี้เท่าไหร่",
+      "expected": null,
+      "returned": [],
+      "abstained": true,
+      "latency_ms": 0.07449999999999335
+    },
+    {
+      "question": "ยาหมดอายุควรทิ้งที่ไหน",
+      "expected": null,
+      "returned": [],
+      "abstained": true,
+      "latency_ms": 0.08940000000000481
+    },
+    {
+      "question": "วัสดุชนิดนี้มีสารเคมีอะไรแน่นอน",
+      "expected": null,
+      "returned": [],
+      "abstained": true,
+      "latency_ms": 0.12839999999999918
+    }
+  ]
+}

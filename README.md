@@ -14,6 +14,35 @@
 
 รอบดีไซน์นี้ไม่ได้ฝึกหรือปรับเกณฑ์โมเดลเพื่อทำให้ตัวเลขดูดีขึ้น ดู [ผลตรวจตามลำดับผู้ใช้](docs/USER_JOURNEY_QA.md) สำหรับสิ่งที่ทดสอบผ่านจริงและส่วนที่เครื่องมือยังตรวจไม่ได้ ไม่ควรกล่าวว่าทดสอบกล้องมือถือหรือทุกฟังก์ชันผ่าน end-to-end แล้ว
 
+## อัปเดตเพื่อเชื่อมกับวิชา CE564 · 24 พฤศจิกายน 2026
+
+รอบนี้เพิ่มหลักฐานการทดลองและส่วนภาษาให้โครงงาน ไม่ได้เปลี่ยนโมเดลภาพ production หรืออ้างว่าความแม่นยำดีขึ้นแล้ว
+
+| ส่วนที่เพิ่ม | สถานะและหลักฐาน |
+| --- | --- |
+| ค้นคำแนะนำภาษาไทย | ใช้งานได้ในหน้า **วิธีใช้งาน → ค้นคำแนะนำการคัดแยก** ใช้ TF-IDF จากบันทึก 8 หัวข้อ แสดงแหล่งอ้างอิง ไม่ส่งหรือบันทึกคำถามจากหน้าเว็บ |
+| Baseline ML เทียบ CNN | HOG + colour histogram + Linear SVM ได้ accuracy60.15% เทียบ CNN เดิม82.14% บน test532ภาพเดียวกัน เลือก C จาก validation ดู [รายงานการทดลอง](docs/EXPERIMENTS.md) |
+| ชุดประเมินการค้นคืน | 24 คำถามที่ผู้พัฒนาสร้าง: ตรงอันดับแรก18/18 และปฏิเสธนอกขอบเขต6/6 ผลใน `ml/results/retrieval-evaluation.json` ไม่ใช่ independent holdout หรือความถูกต้องของ LLM |
+| ตรวจข้อมูลไทยก่อนฝึก | validator ตรวจ physical item/session/SHA256 ข้าม split พร้อม consent/สิทธิ์ข้อมูล มี template ให้ทีมเก็บจริง ยังไม่มีภาพภาคสนามไทยรอบใหม่ |
+| ทางเชื่อม LLM local/API | CLI เปรียบเทียบ Ollama/OpenRouter พร้อม prompt, token usage และแบบตรวจโดยคน ยังไม่ได้รันกับบริการจริงและยังไม่เปิด LLM บนเว็บ |
+| เอกสารสำหรับรายวิชา | CLO mapping, เปิดเผยการใช้ AI และโครงสไลด์พร้อมแหล่งตัวเลข |
+
+**สำหรับเพื่อนที่จะทำสไลด์:** เริ่มจาก [SLIDES_READY.md](docs/SLIDES_READY.md) แล้วอ่าน [COURSE_ALIGNMENT.md](docs/COURSE_ALIGNMENT.md), [EXPERIMENTS.md](docs/EXPERIMENTS.md), [KNOWLEDGE_ASSISTANT.md](docs/KNOWLEDGE_ASSISTANT.md) และ [AI_USAGE_DISCLOSURE.md](docs/AI_USAGE_DISCLOSURE.md)
+
+คำที่ใช้ในสไลด์: “ค้นคืนคำแนะนำภาษาไทยพร้อมแหล่งอ้างอิง และเตรียมต่อยอดเป็น RAG ที่ใช้ LLM” ไม่ใช้ “มี LLM/RAG สร้างคำตอบบนเว็บแล้ว” และไม่ใช้คะแนน retrieval แทนความแม่นยำโมเดลภาพ
+
+คำสั่งทำซ้ำ:
+
+```sh
+npm test
+python ml/test_field_manifest.py
+npm run evaluate:retrieval
+# ใช้ Python environment และข้อมูลภาพตามส่วนโมเดลด้านล่าง
+python ml/benchmark_baseline.py
+```
+
+ผลทดสอบรอบนี้: JavaScript/API 26 กรณี และ field manifest validator 6 กรณีผ่าน production build ผ่าน รายการ UI/กล้อง/อุปกรณ์จริงที่ยังไม่ครบในรอบก่อนยังไม่ถือว่าผ่าน และส่วนค้นคำแนะนำใหม่ยังไม่ได้ตรวจหน้าจอบนอุปกรณ์จริง รายละเอียดผล API หลังเผยแพร่ให้ตรวจตามคำสั่งในคู่มือ ไม่ใช้ unit tests แทน UI end-to-end
+
 ## วิธีใช้สำหรับผู้ทดลอง
 
 1. เปิดลิงก์หลัก อ่านภาพรวมและวิธีใช้ แล้วเลือก **จำแนกขยะ** จากเมนูด้านล่างบนมือถือ หรือเมนูด้านบนบนคอม
@@ -147,6 +176,7 @@ POSTทั่วไปต้องsame-origin, JSONและheader `x-wastevisio
 | `POST /api/card/close` | ปิดsessionปัจจุบัน |
 | `POST /api/scan-ticket` | cookie+รุ่นโมเดล/คะแนน/รหัสภาพที่เข้าเกณฑ์ สร้างticket10นาที |
 | `POST /api/points` | ticket+condition+confirm เพิ่มหนึ่งรายการ |
+| `POST /api/advice` | ค้นบันทึกคำแนะนำด้วย question ไม่ต้องมีบัตร ไม่ใช้ LLM |
 | `GET /api/quality` | สถิติรวมแยกmodel_version ไม่เปิดภาพหรือข้อมูลสมาชิก |
 | `POST /api/feedback` | consentข้อมูล และimageConsentหากแนบภาพ; ไม่ต้องเปิดบัตร |
 | `POST /api/feedback/delete` | idและdeleteTokenของรายการ ลบข้อมูลและภาพ |
@@ -207,7 +237,7 @@ python ml/train_detector.py --reviewed ml/data/reviewed/annotations.json --versi
 
 ## การทดสอบและงานที่ยังต้องเก็บ
 
-- `npm test`:22กรณี รวมAPIกับSQLiteจริงในหน่วยความจำ, consent, session, แต้มซ้ำ,100ต่อวัน,999→1000ระดับA, special waste, private review, pending/reviewed/rejected และการจัดลำดับคำขอบัตร
+- `npm test`:26กรณี รวมAPIกับSQLiteจริงในหน่วยความจำ, consent, session, แต้มซ้ำ,100ต่อวัน,999→1000ระดับA, special waste, private review, pending/reviewed/rejected และการจัดลำดับคำขอบัตร
 - `npm run build`: ตรวจWorkerและสองHTML entry; build hookลบ`.dev.vars`ออกจากartifact
 - `python ml/check_model.py`: hash, labels, shape, ONNXและmetadata/reportของทั้งสองโมเดล
 - ตรวจChromeจริงรอบดีไซน์: หน้าแรก/คู่มือ/ตัวอย่างตรวจจับ/คำเตือนแบตเตอรี่/บัตร/QR/คัดลอกลิงก์ และviewport390×844กับ1440×1000
